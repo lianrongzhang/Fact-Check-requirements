@@ -276,63 +276,75 @@
 #     if i['Q1'] == 'False':
 #         test.append([i['Article'],'Refuted'])
 
-import json
+# import json
 
-# 開啟並讀取 JSON 檔案
-articles = "/home/user/talen-python/Cofacts_articles.json"  # 替換為你的 JSON 檔案路徑
-article_replies = "/home/user/talen-python/Cofacts_articles_replies.json"  # 替換為你的 JSON 檔案路徑
+# # 開啟並讀取 JSON 檔案
+# articles = "/home/user/talen-python/Cofacts_articles.json"  # 替換為你的 JSON 檔案路徑
+# article_replies = "/home/user/talen-python/Cofacts_articles_replies.json"  # 替換為你的 JSON 檔案路徑
 
-try:
-    with open(articles, "r", encoding="utf-8") as file:
-        articles_data = json.load(file)  # 將 JSON 資料讀取並轉換為 Python 字典或列表
-except FileNotFoundError:
-    print(f"找不到檔案：{articles}")
-except json.JSONDecodeError as e:
-    print(f"解析 JSON 檔案時發生錯誤：{e}")
+# try:
+#     with open(articles, "r", encoding="utf-8") as file:
+#         articles_data = json.load(file)  # 將 JSON 資料讀取並轉換為 Python 字典或列表
+# except FileNotFoundError:
+#     print(f"找不到檔案：{articles}")
+# except json.JSONDecodeError as e:
+#     print(f"解析 JSON 檔案時發生錯誤：{e}")
 
-try:
-    with open(article_replies, "r", encoding="utf-8") as file:
-        article_replies_data = json.load(file)  # 將 JSON 資料讀取並轉換為 Python 字典或列表
-except FileNotFoundError:
-    print(f"找不到檔案：{article_replies}")
-except json.JSONDecodeError as e:
-    print(f"解析 JSON 檔案時發生錯誤：{e}")
+# try:
+#     with open(article_replies, "r", encoding="utf-8") as file:
+#         article_replies_data = json.load(file)  # 將 JSON 資料讀取並轉換為 Python 字典或列表
+# except FileNotFoundError:
+#     print(f"找不到檔案：{article_replies}")
+# except json.JSONDecodeError as e:
+#     print(f"解析 JSON 檔案時發生錯誤：{e}")
 
-test = []
-# 構建 replyType 為 "RUMOR" 的回應並根據 articleId 查找對應的文章資料
-for reply in article_replies_data:
-    if reply.get('replyType') == 'RUMOR':
-        article_id = reply.get('articleId')
+# test = []
+# # 構建 replyType 為 "RUMOR" 的回應並根據 articleId 查找對應的文章資料
+# for reply in article_replies_data:
+#     if reply.get('replyType') == 'RUMOR':
+#         article_id = reply.get('articleId')
         
-        # 查找對應的文章
-        article = next((item for item in articles_data if item['id'] == article_id), None)
+#         # 查找對應的文章
+#         article = next((item for item in articles_data if item['id'] == article_id), None)
         
-        if article:
-            # 把對應的文章和回應資料加入 test 清單
-            test.append({
-                'id': article.get('id'),
-                'claim': article.get('text'),
-                'label': 'Refuted',
-                'created_at': article.get('createdAt')
-            })
+#         if article:
+#             # 把對應的文章和回應資料加入 test 清單
+#             test.append({
+#                 'id': article.get('id'),
+#                 'claim': article.get('text'),
+#                 'label': 'Refuted',
+#                 'created_at': article.get('createdAt')
+#             })
 
-    else:
-        article_id = reply.get('articleId')
+#     else:
+#         article_id = reply.get('articleId')
         
-        # 查找對應的文章
-        article = next((item for item in articles_data if item['id'] == article_id), None)
+#         # 查找對應的文章
+#         article = next((item for item in articles_data if item['id'] == article_id), None)
         
-        if article:
-            # 把對應的文章和回應資料加入 test 清單
-            test.append({
-                'id': article.get('id'),
-                'claim': article.get('text'),
-                'label': 'Supported',
-                'created_at': article.get('createdAt')
-            })
+#         if article:
+#             # 把對應的文章和回應資料加入 test 清單
+#             test.append({
+#                 'id': article.get('id'),
+#                 'claim': article.get('text'),
+#                 'label': 'Supported',
+#                 'created_at': article.get('createdAt')
+#             })
 
 
-file_path = "/home/user/talen-python/data/Cofacts.json"  # 替換為你的 JSON 檔案路徑\
+# file_path = "/home/user/talen-python/data/Cofacts.json"  # 替換為你的 JSON 檔案路徑\
 
-with open(file_path, "w", encoding="utf-8") as file:
-    json.dump(test, file, ensure_ascii=False, indent=4)
+# with open(file_path, "w", encoding="utf-8") as file:
+#     json.dump(test, file, ensure_ascii=False, indent=4)
+
+from langchain_community.document_loaders import WebBaseLoader
+
+# 初始化 WebBaseLoader
+loader = WebBaseLoader('https://tfc-taiwan.org.tw/articles/11337')
+
+# 載入數據
+data = loader.load()
+
+# 輸出數據的前幾行
+
+print(data)

@@ -1,0 +1,17 @@
+---
+name: FactCheck
+channels:
+  - defaults
+dependencies:
+  - python=3.12.7
+  - pip:
+    - fake_useragent
+    - langchain-community
+    - langchain
+    - langchain-core
+    - requests
+    - langchain-ollama
+    - langchain-chroma
+    - langchain-huggingface
+    - datetime
+    - bs4

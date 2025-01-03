@@ -18,7 +18,6 @@ from langchain.schema import Document
 from datetime import datetime
 import json
 import re
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import timeit
 
 
