@@ -23,7 +23,7 @@ jobs:
       
       - name: Install python dependencies
         run: | 
-          pip install fake_useragent langchain-community free-proxy
+          pip install fake_useragent langchain-community free-proxy beautifulsoup4
 
       - name: Run python file
         run: |
