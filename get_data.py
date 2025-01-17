@@ -51,7 +51,7 @@ def web_loader(url, verify_ssl=False):
         print(f"Error loading content from {url}: {e}")
         return None
 
-def get_fact_check_content(urls, max_retries=3):
+def get_fact_check_content(urls, max_retries=10):
     if not urls:
         print("No URLs provided.")
         return []
