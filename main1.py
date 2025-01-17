@@ -7,8 +7,6 @@ ua = UserAgent()
 os.environ['USER_AGENT'] = ua.random
 
 from langchain_community.document_loaders import WebBaseLoader
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
 from langchain.prompts import PromptTemplate
 import requests
 from langchain_ollama import OllamaLLM
@@ -19,6 +17,13 @@ from datetime import datetime
 import json
 import re
 import timeit
+from fp.fp import FreeProxy
+import urllib3
+import signal
+
+# 禁用 InsecureRequestWarning 警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
@@ -42,32 +47,65 @@ def create_vector_db(persist_directory, embeddings):
         print(f"Error creating database at {persist_directory}: {e}")
         return None
     
-def get_fact_check_url(query, API_KEY, SEARCH_ENGINE_ID):
-    url = f'https://www.googleapis.com/customsearch/v1?q={query}&key={API_KEY}&num=5&cx={SEARCH_ENGINE_ID}'
+def get_fact_check_url(query, api_key, search_engine_id, num_results=5):
+    url = (
+        f'https://www.googleapis.com/customsearch/v1?q={query}&key={api_key}&cx={search_engine_id}&num={num_results}'
+    )
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()  # 確保請求成功
+        results = response.json()
 
-    fact_check_urls = []
-    response = requests.get(url)
-    results = response.json()
-    if 'items' in results:
-        for item in results['items']:
-            fact_check_urls.append(item['link'])
-        return fact_check_urls
-    else:
-        return None
+        if 'items' in results:
+            fact_check_urls = [item['link'] for item in results['items']]
+            return fact_check_urls
+        else:
+            print("No items found in the search results.")
+            return []
+    except requests.RequestException as e:
+        print(f"Error during API request: {e}")
+        return []
 
-def get_fact_check_content(urls):
-    if urls == None:
-        return None
-    print('-'*50)
-    print('searching relavant info...')
+
+def get_fact_check_content(urls, max_retries=3):
+    if not urls:
+        print("No URLs provided.")
+        return []
+
+    print('-' * 50)
+    print('Searching relevant info...')
     fact_check_content = []
-    for i in urls:
-        loader = WebBaseLoader(i)
-        docs = loader.load()
-        fact_check_content.append([docs, i])
-    print('searching completed.')
-    print('-'*50)
+
+    for i, url in enumerate(urls, start=1):
+        retries = 0
+        while retries < max_retries:
+            try:
+                # 嘗試獲取代理
+                proxy = FreeProxy(rand=True, timeout=3).get()
+                print(f"[{i}/{len(urls)}] Attempt {retries + 1}: Using proxy: {proxy}")
+                # 加載網頁內容
+                docs = run_with_timeout(web_loader, args=(url,), kwargs={"proxies": {"http": proxy, "https": proxy}})
+                fact_check_content.append([docs, url])
+                break  # 如果成功，跳出重試循環
+            except Exception as e:
+                print(f"[{i}/{len(urls)}] Attempt {retries + 1} failed for {url}: {e}")
+                retries += 1
+
+        if retries == max_retries:
+            print(f"[{i}/{len(urls)}] Failed to load {url} after {max_retries} attempts.")
+
+    print('Searching completed.')
+    print('-' * 50)
     return fact_check_content
+
+def web_loader(url, proxies=None, verify_ssl=False):
+    try:
+        loader = WebBaseLoader(url, proxies=proxies, verify_ssl=verify_ssl)
+        docs = loader.load()
+        return docs
+    except Exception as e:
+        print(f"Error loading content from {url}: {e}")
+        return None
 
 
 def analyze_fact_check(fact_check_content, model):
@@ -221,6 +259,166 @@ def query_vectordb(question, questionDB, answerDB):
         print(f"Error retrieving answer from database: {str(e)}")
         return
 
+def main(query, model, search_api_key, search_engine_id):
+    today = datetime.today().strftime('%Y-%m-%d')
+    questionDB = is_vector_db_exist(f"{today}-question-db", embeddings)
+    answerDB = is_vector_db_exist(f"{today}-answer-db", embeddings)
+    fact_check_urls = get_fact_check_url(query, search_api_key, search_engine_id)
+    if fact_check_urls == None:
+        return None
+    fact_check_content = get_fact_check_content(fact_check_urls)
+    documents, analyzer_time = analyze_fact_check(fact_check_content, model)
+    fact_check_result = fact_check(query[0], documents, model, analyzer_time)
+    while fact_check_result == False:
+        fact_check_result = fact_check(query[0], documents, model, analyzer_time)
+    extracted_data = extract_data(fact_check_result[0], patterns)
+    store_to_vectordb(query,fact_check_result[0], questionDB, answerDB, extracted_data)
+    return fact_check_result[0], fact_check_result[1], extracted_data
+
+
+patterns = {
+    "Claim Status": [r"Claim Status:\s*([^\n]+)", r"\*\*Claim Status\*\*:\s*([^\n]+)"],
+    "Language": [r"Language:\s*([^\(\n]+)", r"\*\*Language\*\*:\s*([^\(\n]+)"],
+    "Date": [r"Date:\s*([^\(\n]+)", r"\*\*Date\*\*:\s*([^\(\n]+)"],
+    "Country": [r"Country:\s*([A-Z]+)", r"\*\*Country\*\*:\s*([A-Z]+)"],
+    "URL": [r"URL:\s*(https?://[^\s]+)", r"https?://[^\s]+"]
+}
+
+def extract_data(response, patterns):
+    result = {}
+
+    # 檢查 response 是否為字串
+    if not isinstance(response, str):
+        print(f"Skipping non-string response: {response} (type: {type(response)})")
+        return None
+    
+    for key, regex_list in patterns.items():
+        if key == "URL":
+            matches = []
+            for regex in regex_list:
+                matches.extend(re.findall(regex, response))
+            # 使用 set 去重，然後轉回 list
+            result[key] = list(set(matches)) if matches else None
+        else:
+            for regex in regex_list:
+                match = re.search(regex, response)
+                if match:
+                    result[key] = match.group(1).strip()
+                    break
+            if key not in result:
+                result[key] = None
+    return result
+
+def timeout_handler(signum, frame):
+    raise TimeoutError()
+
+def run_with_timeout(func, args=(), kwargs={}, timeout=15):
+    signal.signal(signal.SIGALRM, timeout_handler)
+    signal.alarm(timeout)
+    try:
+        result = func(*args, **kwargs)
+    except TimeoutError:
+        result = None
+    finally:
+        signal.alarm(0)
+    return result
+
+def MultiFC():
+    # 開啟並讀取 JSON 檔案
+    file_path = "/home/user/talen-python/data/AVeriTeC.json"  # 替換為你的 JSON 檔案路徑
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)  # 將 JSON 資料讀取並轉換為 Python 字典或列表
+    except FileNotFoundError:
+        print(f"找不到檔案：{file_path}")
+    except json.JSONDecodeError as e:
+        print(f"解析 JSON 檔案時發生錯誤：{e}")
+    test = []
+    for i in data:
+        test.append(i["claim"])
+    return test
+
+    
+# query = MultiFC()
+# query = "Barack Obama said Donald Trump 'tried to kill' Mike Pence"
+# query = "Kas kaitsevägi lasi õhku äsja 12 miljoni eest renoveeritud viadukti?"
+# query = "Old clip of cargo ship fire falsely linked to Houthi attacks"
+# query = "Vietăți marine care nu există"
+# query = "nee, dieselauto’s zijn niet even milieuvriendelijk als elektrische wagens"
+# query = "nee, deze video toont niet hoe een man stembiljetten voor Trump vernietigt"
+# query = "het klopt dat je beter je neus ophaalt dan hem te snuiten"
+# query = "حزب الله يستهدف مواقع إسرائيل العسكرية في جنوب لبنان"
+# query = "The non-partisan Congressional Budget Office concluded ObamaCare will cost the U.S. more than 800,000 jobs."
+# query = "中東和烏克蘭戰死的美軍棺木回國"
+
+query = [
+    "Barack Obama said Donald Trump 'tried to kill' Mike Pence",
+]
+
+today = datetime.today().strftime('%Y-%m-%d')
+
+with open('APIKey.json', 'r') as f:
+    config = json.load(f)
+
+search_engine_id = config.get('search_engine_id')
+search_api_key = config.get('search_api_key')
+
+questionDB = is_vector_db_exist(f"{today}-question-db", embeddings)
+answerDB = is_vector_db_exist(f"{today}-answer-db", embeddings)
+
+if not questionDB:
+    questionDB = create_vector_db(f"{today}-question-db", embeddings)
+if not answerDB:
+    answerDB = create_vector_db(f"{today}-answer-db", embeddings)
+
+model = "llama3"
+result = []
+for i in query:
+    print("Query:")
+    print(i)
+    # print(query_result)
+    query_result = query_vectordb(i, questionDB, answerDB)
+    if query_result != "No relevant documents found." and query_result != "The vector database is empty.":
+        print("Result from local database:")
+        print(query_result)
+    else:
+        print(query_result)
+        try:
+            main_result = main(i[0], model, search_api_key, search_engine_id)
+            if main_result == None:
+                print("No results from Google search.")
+            else:
+                while main_result == False:
+                    main_result = main(i, model, search_api_key, search_engine_id)
+                
+                extract_data_result = extract_data(main_result[0], patterns)
+                tmp = {
+                    "Claim": i,
+                    "Result": main_result[0],
+                    "Claim Status": extract_data_result.get("Claim Status"),
+                    "Language": extract_data_result.get("Language"),
+                    "Date": extract_data_result.get("Date"),
+                    "Country": extract_data_result.get("Country"),
+                    "URL": extract_data_result.get("URL"),
+                    "Time taken": main_result[1]
+                }
+                result.append(tmp)
+                print("Result from Google search:")
+                print(main_result[0])
+                print(f"Time taken: {main_result[1]:.2f} seconds")
+                print()
+        except Exception as e:
+            print(f"Failed to get result from Google search: {e}")
+
+with open('result.json', 'w') as f:
+    json.dump(result, f, indent=4)
+
+
+
+
+
+
+
 def google_fact_check(query, API_KEY):
     # Base URL for Fact Check API
     url = 'https://factchecktools.googleapis.com/v1alpha1/claims:search'
@@ -272,135 +470,3 @@ def google_fact_check(query, API_KEY):
             return None
     else:
             print(f"Error: {response.status_code}, {response.json()}")
-
-def main(query, model, search_api_key, search_engine_id):
-    today = datetime.today().strftime('%Y-%m-%d')
-    questionDB = is_vector_db_exist(f"{today}-question-db", embeddings)
-    answerDB = is_vector_db_exist(f"{today}-answer-db", embeddings)
-    fact_check_urls = get_fact_check_url(query, search_api_key, search_engine_id)
-    if fact_check_urls == None:
-        return None
-    fact_check_content = get_fact_check_content(fact_check_urls)
-    documents = analyze_fact_check(fact_check_content, model)
-    result = fact_check(query, documents[0], model, documents[1])
-    while result == False:
-        result = fact_check(query, documents[0], model, documents[1])
-    extracted_data = extract_data(result[0], patterns)
-    store_to_vectordb(query,result[0], questionDB, answerDB, extracted_data)
-    return result[0], result[1]
-
-
-patterns = {
-    "Claim Status": [r"Claim Status:\s*([^\n]+)", r"\*\*Claim Status\*\*:\s*([^\n]+)"],
-    "Language": [r"Language:\s*([^\(\n]+)", r"\*\*Language\*\*:\s*([^\(\n]+)"],
-    "Date": [r"Date:\s*([^\(\n]+)", r"\*\*Date\*\*:\s*([^\(\n]+)"],
-    "Country": [r"Country:\s*([A-Z]+)", r"\*\*Country\*\*:\s*([A-Z]+)"],
-    "URL": [r"URL:\s*(https?://[^\s]+)", r"https?://[^\s]+"]
-}
-
-def extract_data(response, patterns):
-    result = {}
-
-    # 檢查 response 是否為字串
-    if not isinstance(response, str):
-        print(f"Skipping non-string response: {response} (type: {type(response)})")
-        return None
-    
-    for key, regex_list in patterns.items():
-        if key == "URL":
-            matches = []
-            for regex in regex_list:
-                matches.extend(re.findall(regex, response))
-            # 使用 set 去重，然後轉回 list
-            result[key] = list(set(matches)) if matches else None
-        else:
-            for regex in regex_list:
-                match = re.search(regex, response)
-                if match:
-                    result[key] = match.group(1).strip()
-                    break
-            if key not in result:
-                result[key] = None
-    return result
-
-    
-# Main query execution
-query = "Barack Obama says Donald Trump tried to kill Mike Pence"
-# query = "Kas kaitsevägi lasi õhku äsja 12 miljoni eest renoveeritud viadukti?"
-# query = "Old clip of cargo ship fire falsely linked to Houthi attacks"
-# query = "Vietăți marine care nu există"
-# query = "nee, dieselauto’s zijn niet even milieuvriendelijk als elektrische wagens"
-# query = "nee, deze video toont niet hoe een man stembiljetten voor Trump vernietigt"
-# query = "het klopt dat je beter je neus ophaalt dan hem te snuiten"
-# query = "حزب الله يستهدف مواقع إسرائيل العسكرية في جنوب لبنان"
-# query = "The non-partisan Congressional Budget Office concluded ObamaCare will cost the U.S. more than 800,000 jobs."
-# query = "小泉進次郎は年金の『支給開始年齢』を「80歳でもいい」とは言っていない"
-
-# query = "In a letter to Steve Jobs, Sean Connery refused to appear in an apple commercial."
-
-
-
-
-today = datetime.today().strftime('%Y-%m-%d')
-
-with open('APIKey.json', 'r') as f:
-    config = json.load(f)
-
-fact_check_api_key = config.get('fact_check_api')
-search_engine_id = config.get('search_engine_id')
-search_api_key = config.get('search_api_key')
-
-questionDB = is_vector_db_exist(f"{today}-question-db", embeddings)
-answerDB = is_vector_db_exist(f"{today}-answer-db", embeddings)
-
-if not questionDB:
-    questionDB = create_vector_db(f"{today}-question-db", embeddings)
-if not answerDB:
-    answerDB = create_vector_db(f"{today}-answer-db", embeddings)
-
-query_result = query_vectordb(query, questionDB, answerDB)
-
-model = "llama3"
-
-
-
-# print(query_result)
-if query_result != "No relevant documents found." and query_result != "The vector database is empty.":
-    print("Result from local database:")
-    print(query_result)
-else:
-    print(query_result)
-    # # 使用 Google Fact Check 進行查詢
-    # google_result = google_fact_check(query, fact_check_api_key)
-    # if google_result:
-    #     # 如果 Google Fact Check 有結果，進行處理
-    #     print("Result from Google Fact Check:")
-    #     result = fact_check(query, google_result, model)
-    #     while result == False:
-    #         result = fact_check(query, google_result, model)
-    #     print(result[0])
-    #     print(f"Time taken: {result[1]:.2f} seconds")
-    #     try:
-    #         extracted_data = extract_data(result[0], patterns)
-    #     except Exception as e:
-    #         print(f"Failed to extract data from the result: {e}")
-    #     # 嘗試將結果儲存到向量資料庫
-    #     try:
-    #         vector_store = store_to_vectordb(query,result[0], questionDB, answerDB, extracted_data)
-    #     except Exception as e:
-    #         print(f"Failed to store result to vector database: {e}")
-
-    # else:
-    #     print("No results from Google Fact Check.")
-    try:
-        main_result = main(query, model, search_api_key, search_engine_id)
-        if main_result == None:
-            print("No results from Google search.")
-        else:
-            while main_result == False:
-                main_result = main(query, model, search_api_key, search_engine_id)
-            print("Result from Google search:")
-            print(main_result[0])
-            print(f"Time taken: {main_result[1]:.2f} seconds")
-    except Exception as e:
-        print(f"Failed to get result from Google search: {e}")
