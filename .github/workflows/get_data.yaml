@@ -1,0 +1,30 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-activate-base: true
+          channels: conda-forge
+          auto-update-conda: true
+          python-version: 3.12.7
+      
+      - name: Install python dependencies
+        run: | 
+          pip install fake_useragent langchain-community free-proxy threading
+
+      - name: Run python file
+        run: |
+          python get_data.py
