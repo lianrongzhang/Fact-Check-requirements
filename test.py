@@ -1453,10 +1453,10 @@
 # while test ==1:
 #     print(test)
 #     test+=1
-import json
-with open('/home/user/talen-python/result.json', 'r') as f:
-    data = json.load(f)
-print(len(data))
+# import json
+# with open('/home/user/talen-python/result.json', 'r') as f:
+#     data = json.load(f)
+# print(len(data))
 # test = []
 # test1 = []
 # test2 = []
@@ -1476,3 +1476,28 @@ print(len(data))
 #     json.dump(test1, f, indent=4, ensure_ascii=False)
 # with open('MultiFC4.json', 'w') as f:
 #     json.dump(test2, f, indent=4, ensure_ascii=False)
+
+import json
+from langchain_ollama import OllamaLLM
+from langchain.prompts import PromptTemplate
+
+
+with open('/home/user/talen-python/AVeriTeC_content.json', 'r') as f:
+    data = json.load(f)
+model = "llama3"
+
+for i in data['Donald Trump delivered the largest tax cuts in American history.']:
+    llm = OllamaLLM(model=model)
+    # 定義 PromptTemplate
+    template = """
+    Write a concise summary of the following:
+    {context}
+    """
+    prompt = PromptTemplate.from_template(template)
+    # 格式化 prompt
+    formatted_prompt = prompt.format(context=i)
+    # 執行 LLM
+    result = llm.invoke(formatted_prompt)
+
+    print(result)
+    print("-----------------------------------------------")

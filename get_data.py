@@ -6,6 +6,10 @@ from fp.fp import FreeProxy
 import threading
 import json
 import urllib3
+import requests
+from bs4 import BeautifulSoup
+from langchain.schema import Document  # Assuming you're using langchain for Document format
+
 
 # Disable InsecureRequestWarning warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -39,14 +43,19 @@ def run_with_timeout(func, args=(), kwargs={}, timeout=10):
 
 def web_loader(url, verify_ssl=False):
     try:
-        proxy = FreeProxy(rand=True, timeout=3).get()
-        loader = WebBaseLoader(
-            url,
-            proxies={"http": proxy, "https": proxy},
-            verify_ssl=verify_ssl,
+        headers = {'User-Agent': ua.random}
+        response = requests.get(url, headers=headers)
+        
+        # Parse the HTML using BeautifulSoup
+        soup = BeautifulSoup(response.text, 'html.parser')
+        plain_text = soup.get_text()  # Extract text and separate lines
+        
+        # Create a LangChain Document object
+        doc = Document(
+            page_content=plain_text,
+            metadata={"source": url}  # Optionally, add the URL as metadata
         )
-        docs = loader.load()
-        return docs
+        return doc  # Return the document directly
     except Exception as e:
         print(f"Error loading content from {url}: {e}")
         return None
@@ -62,10 +71,10 @@ def get_fact_check_content(urls, max_retries=10):
 
     for i, url in enumerate(urls, start=1):
         for retries in range(max_retries):
-            docs = run_with_timeout(web_loader, args=(url,))
-            if docs:
+            doc = run_with_timeout(web_loader, args=(url,))
+            if doc:
                 print(f"[{i}/{len(urls)}] Successfully fetched content from {url}")
-                fact_check_content.append([docs, url])
+                fact_check_content.append(doc)
                 break
             else:
                 print(f"[{i}/{len(urls)}] Attempt {retries + 1} failed. Retrying...")
@@ -79,9 +88,9 @@ def get_fact_check_content(urls, max_retries=10):
 def main(input_path, output_path):
     with open(input_path, 'r') as f:
         data = json.load(f)
-
     query = []
-    save_result = []
+    save_result = dict()
+
     for i in data:
         if i['urls']:
             query.append([i['claim'], i['urls']])
@@ -89,10 +98,18 @@ def main(input_path, output_path):
     for i in query:
         print(f"Processing claim: {i[0]}")
         result = get_fact_check_content(i[1])
-        save_result.append(result)
+        save_result[i[0]] = result  # Store LangChain Document objects in the result
+
+    print(save_result)
+
+    # Save the LangChain documents as JSON with metadata (if desired)
+    serialized_result = {
+        claim: [{"page_content": doc.page_content, "metadata": doc.metadata} for doc in docs]
+        for claim, docs in save_result.items()
+    }
 
     with open(output_path, 'w') as f:
-        json.dump(save_result, f, indent=4, ensure_ascii=False)
+        json.dump(serialized_result, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process fact-checking claims.")
