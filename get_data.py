@@ -8,6 +8,10 @@ from langchain_community.document_loaders import WebBaseLoader
 from fp.fp import FreeProxy
 import threading
 import json
+import urllib3
+
+# 禁用 InsecureRequestWarning 警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def run_with_timeout(func, args=(), kwargs={}, timeout=10):
     result = [None]  # To store the function result
