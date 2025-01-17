@@ -23,7 +23,7 @@ jobs:
       
       - name: Install python dependencies
         run: | 
-          pip install fake_useragent langchain-community free-proxy threading
+          pip install fake_useragent langchain-community free-proxy
 
       - name: Run python file
         run: |
