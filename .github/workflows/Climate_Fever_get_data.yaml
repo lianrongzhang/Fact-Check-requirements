@@ -27,7 +27,7 @@ jobs:
 
       - name: Run python file
         run: |
-          python get_data.py  Climate_Fever/Climate_Fever.json Climate_Fever/Climate_Fever_content.json
+          python get_data.py --input_path Climate_Fever/Climate_Fever.json --output_path Climate_Fever/Climate_Fever_content.json
 
       - uses: actions/upload-artifact@v4
         with:

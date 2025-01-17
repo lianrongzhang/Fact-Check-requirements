@@ -27,7 +27,7 @@ jobs:
 
       - name: Run python file
         run: |
-          python get_data.py  MultiFC/MultiFC.json MultiFC/MultiFC_content.json
+          python get_data.py --input_path MultiFC/MultiFC.json --output_path MultiFC/MultiFC_content.json
 
       - uses: actions/upload-artifact@v4
         with:
