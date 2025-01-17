@@ -94,13 +94,12 @@ def main(input_path, output_path):
     for i in data:
         if i['urls']:
             query.append([i['claim'], i['urls']])
-
+    
+    print(len(query))
     for i in query:
         print(f"Processing claim: {i[0]}")
         result = get_fact_check_content(i[1])
         save_result[i[0]] = result  # Store LangChain Document objects in the result
-
-    print(save_result)
 
     # Save the LangChain documents as JSON with metadata (if desired)
     serialized_result = {

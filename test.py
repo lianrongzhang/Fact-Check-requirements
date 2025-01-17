@@ -1482,22 +1482,37 @@ from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 
 
-with open('/home/user/talen-python/AVeriTeC_content.json', 'r') as f:
+with open('/home/user/talen-python/Climate_Fever/Climate_Fever_content.json', 'r') as f:
     data = json.load(f)
-model = "llama3"
 
-for i in data['Donald Trump delivered the largest tax cuts in American history.']:
-    llm = OllamaLLM(model=model)
-    # 定義 PromptTemplate
-    template = """
-    Write a concise summary of the following:
-    {context}
-    """
-    prompt = PromptTemplate.from_template(template)
-    # 格式化 prompt
-    formatted_prompt = prompt.format(context=i)
-    # 執行 LLM
-    result = llm.invoke(formatted_prompt)
+with open('/home/user/talen-python/Climate_Fever/Climate_Fever.json', 'r') as f:
+    data1 = json.load(f)
 
-    print(result)
-    print("-----------------------------------------------")
+print(len(data))
+for i in data1:
+    flag = 1
+    for j in data:
+        if i['claim']==j:
+            flag = 0
+            break
+    if flag == 1:
+        print(i,"FUCK")
+
+
+# model = "llama3"
+
+# for i in data['Donald Trump delivered the largest tax cuts in American history.']:
+#     llm = OllamaLLM(model=model)
+#     # 定義 PromptTemplate
+#     template = """
+#     Write a concise summary of the following:
+#     {context}
+#     """
+#     prompt = PromptTemplate.from_template(template)
+#     # 格式化 prompt
+#     formatted_prompt = prompt.format(context=i)
+#     # 執行 LLM
+#     result = llm.invoke(formatted_prompt)
+
+#     print(result)
+#     print("-----------------------------------------------")

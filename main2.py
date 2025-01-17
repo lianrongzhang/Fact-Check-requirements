@@ -346,7 +346,7 @@ def test_data(path):
         data = json.load(f)
     return data
 
-path1 = '/home/user/talen-python/MultiFC2.json'
+path1 = '/home/user/talen-python/Climate_Fever/Climate_Fever_content.json'
 
 
     
