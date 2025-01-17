@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Climate_Fever
 
 on:
   push:
@@ -27,9 +27,9 @@ jobs:
 
       - name: Run python file
         run: |
-          python get_data.py
+          python get_data.py  Climate_Fever/Climate_Fever.json Climate_Fever/Climate_Fever_content.json
 
       - uses: actions/upload-artifact@v4
         with:
           name: save_file
-          path: AVeriTeC/AVeriTeC_content.json
+          path: Climate_Fever/Climate_Fever_content.json

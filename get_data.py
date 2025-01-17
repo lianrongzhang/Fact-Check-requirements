@@ -1,21 +1,22 @@
 import os
+import argparse
 from fake_useragent import UserAgent
-
-# 初始化 UserAgent 物件
-ua = UserAgent()
-os.environ['USER_AGENT'] = ua.random
 from langchain_community.document_loaders import WebBaseLoader
 from fp.fp import FreeProxy
 import threading
 import json
 import urllib3
 
-# 禁用 InsecureRequestWarning 警告
+# Disable InsecureRequestWarning warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# Initialize UserAgent object
+ua = UserAgent()
+os.environ['USER_AGENT'] = ua.random
+
 def run_with_timeout(func, args=(), kwargs={}, timeout=10):
-    result = [None]  # To store the function result
-    exception = [None]  # To capture any exception
+    result = [None]
+    exception = [None]
 
     def target():
         try:
@@ -26,25 +27,25 @@ def run_with_timeout(func, args=(), kwargs={}, timeout=10):
     thread = threading.Thread(target=target)
     thread.daemon = True
     thread.start()
-    thread.join(timeout)  # Wait for execution to complete
+    thread.join(timeout)
 
-    if thread.is_alive():  # Check if the function timed out
+    if thread.is_alive():
         print("Function execution timed out.")
         return None
-    if exception[0]:  # Check for any exceptions
+    if exception[0]:
         print(f"Error during execution: {exception[0]}")
         return None
     return result[0]
 
 def web_loader(url, verify_ssl=False):
     try:
-        proxy = FreeProxy(rand=True, timeout=3).get()  # Get a random proxy
+        proxy = FreeProxy(rand=True, timeout=3).get()
         loader = WebBaseLoader(
             url,
             proxies={"http": proxy, "https": proxy},
             verify_ssl=verify_ssl,
         )
-        docs = loader.load()  # Load the content
+        docs = loader.load()
         return docs
     except Exception as e:
         print(f"Error loading content from {url}: {e}")
@@ -62,44 +63,52 @@ def get_fact_check_content(urls, max_retries=3):
     for i, url in enumerate(urls, start=1):
         for retries in range(max_retries):
             docs = run_with_timeout(web_loader, args=(url,))
-            if docs:  # Successfully fetched content
+            if docs:
                 print(f"[{i}/{len(urls)}] Successfully fetched content from {url}")
                 fact_check_content.append([docs, url])
                 break
-            else:  # Retry failed
+            else:
                 print(f"[{i}/{len(urls)}] Attempt {retries + 1} failed. Retrying...")
-        else:  # Exceeded max retries
+        else:
             print(f"[{i}/{len(urls)}] Failed to load content from {url} after {max_retries} attempts.")
 
     print('Searching completed.')
     print('-' * 50)
     return fact_check_content
 
-def main(query):
-    urls = query[1]
-    if urls == []:
-        return "No relevant fact-checking articles found."
-    
-    content = get_fact_check_content(urls)
-    if content == None:
-        print("Failed to get fact check content.")
-        return None
-    
-    return content
+def main(input_path, output_path):
+    with open(input_path, 'r') as f:
+        data = json.load(f)
 
-with open('AVeriTeC/AVeriTeC.json', 'r') as f:
-    data = json.load(f)
+    query = []
+    save_result = []
+    for i in data:
+        if i['urls']:
+            query.append([i['claim'], i['urls']])
 
-query = []
-save_result = []
-for i in data:
-    if i['urls'] != []:
-        query.append([i['claim'],i['urls']])
+    for i in query:
+        print(f"Processing claim: {i[0]}")
+        result = get_fact_check_content(i[1])
+        save_result.append(result)
 
-for i in query:
-    print(f"Processing claim: {i[0]}")
-    result = main(i)
-    save_result.append(result)
+    with open(output_path, 'w') as f:
+        json.dump(save_result, f, indent=4, ensure_ascii=False)
 
-with open('AVeriTeC/AVeriTeC_content.json', 'w') as f:
-    json.dump(save_result, f, indent=4, ensure_ascii=False)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Process fact-checking claims.")
+    parser.add_argument(
+        "--input_path",
+        type=str,
+        required=True,
+        help="Path to the input JSON file containing claims and URLs."
+    )
+    parser.add_argument(
+        "--output_path",
+        type=str,
+        required=True,
+        help="Path to save the output JSON file with fact-check content."
+    )
+
+    args = parser.parse_args()
+
+    main(args.input_path, args.output_path)
