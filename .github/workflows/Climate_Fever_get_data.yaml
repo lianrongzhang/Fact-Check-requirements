@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  Get-Data:
+    name: Climate_Fever
     runs-on: ubuntu-latest
 
     steps:

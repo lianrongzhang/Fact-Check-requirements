@@ -1482,23 +1482,13 @@ from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 
 
-with open('/home/user/talen-python/Climate_Fever/Climate_Fever_content.json', 'r') as f:
+with open('/home/user/talen-python/MultiFC/MultiFC.json', 'r') as f:
     data = json.load(f)
 
-with open('/home/user/talen-python/Climate_Fever/Climate_Fever.json', 'r') as f:
+with open('/home/user/talen-python/MultiFC/MultiFC1.json', 'r') as f:
     data1 = json.load(f)
 
-print(len(data))
-for i in data1:
-    flag = 1
-    for j in data:
-        if i['claim']==j:
-            flag = 0
-            break
-    if flag == 1:
-        print(i,"FUCK")
-
-
+print(len(data),len(data1))
 # model = "llama3"
 
 # for i in data['Donald Trump delivered the largest tax cuts in American history.']:
