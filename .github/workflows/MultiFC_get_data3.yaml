@@ -1,0 +1,35 @@
+name: MultiFC
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Get-Data:
+    name: MultiFC3
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-activate-base: true
+          channels: conda-forge
+          auto-update-conda: true
+          python-version: 3.12.7
+      
+      - name: Install python dependencies
+        run: | 
+          pip install fake_useragent langchain-community free-proxy beautifulsoup4
+
+      - name: Run python file
+        run: |
+          python get_data.py --input_path MultiFC/MultiFC4.json --output_path MultiFC/MultiFC_content3.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MultiFC_content3
+          path: MultiFC/MultiFC_content3.json

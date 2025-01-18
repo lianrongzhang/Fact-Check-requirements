@@ -1477,18 +1477,105 @@
 # with open('MultiFC4.json', 'w') as f:
 #     json.dump(test2, f, indent=4, ensure_ascii=False)
 
-import json
-from langchain_ollama import OllamaLLM
-from langchain.prompts import PromptTemplate
+
+# import json
+# from langchain_ollama import OllamaLLM
+# from langchain.prompts import PromptTemplate
+# import timeit
+# from langchain.schema import Document
+# import re
 
 
-with open('/home/user/talen-python/MultiFC/MultiFC.json', 'r') as f:
-    data = json.load(f)
+# def test_data(path):
+#     with open(path, 'r') as f:
+#         data = json.load(f)
+#     return data
 
-with open('/home/user/talen-python/MultiFC/MultiFC1.json', 'r') as f:
-    data1 = json.load(f)
+# path1 = '/home/user/talen-python/Climate_Fever/Climate_Fever_content.json'
+# query = test_data(path1)
+# flag = 0
+# keys = list(query.keys())
+# model = "llama3"
 
-print(len(data),len(data1))
+# def fact_check(query, documents, model,analyzer_time=None):
+#     if not documents:
+#         return
+#     llm = OllamaLLM(model=model)
+#     # 定義 prompt
+#     template = """
+#         You are a professional fact-checker tasked with evaluating the following claim.
+#         Let's break down the evidence and reasoning step by step.
+#         First, analyze the provided context {context} and identify key information relevant to the claim {claim}.
+#         Then, evaluate the evidence step by step to determine if the claim is true or false.
+#         Finally, structure the response in the following format:
+        
+
+#         ### Analysis of Claim:
+
+#         - Key Information from Context:  
+#         [Summarize the key points from the context relevant to the claim.]
+
+#         ### Step-by-Step Evaluation:
+
+#         1. Evidence 1:  
+#         - Observation: [Detail the first piece of evidence or data relevant to the claim.]  
+#         - Reasoning: [Explain how this evidence supports or refutes the claim, or note any limitations.]
+
+#         2. Evidence 2:  
+#         - Observation: [Detail the second piece of evidence or data relevant to the claim.]  
+#         - Reasoning: [Explain how this evidence supports or refutes the claim, or note any limitations.]
+
+#         3. Additional Analysis (if needed):  
+#         - [Integrate multiple pieces of evidence or consider other contextual factors for deeper reasoning.]
+
+#         ### Conclusion:
+
+#         - Claim Status: [State "Supported," "Refuted," or "Not Enough Information"]
+#         - Language: [Specify the language of the claim and context, do not translate.]
+#         - Date: [Specify the date of the claim or context, e.g., "YYYY-MM-DD."]
+#         - Country: [Reason the country relevant to the claim and transform it to the country code (e.g., US, UK, CA), only show the country code.]
+#         - URL: [Provide the URL of the source for reference.]
+#     """
+#     prompt = PromptTemplate.from_template(template)
+#     formatted_prompt = prompt.format(context=documents, claim=query)
+    
+#     # 將 prompt 傳遞給 LLM
+#     time_start = timeit.default_timer()
+#     result = llm.invoke(formatted_prompt)
+#     time_end = timeit.default_timer()
+#     url_pattern = r"(https?://[^\s]+)"
+    
+#     # 使用正則表達式搜尋 result 中是否有符合的連結
+#     match = re.search(url_pattern, result)
+
+#     if match:
+#         # 如果有找到，返回結果和連結
+#         if analyzer_time == None:
+#             return result, time_end - time_start
+#         else:
+#             return result, time_end - time_start + analyzer_time
+#     else:
+#         return False
+
+
+# for i in keys:
+#     content = []
+#     for j in query[i]:
+#         llm = OllamaLLM(model=model)
+#         # 定義 PromptTemplate
+#         template = """
+#         Write a concise summary of the following:
+#         {context}
+#         """
+#         prompt = PromptTemplate.from_template(template)
+#         # 格式化 prompt
+#         formatted_prompt = prompt.format(context=j)
+#         # 執行 LLM
+#         result = llm.invoke(formatted_prompt)
+#         content.append(result)
+#     print(fact_check(i, content, model,analyzer_time=None))
+
+
 # model = "llama3"
 
 # for i in data['Donald Trump delivered the largest tax cuts in American history.']:
@@ -1506,3 +1593,68 @@ print(len(data),len(data1))
 
 #     print(result)
 #     print("-----------------------------------------------")
+
+import json
+
+# 讀取 JSON 檔案
+with open('/home/user/talen-python/MultiFC/MultiFC1.json', 'r') as f:
+    data = json.load(f)
+
+# 計算資料長度並定義分割大小
+total_length = len(data)
+chunk_size = total_length // 5  # 每部分的大小
+
+# 初始化分割結果
+parts = [data[i * chunk_size: (i + 1) * chunk_size] for i in range(4)]
+parts.append(data[4 * chunk_size:])  # 剩下的資料放在最後一部分
+
+# 儲存每一部分為新的 JSON 檔案
+for idx, part in enumerate(parts):
+    output_path = f'/home/user/talen-python/MultiFC/MultiFC_{idx + 1}.json'
+    with open(output_path, 'w') as outfile:
+        json.dump(part, outfile, indent=4, ensure_ascii=False)
+    print(f"Saved part {idx + 1} to {output_path}")
+
+
+
+
+
+# import json
+
+# # 定義 5 個檔案的路徑
+# file_paths = [
+#     '/home/user/talen-python/AVeriTeC/AVeriTeC2.json',
+#     '/home/user/talen-python/AVeriTeC/AVeriTeC3.json',
+#     '/home/user/talen-python/AVeriTeC/AVeriTeC4.json',
+# ]
+
+# # 初始化變數
+# all_data = []
+# original_length = 0  # 原始資料的總長度
+
+# # 逐一讀取檔案並收集所有資料
+# for path in file_paths:
+#     with open(path, 'r') as f:
+#         part_data = json.load(f)
+#         all_data.extend(part_data)
+#         print(f"Loaded {len(part_data)} items from {path}")  # 每個檔案的資料量
+#         original_length += len(part_data)
+
+# # 檢查是否有重複的資料
+# duplicates = len(all_data) - len(set(json.dumps(item, sort_keys=True) for item in all_data))
+
+# # 輸出檢查結果
+# print("\n=== 分割檢查結果 ===")
+# print(f"原始資料總長度: {original_length}")
+# print(f"分割後的資料總長度: {len(all_data)}")
+# print(f"是否有重複資料: {'有重複' if duplicates > 0 else '無重複'}")
+# print(f"是否保持原順序: {'是' if all_data == sorted(all_data, key=lambda x: all_data.index(x)) else '否'}")
+
+# with open('/home/user/talen-python/MultiFC/MultiFC2.json', 'w') as f:
+#     json.dump(test, f, indent=4, ensure_ascii=False)
+
+# with open('/home/user/talen-python/MultiFC/MultiFC3.json', 'w') as f:
+#     json.dump(test1, f, indent=4, ensure_ascii=False)
+
+# with open('/home/user/talen-python/MultiFC/MultiFC4.json', 'w') as f:
+#     json.dump(test2, f, indent=4, ensure_ascii=False)

@@ -1,5 +1,2309 @@
 [
     {
+        "claim": "Kenya experienced an increase in the number of functional health facilities growing from 9,858 to 10,820 in 2018 across all counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/STATE-OF-DEVOLUTION-ADDRESS-2019-.pdf"
+        ]
+    },
+    {
+        "claim": "KSh1.57 trillion is equivalent to 20% of Kenya's total shareable revenue of KSh7.8 trillion.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address"
+        ]
+    },
+    {
+        "claim": "In Kenya, for the 2018/19 year under review all County Governments allocated at least 20% of their budgets to health.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/Energy-ICT-and-Infrasctructure-Sector-2.pdf"
+        ]
+    },
+    {
+        "claim": "For the year under review all County Governments allocated out of their budgets at least 20% to health.",
+        "urls": [
+            "https://africacheck.org/sites/default/files/media/documents/2022-07/2017-2018%20University%20Statistics%20Report%20-%20Approved.doc.pdf",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf",
+            "https://africacheck.org/sites/default/files/AGSA_General_report_WC_2008_09.pdf",
+            "https://africacheck.org/sites/default/files/AGSA_General_report_WC_2009_10.pdf",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf"
+        ]
+    },
+    {
+        "claim": "In Kenya the number of functional health facilities increased from 9,858 to 10,820 in 2018 across all counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/STATE-OF-DEVOLUTION-ADDRESS-2019-.pdf"
+        ]
+    },
+    {
+        "claim": "County governments have allocated on average 6.7 % of their total budgets to the agriculture sector.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/media/documents/2024-10/Kenya%20Controller%20of%20Budget%20-Counties%20report-Q1%202023-24.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2015.pdf",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2016-1.pdf"
+        ]
+    },
+    {
+        "claim": "In Kenya, County Governments have allocated on average 6.7% of their total budgets to the agriculture sector.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/verifying-kenyan-governors-claims-progress",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf",
+            "https://africacheck.org/sites/default/files/media/documents/2022-07/2017-2018%20University%20Statistics%20Report%20-%20Approved.doc.pdf",
+            "https://africacheck.org/sites/default/files/KIHBS-2015_16-Labour-Force-Basic-Report.pdf"
+        ]
+    },
+    {
+        "claim": "In Kenya, county governments have allocated an average of 6.7% of their total budgets to the agriculture sector.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/verifying-kenyan-governors-claims-progress",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf"
+        ]
+    },
+    {
+        "claim": "Kenyan County Governments allocated out of their budgets at least 20% to health in the 2018/19 financial year.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/yes-kenyas-health-budget-has-risen-30-last-two-fiscal-years",
+            "https://africacheck.org/sites/default/files/Energy-ICT-and-Infrasctructure-Sector-2.pdf"
+        ]
+    },
+    {
+        "claim": "According to Wycliffe Oparanya, there was an increase in the number of functional health facilities growing from 9,858 to 10,820 in 2018 across all counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/STATE-OF-DEVOLUTION-ADDRESS-2019-.pdf"
+        ]
+    },
+    {
+        "claim": "The number of functional health facilities, in Kenya, increased from 9,858 in 2017 to 10,820 in 2018 across all counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/sites/default/files/STATE-OF-DEVOLUTION-ADDRESS-2019-.pdf"
+        ]
+    },
+    {
+        "claim": "Smallpox Treatment MR-VAC Is A Slow Poison For Children",
+        "urls": [
+            "https://www.vishvasnews.com/english/health/fact-check-smallpox-treatment-mr-vac-is-a-slow-poison-for-children-is-a-fake-post/",
+            "https://www.thip.media/health-news-fact-check/smallpox-treatment-mr-vac-a-slow-poison-for-children/1501/",
+            "https://www.vishvasnews.com/english/health/fact-check-no-mr-vaccine-does-not-cause-infertility-the-viral-post-is-fake/",
+            "https://science.feedback.org/review/peter-mccullough-makes-multiple-false-misleading-claims-covid19-vaccine-safety-efficacy-podcast/"
+        ]
+    },
+    {
+        "claim": "HPV vaccine does reduce viral transmission, helping with eventual cervical cancer elimination",
+        "urls": [
+            "https://science.feedback.org/review/nbc-news-article-accurately-reports-hpv-vaccine-benefits-on-reduced-viral-transmission-eventual-cervical-cancer-elimination-kaitlin-sullivan/",
+            "https://science.feedback.org/reviewed-content-author/kaitlin-sullivan/",
+            "https://www.washingtonpost.com/lifestyle/2021/11/22/child-sexual-health-hpv-cancer/",
+            "https://www.usatoday.com/story/news/health/2024/05/15/fda-approves-self-tests-for-cervical-cancer/73498865007/"
+        ]
+    },
+    {
+        "claim": "Cory Booker has accepted over $400,000 from the pharmaceutical industry during his political career.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jul/02/donald-trump/cory-booker-and-drug-maker-campaign-cash-numbers/",
+            "https://www.politifact.com/factchecks/list/?target=cory-booker",
+            "https://www.politifact.com/factchecks/list/?category=campaign-finance&ruling=mostly-true",
+            "https://www.politifact.com/personalities/cory-booker/",
+            "https://www.politifact.com/factchecks/list/?page=2&category=campaign-finance"
+        ]
+    },
+    {
+        "claim": "California Rep. Eric Swalwell correct in stating he is 'the only person on this stage who has voted and passed background checks'.",
+        "urls": [
+            "https://www.factcheck.org/2019/06/factchecking-round-two-of-the-democratic-debate/",
+            "https://www.washingtonpost.com/politics/2019/06/28/transcript-night-first-democratic-debate/",
+            "https://www.washingtonpost.com/politics/paloma/the-trailer/2019/09/13/the-trailer-debate-superlatives-best-and-worst-moments-best-joke-and-more/5d7ac2a6602ff171a5d735ab/",
+            "https://www.washingtonpost.com/politics/interactive/2023/jim-jordan/",
+            "https://www.washingtonpost.com/politics/democratic-debate-2019/2019/06/25/af9fd37e-96af-11e9-8d0a-5edd7e2025b1_story.html"
+        ]
+    },
+    {
+        "claim": "President Trump “immediately discontinued” an aid program to Central America which is the cause of surging immigration across the U.S.-Mexico border.",
+        "urls": [
+            "https://www.factcheck.org/2019/06/factchecking-round-two-of-the-democratic-debate/",
+            "https://www.factcheck.org/2019/06/video-factchecking-the-second-debate/",
+            "https://www.washingtonpost.com/politics/2019/06/28/transcript-night-first-democratic-debate/"
+        ]
+    },
+    {
+        "claim": "The top 1 percent wealthiest control 90 percent of the wealth in the US",
+        "urls": [
+            "https://www.washingtonpost.com/news/wonk/wp/2017/12/06/the-richest-1-percent-now-owns-more-of-the-countrys-wealth-than-at-any-time-in-the-past-50-years/",
+            "https://www.washingtonpost.com/news/wonk/wp/2015/11/19/bernie-sanders-is-right-the-top-0-1-have-as-much-as-the-bottom-90/",
+            "https://www.usatoday.com/story/money/2024/10/24/americas-richest-10-percent-controls-60-percent-of-wealth/75790850007/",
+            "https://www.washingtonpost.com/news/wonk/wp/2015/05/21/the-top-10-of-americans-own-76-of-the-stuff-and-its-dragging-our-economy-down/",
+            "https://www.washingtonpost.com/us-policy/2019/02/08/wealth-concentration-returning-levels-last-seen-during-roaring-twenties-according-new-research/"
+        ]
+    },
+    {
+        "claim": "\"The wealthiest three families now own more wealth than the bottom half of the country.\"",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jul/03/bernie-sanders/bernie-sanders-target-saying-3-richest-have-much-w/",
+            "https://www.politifact.com/factchecks/list/?page=2&speaker=bernie-sanders",
+            "https://www.politifact.com/factchecks/list/?category=wealth&ruling=true",
+            "https://www.politifact.com/factchecks/list/?page=20&author=tom-kertscher",
+            "https://www.politifact.com/factchecks/list/?page=2&category=truth-o-meter&ruling=true"
+        ]
+    },
+    {
+        "claim": "Kenyan Singer Ringtone Apoko found dead in a waste bin in Karen, Kenya.",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/kenyan-gospel-music-star-ringtone-apoko-alive-and-well",
+            "https://pesacheck.org/hoax-a-post-claiming-that-gospel-musician-ringtone-apoko-is-dead-is-false-21fb77451d47",
+            "https://africacheck.org/search?f%5B0%5D=topic%3A336&page=47",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&f%5B5%5D=article_type%3Aspot_checks&f%5B6%5D=topic%3A55&f%5B7%5D=topic%3A93&page=83",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Ameta-programme-fact-checks&f%5B3%5D=topic%3A336&f%5B4%5D=topic%3A4457&search_api_fulltext=&page=48"
+        ]
+    },
+    {
+        "claim": "A group of 15-20 miscreants are on the loose in parts of Malad and Dahisar and asks residents not to open their doors at night if they hear a baby crying outside.",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-viral-post-warning-mumbai-residents-of-robbers-is-a-hoax-1556048-2019-06-25"
+        ]
+    },
+    {
+        "claim": "Former Kenyan election commissioner Roselyn Akombe has died.",
+        "urls": [
+            "https://www.washingtonpost.com/world/kenya-election-official-resigns-just-days-before-the-election-says-vote-cannot-be-fair/2017/10/18/c8ecd264-b3e9-11e7-be94-fabb0f1e9ffb_story.html",
+            "https://www.washingtonpost.com/news/democracy-post/wp/2017/10/24/dear-kenyans-im-from-rwanda-please-dont-repeat-our-mistakes/",
+            "https://pesacheck.org/hoax-reports-of-roselyn-akombes-death-are-false-118f19928d4f",
+            "https://www.washingtonpost.com/news/monkey-cage/wp/2017/10/26/kenyans-vote-again-today-heres-what-they-think-about-the-current-election-crisis/",
+            "https://www.washingtonpost.com/world/2022/06/25/kenya-elections-kenyatta-odinga-ruto/"
+        ]
+    },
+    {
+        "claim": "More Americans are uninsured today than when US President Donald Trump took office.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/aug/13/tammy-baldwin/us-sen-baldwin-right-more-americans-are-without-he/",
+            "https://www.politifact.com/factchecks/2019/mar/28/julian-castro/rise-uninsured-under-trump-tops-1-million-beware-e/",
+            "https://www.washingtonpost.com/health/2024/01/24/obamacare-record-enrollment-biden/",
+            "https://www.usatoday.com/story/news/health/2020/09/15/census-data-pre-covid-2-3-million-lost-health-insurance-under-trump/5810404002/",
+            "https://www.factcheck.org/2019/02/did-the-uninsured-increase-by-7-million/"
+        ]
+    },
+    {
+        "claim": "Ninety percent of the people applying for asylum never show up for their immigration court hearing in the months ahead.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/26/how-many-migrants-show-up-immigration-court-hearings/",
+            "https://www.washingtonpost.com/politics/interactive/2021/biden-fact-checker-100-days/",
+            "https://www.factcheck.org/2023/01/bidens-numbers-january-2023-update/",
+            "https://www.factcheck.org/2024/10/factchecking-the-vice-presidential-debate-2/"
+        ]
+    },
+    {
+        "claim": "Russian Mercenaries in Syria are Private Contractors and They Are Not Engaged in Combat",
+        "urls": [
+            "https://www.washingtonpost.com/news/monkey-cage/wp/2018/02/20/russia-and-the-u-s-just-defused-a-potential-crisis-in-syria-and-showed-us-how-to-back-away-from-a-war/",
+            "https://www.washingtonpost.com/world/russian-mercenaries-reported-killed-by-us-airstrike-in-syria/2018/02/13/c15f5db4-10d7-11e8-a68c-e9374188170e_story.html",
+            "https://www.dw.com/en/wagner-group-what-are-private-military-companies/a-66062061",
+            "https://www.washingtonpost.com/news/worldviews/wp/2018/02/23/what-we-know-about-the-shadowy-russian-mercenary-firm-behind-the-attack-on-u-s-troops-in-syria/",
+            "https://www.dw.com/en/the-rise-of-mercenary-armies-in-africa/a-61485270"
+        ]
+    },
+    {
+        "claim": "The Jamnagar Junagarh Highway bridge that collapsed, was inaugurated by PM Modi.",
+        "urls": [
+            "https://www.vishvasnews.com/english/politics/fact-check-the-collapsed-bridge-was-50-years-old-pm-modi-did-not-inaugurate-it/",
+            "https://factly.in/the-collapsed-jamnagar-junagarh-highway-bridge-wasnt-inaugurated-by-pm-modi-three-months-ago/",
+            "https://www.indiatoday.in/fact-check/story/fact-check-this-50-yr-old-bridge-in-gujarat-that-collapsed-was-not-inaugurated-by-pm-modi-1553844-2019-06-21",
+            "https://www.boomlive.in/did-a-bridge-inaugurated-by-pm-modi-collapse-a-factcheck/",
+            "https://www.thequint.com/news/webqoof/did-prime-minister-modi-inaugurate-the-bridge-that-collapsed-in-gujarat-fact-check"
+        ]
+    },
+    {
+        "claim": "Jamnagar-Junagarh highway bridge in India collapsed within 3 months of inauguration.",
+        "urls": [
+            "https://www.vishvasnews.com/english/politics/fact-check-the-collapsed-bridge-was-50-years-old-pm-modi-did-not-inaugurate-it/",
+            "https://factly.in/the-collapsed-jamnagar-junagarh-highway-bridge-wasnt-inaugurated-by-pm-modi-three-months-ago/",
+            "https://www.indiatoday.in/fact-check/story/fact-check-this-50-yr-old-bridge-in-gujarat-that-collapsed-was-not-inaugurated-by-pm-modi-1553844-2019-06-21",
+            "https://factly.in/author/rakesh-vuppu/page/74/",
+            "https://factly.in/no-297-birds-did-not-die-in-the-netherlands-due-to-a-5g-test/"
+        ]
+    },
+    {
+        "claim": "Margaret Hello was phone inventor Alexander Graham Bell’s girlfriend",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-margaret-hello-was-not-phone-inventor-alexander-graham",
+            "https://www.snopes.com/fact-check/the-hello-girl/",
+            "https://www.rappler.com/newsbreak/fact-check/alexander-graham-bells-fiancee-not-named-margaret-hello/",
+            "https://factly.in/the-origin-of-the-word-hello-is-not-linked-to-alexander-graham-bells-fiance/",
+            "https://dfrac.org/en/2022/10/27/the-inventors-girlfriends-name-was-hello-so-it-is-said-first-on-the-phone/"
+        ]
+    },
+    {
+        "claim": "Nigeria is top in Africa for suicide.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/nigeria-ranked-15th-world-suicide-lesotho-tops-african-list",
+            "https://www.washingtonpost.com/world/africa/un-report-huge-surge-in-boko-haram-child-suicide-bombers-in-west-africa/2016/04/12/b0856ee0-4ac7-49d0-9d3f-9b423631eded_story.html",
+            "https://africacheck.org/fact-checks/reports/suicide-3rd-leading-cause-death-south-africans-aged-15-24",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Afactsheets&f%5B3%5D=article_type%3Aguides&f%5B4%5D=article_type%3Ameta-programme-fact-checks&f%5B5%5D=article_type%3Areports&f%5B6%5D=country_search%3ANG&f%5B7%5D=topic%3A40&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=5",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Aguides&f%5B2%5D=article_type%3Areports&page=56&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC"
+        ]
+    },
+    {
+        "claim": "Irish poet and playwright Oscar Wilde once said, “Some cause happiness wherever they go; others whenever they go.”",
+        "urls": [
+            "https://checkyourfact.com/2019/08/13/oscar-wilde-happiness-wherever-whenever/"
+        ]
+    },
+    {
+        "claim": "Pakistan cricketers were out till late at night smoking hookah before their match against India which led to their loss",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-pakistan-cricket-fans-use-two-day-old-video-to-bash-up-team-after-loss-to-india-1550845-2019-06-17",
+            "https://www.indiatoday.in/lifestyle/wellness/story/6-blood-donation-myths-busted-world-blood-donor-day-14161-2016-06-14"
+        ]
+    },
+    {
+        "claim": "Four in ten fathers will not see their children this Father’s Day.",
+        "urls": [
+            "https://fullfact.org/news/fathers-day/",
+            "https://www.washingtonpost.com/advice/2025/01/06/asking-eric-husband-jealousy-damper-joy/",
+            "https://www.abs-cbn.com/sports/11/20/20/golf-woods-to-play-with-charlie-in-father-son-tournament",
+            "https://www.afp.com/en/search/site/%27link%20staff%27%20avant%20fonction%20for%20accord%20%2483%20million?page=122",
+            "https://www.abs-cbn.com/life/10/13/20/taiwanese-airlines-offer-micro-holidays-to-travel-hungry-people"
+        ]
+    },
+    {
+        "claim": "Canadian Prime Minister Justin Trudeau is converting to Islam from Christianity.",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-no-canadian-pm-justin-trudeau-is-not-converting-to-islam-1560632-2019-07-02",
+            "https://www.thequint.com/news/webqoof/no-canadian-pm-justin-trudeau-did-not-convert-to-islam",
+            "https://www.dw.com/en/malaysian-lawmakers-struggle-to-maintain-harmony/a-16958185",
+            "https://www.snopes.com/fact-check/halal-mortgages-in-canada/",
+            "https://www.dw.com/en/study-large-number-of-turks-in-germany-put-islam-above-the-law/a-19336757"
+        ]
+    },
+    {
+        "claim": "A little girl photographed in a hospital bed receives a dollar for a kidney transplant every time someone shares a Facebook post.",
+        "urls": [
+            "https://www.snopes.com/fact-check/kidney-transplant-social-share/",
+            "https://www.usatoday.com/story/news/factcheck/2021/08/23/fact-check-facebook-post-isnt-raising-money-girls-transplant/8178421002/"
+        ]
+    },
+    {
+        "claim": "Presidential Spokesperson Salvador Panelo said that the Filipino fishermen involved in the boat sinking incident in the West Philippine Sea were only hallucinating.",
+        "urls": [
+            "https://www.rappler.com/newsbreak/fact-check/233258-panelo-says-filipino-fishermen-hallucinating-over-sunken-ship/"
+        ]
+    },
+    {
+        "claim": "School Kids Touching A Soldier's Feet Is From India",
+        "urls": [
+            "https://www.boomlive.in/viral-video-of-school-kids-touching-a-soldiers-feet-is-not-from-india/",
+            "https://www.indiatoday.in/fact-check/story/fact-check-no-these-school-children-are-not-touching-the-feet-of-an-indian-soldier-1551491-2019-06-18",
+            "https://www.indiatoday.in/world/story/yahya-sinwar-killed-israel-hamas-chief-mastermind-october-7-massacre-war-1200-killed-butcher-of-khan-younis-2619058-2024-10-18",
+            "https://www.ap.org/news-highlights/spotlights/2024/kash-patel-is-pushing-conspiracies-and-his-brand-hes-poised-to-help-lead-a-trump-administration/",
+            "https://factly.in/this-narrative-of-a-soldier-asking-the-japanese-boy-in-this-photo-to-throw-away-his-siblings-dead-body-is-not-true/"
+        ]
+    },
+    {
+        "claim": "Sri Lanka has been ranked in the top four most corrupt nations in the world",
+        "urls": [
+            "https://www.indiatoday.in/world/us-news/story/lionel-messi-george-soros-ralph-lauren-to-receive-highest-us-civilian-honour-2659735-2025-01-04"
+        ]
+    },
+    {
+        "claim": "On 13 June 2019 Kenya’s finance minister Henry Rotich claimed that Kenyas  growth is the highest to have been recorded for the past 8 years.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add",
+            "https://africacheck.org/sites/default/files/media/documents/2022-06/Kenya%20Hansard%20Budget%20Reading%2030%20March%202017.pdf",
+            "https://africacheck.org/sites/default/files/media/documents/2021-07/Final%20Version%20of%20MES%20Committee%20report%20pdf%20version.pdf"
+        ]
+    },
+    {
+        "claim": "25% of drug users in Nigeria are women",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/how-many-nigerians-use-drugs",
+            "https://africacheck.org/podcasts?page=15",
+            "https://africacheck.org/podcasts?page=14",
+            "https://www.dw.com/en/england/t-19249879/page-1"
+        ]
+    },
+    {
+        "claim": "\"Kenya has been ranked 85th globally in e-commerce uptake.”",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add"
+        ]
+    },
+    {
+        "claim": "The domestic Indonesian flight route CI9798 is being Operated by China Airlines.",
+        "urls": []
+    },
+    {
+        "claim": "On 13 June 2019 Kenya’s finance minister Henry Rotich claimed in 2018 Kenyas economy grew by 6.3%, up from 4.9% in the previous year.”",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add"
+        ]
+    },
+    {
+        "claim": "Former health secretary Janette Garin points to Senator Risa Hontiveros as the root cause of the current anomalies involving the Philippine Health Insurance Corporation.",
+        "urls": [
+            "https://www.rappler.com/newsbreak/fact-check/233438-garin-said-philhealth-problems-started-during-hontiveros-term/"
+        ]
+    },
+    {
+        "claim": "This [6.3%] growth is the highest to have been recorded for the past 8 years says Kenya’s finance minister Henry Rotich",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add",
+            "https://africacheck.org/sites/default/files/media/documents/2024-07/Annual-Public-Debt-Report-2013-2014.pdf",
+            "https://africacheck.org/sites/default/files/media/documents/2021-07/Final%20Version%20of%20MES%20Committee%20report%20pdf%20version.pdf"
+        ]
+    },
+    {
+        "claim": "”Kenya has been ranked 85th globally in e-commerce uptake.”",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add"
+        ]
+    },
+    {
+        "claim": "“This growth is well above the sub-Saharan Africa region average growth of 3% and the global average of 3.6%.”",
+        "urls": [
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf",
+            "https://africacheck.org/sites/default/files/2018_human_development_statistical_update.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2015.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2016-1.pdf",
+            "https://www.abs-cbn.com/business/03/02/20/coronavirus-time-bomb-americas-uninsured-and-brutal-work-culture"
+        ]
+    },
+    {
+        "claim": "Cosmetologists train  eleven times longer than emergency medical technicians",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/08/07/are-cosmetologists-training-longer-than-emergency-medical-technicians/",
+            "https://www.washingtonpost.com/video/politics/fact-checker/are-cosmetologists-training-longer-than-emergency-medical-technicians--the-fact-checker/2019/08/07/3193e2ce-ee1c-4d5a-9186-153a8a2710a0_video.html"
+        ]
+    },
+    {
+        "claim": "Republicans voted against military pay rises",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/18/steny-hoyers-claim-that-republicans-voted-against-military-pay-raises/",
+            "https://www.factcheck.org/2020/12/cherry-picked-pay-raise-attacks-on-perdue/",
+            "https://www.washingtonpost.com/politics/2022/03/17/republicans-ukraine-aid-vote/",
+            "https://www.washingtonpost.com/national-security/2023/12/14/house-defense-bill-ndaa/",
+            "https://www.politifact.com/factchecks/2020/oct/10/votevetsorg/no-tillis-didnt-oppose-military-raises-or-boost-hi/"
+        ]
+    },
+    {
+        "claim": "“This growth is well above the sub-Saharan Africa region average growth of 3% and the global average of 3.6%.” Kenya",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/kenyas-2019-budget-speech-do-finance-ministers-numbers-add"
+        ]
+    },
+    {
+        "claim": "Sri Lankan Muslims are demolishing mosques and are converting into Hinduism.",
+        "urls": [
+            "https://factly.in/mosque-was-demolished-because-it-was-foreign-funded-not-because-muslims-got-converted-into-hinduism/",
+            "https://www.boomlive.in/no-sri-lankan-muslims-demolishing-mosques-did-not-convert-to-hinduism/"
+        ]
+    },
+    {
+        "claim": "About 14.4 million Nigerians are currently on drugs",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/how-many-nigerians-use-drugs",
+            "https://africacheck.org/user/693?page=21",
+            "https://africacheck.org/user/583?page=21",
+            "https://africacheck.org/search?sort_bef_combine=created_ASC&page=689",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Areports&f%5B4%5D=country_search%3AZA&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=28"
+        ]
+    },
+    {
+        "claim": "The growth of the Russian economy in the decade from 1999 to 2008 averaged 6.9%",
+        "urls": [
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf",
+            "https://africacheck.org/sites/default/files/2018_human_development_statistical_update.pdf",
+            "https://www.usatoday.com/"
+        ]
+    },
+    {
+        "claim": "In 2014 in McDowell County, West Virginia, life expectancy for men was 64 years.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jul/18/bernie-sanders/checking-bernie-sanders-life-expectancy-wva-virgin/",
+            "https://www.politifact.com/factchecks/list/?category=west-virginia&ruling=mostly-true",
+            "https://www.politifact.com/staff/kristen-uppercue/",
+            "https://www.politifact.com/factchecks/list/?author=patrick-orsagos",
+            "https://www.politifact.com/factchecks/list/?page=3&category=west-virginia"
+        ]
+    },
+    {
+        "claim": "The U.S. women’s soccer team bring in more revenue but get paid less than the men",
+        "urls": [
+            "https://www.politifact.com/article/2019/jul/11/does-us-womens-soccer-team-bring-more-revenue-get-/",
+            "https://www.washingtonpost.com/politics/2019/07/08/are-us-womens-soccer-players-really-earning-less-than-men/",
+            "https://www.washingtonpost.com/news/on-leadership/wp/2016/03/31/why-these-soccer-stars-are-the-right-leaders-to-fight-sports-gender-pay-gap/",
+            "https://www.washingtonpost.com/news/wonk/wp/2016/03/31/everyone-benefits-when-womens-soccer-players-earn-more/",
+            "https://www.politifact.com/factchecks/2016/apr/06/other-98/facebook-post-exaggerates-discrepancy-between-us-m/"
+        ]
+    },
+    {
+        "claim": "Mexican drug cartels make £500 billion a year.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/24/do-mexican-drug-cartels-make-billion-year/",
+            "https://www.washingtonpost.com/news/fact-checker/wp/2018/05/21/are-human-smuggling-cartels-at-the-u-s-border-earning-500-million-a-year/",
+            "https://www.washingtonpost.com/video/politics/nielsen-cartels-make-500-million-a-year-from-smuggling-migrants-into-the-us/2018/05/18/3bed176a-5aac-11e8-9889-07bcc1327f4b_video.html",
+            "https://www.washingtonpost.com/world/2024/11/01/migrant-smuggling-us-border-cartels/",
+            "https://www.washingtonpost.com/world/americas/central-america-asks-us-for-help-with-drug-cartels/2011/06/22/AG3DVQgH_story.html"
+        ]
+    },
+    {
+        "claim": "India's Bharatiya Janata Party workers were killed in West Bengal by 11 Bajrang Dal members.",
+        "urls": [
+            "https://www.indiatoday.in/magazine/the-big-story/story/20201228-love-and-hate-1750673-2020-12-18",
+            "https://www.indiatoday.in/magazine/cover-story/story/20160808-dalits-upper-caste-violence-elections-bjp-829303-2016-07-27",
+            "https://www.thequint.com/south-india/tipu-sultan-vs-vd-savarkar-how-a-debate-raised-by-bjp-mars-peace-in-poll-bound-karnataka",
+            "https://www.thequint.com/opinion/indian-politics-in-2023-can-hate-be-checked-off-from-the-new-year-wishlist"
+        ]
+    },
+    {
+        "claim": "1.5 lakh sub centers and primary health centers being transformed as health and wellness centers (HWCs) to provide comprehensive primary healthcare services.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-on-ayushman-bharat/"
+        ]
+    },
+    {
+        "claim": "Ayushman Bharat provides comprehensive health coverage up to Rs. 5 lakh per family per year to around 50 crore people.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-on-ayushman-bharat/",
+            "https://factly.in/fact-check-how-true-are-government-claims-about-its-health-initiatives/",
+            "https://www.indiatoday.in/india/story/ayushman-bharat-chief-minister-health-insurance-scheme-tamil-nadu-modi-1349261-2018-09-25",
+            "https://www.indiatoday.in/information/story/ayushman-bharat-diwas-date-history-and-significance-you-need-to-know-2532948-2024-04-29",
+            "https://www.indiatoday.in/education-today/gk-current-affairs/story/1-lakh-patients-aided-under-ayushman-bharat-who-is-eligible-and-how-to-avail-benefits-under-the-scheme-1382906-2018-11-05"
+        ]
+    },
+    {
+        "claim": "Former Vice President Joe Biden leaked the names of US Navy SEAL Team 6 families to Al Qaeda.",
+        "urls": [
+            "https://www.factcheck.org/2019/06/falsehood-swirls-about-biden-seals/",
+            "https://www.politifact.com/factchecks/2019/aug/12/facebook-posts/no-biden-did-not-leak-names-seal-team-6-members-al/",
+            "https://www.usatoday.com/story/news/factcheck/2020/08/17/fact-check-biden-did-not-leak-seal-team-6-identities/3368869001/",
+            "https://www.washingtonpost.com/documents/84519e20-057e-4968-8dd1-e373df9e465e.pdf",
+            "https://www.washingtonpost.com/politics/2022/10/22/joe-biden-presidency/"
+        ]
+    },
+    {
+        "claim": "Standing next to a mobile phone antenna or staying too long in its vicinity is a radiation risk.",
+        "urls": [
+            "https://fullfact.org/online/5g-sign-not-official/"
+        ]
+    },
+    {
+        "claim": "Taylor Swift says most Democrats, independents, Republicans back nondiscrimination for LGBTQ people.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jun/05/taylor-swift/taylor-swift-says-most-democrats-independents-repu/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2020/06/15/daily-202-two-conservatives-join-liberals-in-supreme-court-ruling-to-protect-lgbtq-workers/5ee700d888e0fa32f823a498/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2019/07/02/daily-202-racist-facebook-posts-point-to-cultural-problems-inside-the-border-patrol-that-money-alone-cannot-fix/5d1a47a6a7a0a47d87c56f7e/"
+        ]
+    },
+    {
+        "claim": "Being vegan for a year saves 6,670kg of grain.",
+        "urls": [
+            "https://fullfact.org/online/vegan-food-facts/"
+        ]
+    },
+    {
+        "claim": "Virginia Beach USA mass shooting a \"false flag\" ordered by the \"Deep State\" to distract attention away from the investigation of \"SPYgate\"",
+        "urls": [
+            "https://leadstories.com/hoax-alert/2019/06/fake-news-virginia-beach-false%20-flag%20-mass-shooting-not-ordered-by-deep-state%20.html",
+            "https://leadstories.com/cgi-bin/mt/mt-search.fcgi?search=donald%20Trump&IncludeBlogs=1&blog_id=1&limit=10&page=120"
+        ]
+    },
+    {
+        "claim": "Being vegan for a year saves 3,320kg of CO2.",
+        "urls": [
+            "https://fullfact.org/online/vegan-food-facts/"
+        ]
+    },
+    {
+        "claim": "Michael Jordan Said  'I Won't Release Another Shoe Until Black People Unite'",
+        "urls": [
+            "https://www.snopes.com/fact-check/michael-jordan-no-shoes-black-people-unite/",
+            "https://www.snopes.com/tag/michael-jordan/",
+            "https://www.snopes.com/tag/black-lives-matter/?pagenum=4",
+            "https://leadstories.com/hoax-alert/2019/06/fake-news-michael-jordan-wont-release-shoes-black-people-unite.html",
+            "https://www.snopes.com/latest/?pagenum=933"
+        ]
+    },
+    {
+        "claim": "Being vegan for a year saves 1,000 square metres of forest.",
+        "urls": [
+            "https://fullfact.org/online/vegan-food-facts/"
+        ]
+    },
+    {
+        "claim": "In Kenya, over one in 20 children die before their fifth birthday.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/does-kenya-have-one-worst-maternal-mortality-rates-world",
+            "https://www.dw.com/en/top-stories/s-9097",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Afactsheets&f%5B1%5D=article_type%3Ameta-programme-fact-checks&f%5B2%5D=article_type%3Areports&f%5B3%5D=article_type%3Aspot_checks&f%5B4%5D=topic%3A40&f%5B5%5D=topic%3A62&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=24",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Areports&f%5B3%5D=article_type%3Aspot_checks&f%5B4%5D=country_search%3AZA&f%5B5%5D=topic%3A40&page=2",
+            "https://africacheck.org/fact-checks/reports?sort_bef_combine=created_ASC&page=29"
+        ]
+    },
+    {
+        "claim": "Bhajan kirtans being organised in Srinagar for the first time in 40 years",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-bhajan-kirtans-part-of-ram-navami-processions-in-srinagar-since-2007-1539748-2019-05-31",
+            "https://www.indiatoday.in/magazine/cover-story/story/19950115-carrying-hope-754340-1995-01-14"
+        ]
+    },
+    {
+        "claim": "US, Russia, Israel and France ‘approve’ Biafra’s separation from Nigeria",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-evidence-us-russia-israel-and-france-approve-biafras-1",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-israels-ex-prime-minister-netanyahu-hasnt-called-biafras",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-evidence-pope-francis-said-biafras-independence-gods-will",
+            "https://africacheck.org/search?f%5B0%5D=topic%3A63&page=2&search_api_fulltext=fraude&sort_bef_combine=created_DESC",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Ameta-programme-fact-checks&f%5B3%5D=article_type%3Areports&f%5B4%5D=article_type%3Aspot_checks&f%5B5%5D=topic%3A336&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=47"
+        ]
+    },
+    {
+        "claim": "Abortion is more dangerous now than ever before",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/12/separating-fact-fiction-abortion-talking-points/",
+            "https://www.washingtonpost.com/history/2022/05/15/abortion-history-founders-alito/",
+            "https://www.usatoday.com/story/news/nation/2024/03/19/more-than-1-million-abortions-provided-in-2023/73029585007/",
+            "https://www.washingtonpost.com/",
+            "https://www.washingtonpost.com/politics/2024/09/23/trump-imaginary-world/"
+        ]
+    },
+    {
+        "claim": "5G is killing trees.",
+        "urls": [
+            "https://fullfact.org/online/trees-not-chopped-down-for-5g/",
+            "https://mythdetector.com/en/how-is-5g-linked-to-the-withering-of-trees-diseases-and-domestic-violence/",
+            "https://fullfact.org/online/5g-tower-palm-trees/",
+            "https://fullfact.org/online/dead-birds-india-were-not-killed-5g/",
+            "https://www.snopes.com/fact-check/5g-cellular-test-birds/"
+        ]
+    },
+    {
+        "claim": "Trump claimed that he could not be guilty of obstruction of justice",
+        "urls": [
+            "https://www.factcheck.org/2019/05/factchecking-trumps-response-to-mueller/",
+            "https://www.washingtonpost.com/world/national-security/a-bold-new-legal-defense-for-trump-presidents-cannot-obstruct-justice/2017/12/04/b95cb262-d91c-11e7-a841-2066faf731ef_story.html",
+            "https://www.washingtonpost.com/politics/mueller-laid-out-thorough-and-compelling-case-of-obstruction-but-barr-decided-trump-wasnt-guilty-of-a-crime/2019/04/18/40c96e70-61de-11e9-9ff2-abc984dc9eec_story.html",
+            "https://www.factcheck.org/2019/04/what-the-mueller-report-says-about-obstruction/",
+            "https://www.washingtonpost.com/news/the-fix/wp/2017/12/04/trumps-lawyer-says-a-president-cant-technically-obstruct-justice-experts-say-thats-fanciful/"
+        ]
+    },
+    {
+        "claim": "“America is like a healthy body and its resistance is threefold: its patriotism, its morality and its spiritual life. If we can undermine these three areas, America will collapse from within.",
+        "urls": [
+            "https://www.snopes.com/fact-check/false-healthy-body/",
+            "https://www.politifact.com/factchecks/2016/feb/14/ben-carson/ben-carson-flubs-stalin-quote-about-bringing-down-/",
+            "https://www.factcheck.org/2016/02/factchecking-the-ninth-gop-debate/",
+            "https://checkyourfact.com/2019/06/04/fact-check-joseph-stalin-healthy-body-patriotism-morality-spiritual-life-collapse/"
+        ]
+    },
+    {
+        "claim": "Alexandria Ocasio-Cortez said the U.S. doesn’t have to worry about Chinese missile attacks because of the difference in time zones between the two countries",
+        "urls": [
+            "https://checkyourfact.com/2019/05/30/fact-check-alexandria-ocasio-cortez-china-missile-12-hours/",
+            "https://www.washingtonpost.com/sitemap/2020/7/17/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2019/07/16/daily-202-eight-takeaways-from-trump-s-racist-tweets-and-what-s-followed/5d2d8208a7a0a43ad76adbe8/",
+            "https://www.washingtonpost.com/sitemap/2018/12/12/",
+            "https://www.washingtonpost.com/sitemap/2019/2/20/"
+        ]
+    },
+    {
+        "claim": "Robert E. Lee opposed slavery and secession and has come to symbolize both slavery and secession.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2020/jun/12/facebook-posts/fact-checking-claims-about-robert-e-lees-position-/",
+            "https://www.washingtonpost.com/history/2021/09/10/robert-e-lee-slavery/",
+            "https://www.washingtonpost.com/archive/opinions/2000/06/03/the-battle-over-the-battle-flag/f8a8918c-1c40-47bc-a16f-cacdecec86d6/",
+            "https://www.politifact.com/factchecks/list/?page=14&author=samantha-putterman",
+            "https://www.washingtonpost.com/news/made-by-history/wp/2017/11/01/the-north-tried-compromise-the-south-chose-war/"
+        ]
+    },
+    {
+        "claim": "19-year-old Shivu Uppar was murdered by cow smugglers.",
+        "urls": [
+            "https://www.thequint.com/news/webqoof/bjp-leaders-falsely-term-teens-suicide-murder-cow-smugglers-suicide-case",
+            "https://www.boomlive.in/belgaum-police-arrest-two-for-spreading-false-communal-messages-about-teens-death/",
+            "https://digiteye.in/did-belgavi-youth-commit-suicide-or-was-he-killed-by-cow-smugglers-fact-check/",
+            "https://www.thequint.com/news/webqoof/bjp-mp-shobha-karandlaje-falsely-claims-covid-19-positive-tablighis-misbehaved-in-wards",
+            "https://www.dw.com/en/kush-the-drug-killing-west-african-youth/a-64376696"
+        ]
+    },
+    {
+        "claim": "Most research shows that (UW salaries) are a little behind, and (in) some areas we're behind more than others.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jun/14/ray-cross/uw-system-president-hits-pay-dirt-university-pay-g/",
+            "https://www.politifact.com/article/2019/jul/03/politifact-wisconsins-high-five-june-2019/",
+            "https://www.politifact.com/factchecks/list/?speaker=ray-cross",
+            "https://www.politifact.com/factchecks/list/?category=state-budget&ruling=true",
+            "https://www.washingtonpost.com/magazine/2022/10/24/universal-basic-income/"
+        ]
+    },
+    {
+        "claim": "Drug Abuse Resistance Education has removed cannabis from its list of gateway drugs.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/30/viral-image/dre-still-thinks-marijuana-dangerous-drug-kids/"
+        ]
+    },
+    {
+        "claim": "At least 15 men die every day from prostate cancer in Nigeria.",
+        "urls": [
+            "https://africacheck.org/fact-checks/spotchecks/new-data-supports-claim-15-men-die-every-day-prostate-cancer-nigeria",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Afactsheets&f%5B3%5D=article_type%3Aspot_checks&sort_bef_combine=search_api_relevance_DESC&page=36",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ablog&f%5B2%5D=article_type%3Afactsheets&f%5B3%5D=article_type%3Aguides&f%5B4%5D=article_type%3Areports&f%5B5%5D=article_type%3Aspot_checks&search_api_fulltext=&page=80",
+            "https://www.washingtonpost.com/lifestyle/style/from-the-archives-marion-barry-may-be-out-of-office-but-the-ex-mayors-still-a-player/2014/11/24/8cff4e22-73ef-11e4-9c9f-a37e29e80cd5_story.html",
+            "https://www.usatoday.com/story/news/50-states/2019/07/01/chicago-cows-bras-turtles-gold-rush-news-around-states/39642759/"
+        ]
+    },
+    {
+        "claim": "$16 billion in US farmer aid will come from China.",
+        "urls": [
+            "https://www.washingtonpost.com/business/2019/05/23/trump-administration-unveil-new-billion-aid-package-american-farmers-hit-trade-war/",
+            "https://www.usatoday.com/story/news/politics/2019/05/23/trump-trade-war-china-spurs-16-billion-aid-package-farmers/1207743001/",
+            "https://www.washingtonpost.com/business/2019/07/25/trump-administration-reveals-details-billion-farm-bailout-us-trade-war/",
+            "https://www.politifact.com/factchecks/2019/aug/02/donald-trump/no-china-not-paying-us-farmers-16b-through-tariffs/",
+            "https://www.washingtonpost.com/business/2020/02/21/all-caps-tweet-president-trump-vows-new-farm-bailouts-china-purchases-appear-weaker-than-promised/"
+        ]
+    },
+    {
+        "claim": "Video shows House Speaker Nancy Pelosi slurred and slowed during a speech, showing that she is drunk.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/24/politics-watchdog/viral-video-nancy-pelosi-speech-was-manipulated/",
+            "https://www.usatoday.com/story/news/factcheck/2020/08/11/fact-check-video-pelosi-altered-and-selectively-edited/3332920001/",
+            "https://www.washingtonpost.com/politics/facebook-chief-mark-zuckerberg-reached-out-to-house-speaker-to-discuss-viral-misinformation-pelosi-hasnt-called-him-back/2019/06/11/c66e2a5a-8b7f-11e9-8f69-a2795fca3343_story.html",
+            "https://www.factcheck.org/2019/05/manipulated-video-targeting-pelosi-goes-viral/",
+            "https://www.factcheck.org/2019/05/manipulated-pelosi-video-take-2/"
+        ]
+    },
+    {
+        "claim": "Kenyan health minister Sicily Kariuki claimed the Kenyan government  increased the health sector budget by more than 30% between 2017 and 2019.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/yes-kenyas-health-budget-has-risen-30-last-two-fiscal-years"
+        ]
+    },
+    {
+        "claim": "Wisconsin's prison population expanded and vacancy rates for correctional officers went from 2.9% to 15.2%\" over the last eight years.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jun/04/chris-taylor/wisconsin-state-rep-chris-taylor-mark-prison-claim/",
+            "https://www.politifact.com/factchecks/list/?speaker=chris-taylor",
+            "https://www.politifact.com/personalities/chris-taylor/",
+            "https://www.politifact.com/article/2019/jul/03/politifact-wisconsins-high-five-june-2019/",
+            "https://www.politifact.com/factchecks/list/?category=jobs&ruling=true"
+        ]
+    },
+    {
+        "claim": "The Jubilee party had pledged in its manifesto to build 57 mega dams to provide more food and water to Kenyans.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/fact-checking-5-claims-kenyas-deputy-president-ruto-including-corruption-and",
+            "https://africacheck.org/sites/default/files/media/documents/2022-08/Kenya%20Kwanza%20UDA%20Manifesto%202022.pdf"
+        ]
+    },
+    {
+        "claim": "The phrase \"high crimes and misdemeanors\" is not defined in the American Constitution.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/29/justin-amash/what-counts-high-crime-or-misdemeanor-impeachment-/",
+            "https://www.washingtonpost.com/history/2019/09/27/how-founding-fathers-saw-impeachment-high-crimes-misdemeanors/",
+            "https://www.washingtonpost.com/outlook/2020/01/31/justin-amash-dershowitzs-view-would-destroy-our-constitutional-system/",
+            "https://www.washingtonpost.com/outlook/2019/10/19/bribery-is-right-there-constitution-trump-could-be-impeached-that/",
+            "https://www.washingtonpost.com/outlook/2019/11/11/trumps-offense-is-impeachable-it-comes-so-no-it-cant-wait-an-election/"
+        ]
+    },
+    {
+        "claim": "Russian law prohibits political activity in schools.",
+        "urls": [
+            "https://www.lakmusz.hu/a-magyar-szuverenitasvedelmi-tervezetben-ott-van-az-orosz-kulfoldiugynok-torveny-csiraja-3/",
+            "https://www.washingtonpost.com/",
+            "https://www.abs-cbn.com/classified-odd/05/27/22/fang-tastic-dracula-fans-in-uk-set-new-world-record",
+            "https://www.abs-cbn.com/overseas/10/31/20/russian-hackers-targeted-california-indiana-democratic-parties",
+            "https://www.abs-cbn.com/world/2024/4/30/columbia-suspends-students-after-call-to-end-gaza-camp-unheeded-853"
+        ]
+    },
+    {
+        "claim": "£22 billion was taken out of welfare spending in England between 2010 and 2015.",
+        "urls": [
+            "https://www.washingtonpost.com/",
+            "https://www.afp.com/index.php/de/node/3751524",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2016-1.pdf",
+            "https://africacheck.org/sites/default/files/2018_human_development_statistical_update.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2015.pdf"
+        ]
+    },
+    {
+        "claim": "Evil is the result of what happens when man does not have God’s love present in his heart.",
+        "urls": [
+            "https://www.snopes.com/fact-check/false-einstein-humiliates-professor/",
+            "https://www.politifact.com/factchecks/2019/jun/05/viral-image/no-evidence-einstein-said-evil-results-lack-gods-l/",
+            "https://factly.in/no-evidence-to-conclude-that-einstein-proved-the-existence-of-god-to-his-professor/"
+        ]
+    },
+    {
+        "claim": "Joe Biden improperly used his influence as vice president to get Ukraine to sack its top prosecutor, Viktor Shokin, to benefit his son Hunter Biden in 2016",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/05/23/fact-checking-president-trumps-wild-jabs-joe-biden/",
+            "https://www.politifact.com/factchecks/2019/may/07/viral-image/fact-checking-joe-biden-hunter-biden-and-ukraine/",
+            "https://www.factcheck.org/2020/10/trump-revives-false-narrative-on-biden-and-ukraine/",
+            "https://www.washingtonpost.com/world/national-security/the-gas-tycoon-and-the-vice-presidents-son-the-story-of-hunter-bidens-foray-in-ukraine/2019/09/28/1aadff70-dfd9-11e9-8fd3-d943b4ed57e0_story.html",
+            "https://www.washingtonpost.com/politics/how-ukraine-put-trump-and-biden-on-a-collision-course-that-imperils-them-both/2019/12/24/e3ceb796-1ddc-11ea-b4c1-fd0d91b60d9e_story.html"
+        ]
+    },
+    {
+        "claim": "There were 25% cuts to local government spending between 2010 and 2015.",
+        "urls": [
+            "https://fullfact.org/economy/council-funding-welfare-spending-police-coalition/",
+            "https://www.dw.com/",
+            "https://voxukraine.org/en/ukraines-financial-system-during-wartime",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf",
+            "https://www.abs-cbn.com/news/multimedia/photo/11/27/20/health-workers-demand-payment-of-covid-19-hazard-pay"
+        ]
+    },
+    {
+        "claim": "Poland has lowered its retirement age from 67 to 60.",
+        "urls": [
+            "https://fullfact.org/online/polish-pensions-are-not-directly-subsidised-uk/",
+            "https://www.dw.com/en/poles-protest-plans-to-raise-retirement-age-to-67/a-15850610",
+            "https://www.dw.com/en/top-eu-court-rules-against-polish-judicial-reform/a-51114974",
+            "https://www.washingtonpost.com/wellness/2024/06/19/weightlifting-leg-strength-aging/"
+        ]
+    },
+    {
+        "claim": "Tariffs are now being paid to the United States by China of 25% on 250 Billion Dollars worth of goods & products. These massive payments go directly to the Treasury of the U.S.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/05/14/trump-is-taxing-americans-support-farmers-struggling-his-trade-war/",
+            "https://www.washingtonpost.com/politics/2019/05/10/trumps-explanation-trade-fight-with-china-is-wrong-remarkable-number-ways/",
+            "https://www.dw.com/en/us-imposes-increased-tariffs-on-chinese-goods-despite-talks/a-48681831",
+            "https://www.usatoday.com/story/money/2019/05/13/trump-fact-check-china-trade-dispute-under-fog-misinformation/1187318001/",
+            "https://www.washingtonpost.com/politics/kudlow-acknowledges-us-consumers-not-china-pay-for-tariffs-on-imports/2019/05/12/3cbe100e-74b9-11e9-b3f5-5673edf2d127_story.html"
+        ]
+    },
+    {
+        "claim": "The UK’s pension age is going up.",
+        "urls": []
+    },
+    {
+        "claim": "Pakistani man sentenced to death for farting in mosque during Ramadan.",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/pakistani-man-sentenced-death-farting-mosque-during-ramadan",
+            "https://www.africacheck.org/fact-checks/meta-programme-fact-checks?sort_bef_combine=created_DESC&page=418",
+            "https://www.thequint.com/news/india/fake-pakistan-man-sentenced-to-death-for-farting",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&search_api_fulltext=canada&sort_bef_combine=search_api_relevance_DESC&sort_by=search_api_relevance&sort_order=DESC&page=2",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Ameta-programme-fact-checks&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=574"
+        ]
+    },
+    {
+        "claim": "Poland lowered its retirement age using money from the EU.",
+        "urls": [
+            "https://fullfact.org/online/polish-pensions-are-not-directly-subsidised-uk/",
+            "https://fullfact.org/europe/pensioners-eu-uk/",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "King Mswati III, Africa's last absolute monarch who has 14 wives, has ordered men to have at least two marriages or face jail.",
+        "urls": []
+    },
+    {
+        "claim": "NASA spent more than $165 million over 10 years to develop a pen that writes in zero gravity, upside down and in extreme temperatures while the Russians used a pencil instead.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/21/facebook-posts/no-nasa-did-not-spend-over-165-million-space-pen-w/",
+            "https://www.snopes.com/fact-check/the-write-stuff/",
+            "https://www.politifact.com/search/factcheck/?page=5&q=%E5%B9%BF%E6%B1%89%E4%B8%8A%E9%97%A8%E6%9C%8D%E5%8A%A1%E4%BC%9A%E6%89%80+QQ3221369540%E5%AE%89%E6%8E%92%E8%B0%A2%E8%B0%A2.ink",
+            "https://www.politifact.com/factchecks/list/?page=63&category=&ruling=false&speaker=facebook-posts",
+            "https://www.politifact.com/factchecks/list/?page=3&category=space"
+        ]
+    },
+    {
+        "claim": "A change in US federal policy under the Trump administration,was responsible for a newly operational natural gas export terminal.",
+        "urls": [
+            "https://www.factcheck.org/2019/05/trumps-energy-errors/",
+            "https://www.washingtonpost.com/graphics/2021/climate-environment/biden-climate-environment-actions/",
+            "https://www.factcheck.org/2024/09/trumps-problematic-claims-on-the-auto-industry/",
+            "https://www.factcheck.org/2019/08/trumps-steel-industry-claims/"
+        ]
+    },
+    {
+        "claim": "Richmond was one of the only cities in the state that did not (increase) their real estate tax to those pre-recession rates.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/21/levar-stoney/levar-stoney-mostly-right-about-richmonds-rein-rea/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=mostly-true&speaker=levar-stoney",
+            "https://www.politifact.com/personalities/levar-stoney/",
+            "https://www.politifact.com/city-budget/",
+            "https://www.washingtonpost.com/news/wonk/wp/2013/10/05/richmonds-rules-why-one-california-town-is-keeping-wall-street-up-at-night/"
+        ]
+    },
+    {
+        "claim": "There is no reason for the U.S. Consumer to pay the Tariffs, which take effect on China today. This has been proven recently when only 4 points were paid by the U.S., 21 points by China because China subsidizes product to such a large degree.",
+        "urls": [
+            "https://www.ptinews.com/",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf"
+        ]
+    },
+    {
+        "claim": "Jailing parents was an unintended consequence of a 2010 state truancy law Kamala Harris sponsored.",
+        "urls": [
+            "https://www.factcheck.org/2019/05/kamala-harris-spins-facts-on-truancy-law/",
+            "https://www.factcheck.org/person/kamala-harris/page/11/",
+            "https://www.factcheck.org/featured-posts/page/54/",
+            "https://www.factcheck.org/tag/2020-election/page/41/",
+            "https://www.factcheck.org/2020/08/factchecking-sen-kamala-harris/"
+        ]
+    },
+    {
+        "claim": "Barack Obama did not release his tax returns.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/trump-demanded-obamas-records-now-more-are-asking-where-are-trumps/2016/08/12/b536925a-5ff3-11e6-9d2f-b1a3564181a1_story.html",
+            "https://www.factcheck.org/2019/05/social-post-wrong-about-obamas-tax-returns/",
+            "https://www.factcheck.org/2012/07/romney-and-the-tax-return-precedent/",
+            "https://www.washingtonpost.com/news/the-fix/wp/2017/10/17/the-media-has-forgotten-about-trumps-tax-returns/",
+            "https://www.washingtonpost.com/opinions/the-irs-chief-must-release-trumps-tax-returns--and-mnuchin-must-not-stop-him/2019/04/08/c2d78930-5a20-11e9-842d-7d3ed7eb3957_story.html"
+        ]
+    },
+    {
+        "claim": "Kirsten Gillibrand in 2005 ran on Medicare for all.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/22/kirsten-gillibrand/gillibrand-points-early-support-medicare-all/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=true&speaker=kirsten-gillibrand",
+            "https://www.factcheck.org/2019/08/factchecking-julys-round-two-debate/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/the-health-202/2019/04/17/the-health-202-bernie-sanders-says-medicare-for-all-would-reduce-health-spending-but-that-s-unclear/5cb60483a7a0a475985bd484/",
+            "https://www.washingtonpost.com/graphics/politics/policy-2020/immigration/"
+        ]
+    },
+    {
+        "claim": "The US have lost 500 Billion Dollars a year, for many years, on Crazy Trade with China.",
+        "urls": [
+            "https://www.usatoday.com/story/money/2019/05/13/trump-fact-check-china-trade-dispute-under-fog-misinformation/1187318001/",
+            "https://www.washingtonpost.com/politics/interactive/2021/biden-fact-checker-100-days/",
+            "https://www.washingtonpost.com/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/the-finance-202/2018/05/15/the-finance-202-trump-s-china-reversal-sparks-bipartisan-fears-of-a-hasty-deal/5afa3e1630fb042588799502/",
+            "https://www.abs-cbn.com/business/10/11/18/world-stocks-slide-to-3-month-low-on-tech-stocks-plunge-rising-us-rates"
+        ]
+    },
+    {
+        "claim": "The Covi-19 fatality rate in Scotland is 13.9%, the same as in Italy.",
+        "urls": [
+            "https://factcheckni.org/topics/law/does-northern-ireland-have-the-highest-femicide-rate-in-western-europe/"
+        ]
+    },
+    {
+        "claim": "Joe Biden tried to cut Social Security and Medicare for decades. … Now Biden’s promising your benefits to illegal immigrants.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2020/09/18/trumps-social-security-illegal-immigration-attack-biden-misses-its-mark/",
+            "https://www.usatoday.com/story/news/factcheck/2021/03/19/fact-check-no-undocumented-immigrants-di-your-social-security-benefits/4741321001/",
+            "https://www.politifact.com/factchecks/2020/sep/24/donald-trump/donald-trump-ad-distorts-bidens-record-social-secu/",
+            "https://www.politifact.com/factchecks/list/?category=social-security&ruling=barely-true",
+            "https://www.politifact.com/factchecks/list/?page=2&category=&ruling=barely-true&speaker=donald-trump"
+        ]
+    },
+    {
+        "claim": "US Suicides have risen by 30% in 15 years.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/20/amy-klobuchar/yes-us-suicides-have-risen-30-past-decade-and-half/",
+            "https://www.usatoday.com/story/news/2018/07/23/climate-change-rising-temperatures-linked-increase-suicides/817731002/",
+            "https://www.usatoday.com/story/news/nation/2018/06/07/kate-spade-death-rising-suicide-rate-prevention/681563002/",
+            "https://www.usatoday.com/story/opinion/2018/06/09/kate-spade-suicide-anthony-bourdain-depression-culture-success-column/687388002/",
+            "https://www.factcheck.org/2023/04/scicheck-no-evidence-excess-deaths-linked-to-vaccines-contrary-to-claims-online/"
+        ]
+    },
+    {
+        "claim": "US President Donald Trump says four hundred miles of wall are getting built along the US-Mexico border.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2023/aug/09/donald-trump/how-many-miles-of-border-wall-did-donald-trump-bui/",
+            "https://www.factcheck.org/2020/12/trumps-border-wall-where-does-it-stand/",
+            "https://www.politifact.com/article/2019/may/15/donald-trump-says-400-miles-wall-will-be-done-2020/",
+            "https://www.washingtonpost.com/news/wonk/wp/2017/08/31/trump-officials-pick-four-companies-that-will-build-prototypes-of-border-wall/",
+            "https://www.usatoday.com/border-wall/"
+        ]
+    },
+    {
+        "claim": "Texas leads in the number of Confederate monuments removed from public land.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/10/brandon-creighton/its-true-texas-has-removed-more-confederate-monume/",
+            "https://www.washingtonpost.com/national/as-confederate-monuments-tumble-die-hards-are-erecting-replacements/2020/07/25/44f537ee-cd04-11ea-b0e3-d55bda07d66a_story.html",
+            "https://www.washingtonpost.com/news/made-by-history/wp/2017/08/28/six-flags-has-taken-down-its-confederate-flag-but-thats-not-the-only-legacy-of-jim-crow-at-the-park/",
+            "https://www.washingtonpost.com/outlook/2021/06/10/myth-alamo-gets-history-all-wrong/",
+            "https://www.washingtonpost.com/technology/interactive/2024/dei-history-affirmative-action-timeline/"
+        ]
+    },
+    {
+        "claim": "7,182 students have been killed in U.S. schools since 2012",
+        "urls": [
+            "https://www.politifact.com/factchecks/2018/mar/16/blog-posting/facebook-post-incorrectly-says-7182-students-were-/",
+            "https://www.factcheck.org/featured-posts/page/54/",
+            "https://www.factcheck.org/issue/military-deaths/",
+            "https://www.factcheck.org/fake-news/page/80/",
+            "https://www.factcheck.org/issue/memes/page/18/"
+        ]
+    },
+    {
+        "claim": "70% of Americans in poverty are white.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/16/viral-image/about-40-people-living-poverty-are-non-hispanic-wh/",
+            "https://www.washingtonpost.com/education/2024/05/17/brown-vs-board-70-anniversary-poll/",
+            "https://www.washingtonpost.com/news/monkey-cage/wp/2017/06/05/its-time-to-bust-the-myth-most-trump-voters-were-not-working-class/",
+            "https://www.factcheck.org/2023/10/trumps-misleading-poverty-rate-comparison/",
+            "https://www.abs-cbn.com/halalan2016/focus/05/06/16/korina-sanchez-being-there-for-mar"
+        ]
+    },
+    {
+        "claim": "Ilhan Omar said If Israel Is So Innocent, Then Why Do They Insist On Being Jews?",
+        "urls": [
+            "https://www.snopes.com/fact-check/omar-if-israel-is-so-innocent/",
+            "https://www.washingtonpost.com/nation/2019/02/11/its-all-about-benjamins-baby-ilhan-omar-again-accused-anti-semitism-over-tweets/",
+            "https://www.snopes.com/tag/ilhan-omar/",
+            "https://www.snopes.com/tag/the-babylon-bee/",
+            "https://www.snopes.com/author/david-emery/?pagenum=11"
+        ]
+    },
+    {
+        "claim": "The South African freedom fighter, Solomon Mahlangu, was killed by the man who started the Democratic Alliance (DA), the country's official opposition.",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-south-african-freedom-fighter-solomon-mahlangu-was-not"
+        ]
+    },
+    {
+        "claim": "In 2010, U.S. Rep Maxine Waters steered $12 million in Troubled Asset Relief Program (TARP) funds to her husband’s private bank account. She was indicted but served no time",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/16/viral-image/no-maxine-waters-wasnt-indicted-steering-tarp-mone/"
+        ]
+    },
+    {
+        "claim": "Nelson Mandela said\n'When a woman rejects a man of vision, and accept [sic] a man with television, she will end up watching the man of vision on her own husband's television,” it reads.\n\n “Don't judge a man by his pocket but judge him by his vision. Because where a man is going in life is more important than his present condition.”",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/man-vision-or-man-television-relationship-advice-not-nelson"
+        ]
+    },
+    {
+        "claim": "Nigeria has the highest number of out-of-school children in sub-Saharan Africa.",
+        "urls": [
+            "https://www.dw.com/en/africa-right-to-education-remains-a-challenge/a-60518000",
+            "https://www.dw.com/en/conflict-keeps-millions-of-children-out-of-school-in-west-and-central-africa/a-70313033",
+            "https://africacheck.org/fact-checks/spotchecks/no-new-data-shows-10-million-children-are-out-school-nigeria",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/viral-message-makes-unsupported-claims-about-child",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Areports&f%5B4%5D=article_type%3Aspot_checks&page=76&sort_bef_combine=created_ASC"
+        ]
+    },
+    {
+        "claim": "DEMOCRACY IS TWO WOLVES AND A LAMB VOTING ON WHAT TO HAVE FOR LUNCH - BEN FRANKLIN",
+        "urls": [
+            "https://checkyourfact.com/2019/05/29/fact-check-democracy-jefferson-adams-franklin-hamilton/",
+            "https://checkyourfact.com/2019/06/25/fact-check-john-adams-one-useless-man-shame-two-law-firm-three-congress/",
+            "https://www.usatoday.com/story/opinion/2019/05/23/killing-electoral-college-means-rural-americans-would-be-serfs-column/3770424002/"
+        ]
+    },
+    {
+        "claim": "Boy died due to birthday bumps",
+        "urls": [
+            "https://newschecker.in/fact-check/viral-video-that-shows-birthday-boy-dying-due-to-birthday-bumps-is-scripted/",
+            "https://www.indiatoday.in/fact-check/story/fact-check-viral-claim-of-boy-died-due-to-birthday-bumps-is-false-1517905-2019-05-05",
+            "https://www.boomlive.in/did-birthday-bumps-claim-a-boys-life-no-the-victim-is-alive-and-kicking/",
+            "https://www.usatoday.com/story/life/parenting/2019/08/12/bode-miller-wife-morgan-expecting-twins-year-after-daughters-death/1984891001/",
+            "https://www.thequint.com/news/webqoof/scripted-video-shared-as-real-incident-fact-check"
+        ]
+    },
+    {
+        "claim": "More than 10.2 million children are out of school in Nigeria.",
+        "urls": [
+            "https://africacheck.org/fact-checks/spotchecks/no-new-data-shows-10-million-children-are-out-school-nigeria",
+            "https://africacheck.org/sites/default/files/2018_human_development_statistical_update.pdf",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf"
+        ]
+    },
+    {
+        "claim": "William Barr, the US Attorney General's testimony lacked context in investigation into Russian interference in the 2016 presidential campaign.",
+        "urls": [
+            "https://www.factcheck.org/2019/05/barrs-testimony-in-context/",
+            "https://www.factcheck.org/issue/russia-investigation/page/3/",
+            "https://www.factcheck.org/person/robert-mueller/",
+            "https://www.washingtonpost.com/world/national-security/barr-senate-hearing-live-updates/2019/05/01/eeb0ef40-6b6b-11e9-a66d-a82d3f3d96d5_story.html",
+            "https://www.factcheck.org/person/william-barr/"
+        ]
+    },
+    {
+        "claim": "Attorney General William Barr misled Congress  when asked if he was aware of concerns that special counsel Robert S. Mueller’s team may have had with his March 24 memo summarizing the Mueller report",
+        "urls": [
+            "https://www.factcheck.org/2019/05/did-barr-mislead-congress/",
+            "https://www.factcheck.org/issue/russia-investigation/page/3/",
+            "https://www.factcheck.org/person/robert-mueller/",
+            "https://www.factcheck.org/person/patrick-leahy/",
+            "https://www.factcheck.org/person/chris-van-hollen/"
+        ]
+    },
+    {
+        "claim": "A Facebook meme claims  five House Republicans voted with Democrats to create a “firearms registry.”",
+        "urls": [
+            "https://www.factcheck.org/2019/07/a-false-claim-about-h-r-8-and-a-firearms-registry/",
+            "https://www.factcheck.org/issue/gun-control/page/3/",
+            "https://www.factcheck.org/issue/background-checks/",
+            "https://www.factcheck.org/issue/second-amendment/"
+        ]
+    },
+    {
+        "claim": "Salman Rushdie said that 99% of Muslims are terrorists by thought.",
+        "urls": [
+            "https://www.newsmobile.in/tag/fact-check/page/991/?noamp=available",
+            "https://www.newsmobile.in/trending-now/equities-gain-a-little-ground-in-early-trading-nifty-gains-50-points/",
+            "https://www.thejournal.ie/sudan-pregnant-woman-1467724-May2014/",
+            "https://www.thejournal.ie/muslim-jews-oslo-synagogue-1953093-Feb2015/",
+            "https://www.thejournal.ie/ali-selim-fgm-apology-3854030-Feb2018/"
+        ]
+    },
+    {
+        "claim": "Joe Biden was one of the first to introduce a climate change bill to the US Houses of Congress.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/08/joe-biden/was-joe-biden-climate-change-pioneer-congress-hist/",
+            "https://www.washingtonpost.com/graphics/politics/biden-cabinet/",
+            "https://www.washingtonpost.com/",
+            "https://www.usatoday.com/story/news/politics/elections/2025/01/08/exclusive-joe-biden-interview-donald-trump-election/77378693007/",
+            "https://www.washingtonpost.com/climate-environment/2025/01/08/burgum-carbon-trump-energy-czar/"
+        ]
+    },
+    {
+        "claim": "A million Australians are doing two jobs.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/interactive/2021/biden-fact-checker-100-days/",
+            "https://www.washingtonpost.com/world/2024/12/29/aukus-stem-education-south-australia/",
+            "https://www.abs-cbn.com/business/05/07/21/oil-prices-fall-1-percent-on-worries-of-pandemic-surge-in-india",
+            "https://www.abs-cbn.com/business/10/17/17/netflix-adds-5-million-subscribers-doubles-profit",
+            "https://www.abs-cbn.com/business/05/18/21/oil-climbs-on-economic-recovery-hopes-despite-fresh-asian-restrictions"
+        ]
+    },
+    {
+        "claim": "The Mortality Rate for Road Accidents Drops in Russia.",
+        "urls": [
+            "https://www.dw.com/en/ukraine-strikes-russian-air-force-oil-depot/a-71245146",
+            "https://www.usatoday.com/story/news/politics/2022/07/12/ukraine-russia-invasion-live-updates/10035557002/",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2015.pdf",
+            "https://africacheck.org/sites/default/files/Economic-Survey-2016-1.pdf"
+        ]
+    },
+    {
+        "claim": "A million Australians are underemployed.",
+        "urls": [
+            "https://www.abs-cbn.com/business/06/09/16/ph-jobless-rate-up-61-pct-in-april",
+            "https://www.abs-cbn.com/business/06/25/21/japan-ratifies-worlds-biggest-free-trade-deal-involving-china-asean",
+            "https://www.abs-cbn.com/business/11/16/20/taiwan-talks-up-trans-pacific-trade-pact-after-exclusion-from-new-deal",
+            "https://www.abs-cbn.com/business/05/27/20/chinas-young-struggle-for-jobs-in-the-post-outbreak-era",
+            "https://www.abs-cbn.com/business/05/07/21/robinsons-land-net-income-q1"
+        ]
+    },
+    {
+        "claim": "Viral image quotes Joe Biden as saying the Germans Bombed Pearl Harbour.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/01/viral-image/no-joe-biden-didnt-say-germans-bombed-pearl-harbor/",
+            "https://www.politifact.com/factchecks/2020/jan/14/facebook-posts/after-pearl-harbor-japanese-didnt-invade-us-becaus/",
+            "https://www.snopes.com/collections/pearl-harbor/"
+        ]
+    },
+    {
+        "claim": "Sadhvi Pragya said Manohar Parrikar died of cancer because he allowed the consumption of beef in Goa",
+        "urls": [
+            "https://www.boomlive.in/parrikar-died-because-he-allowed-beef-in-goa-fake-quote-attributed-to-pragya-thakur/",
+            "https://www.indiatoday.in/fact-check/story/sadhvi-pragya-singh-thakur-beef-ban-statement-controversy-1513999-2019-04-30",
+            "https://www.thequint.com/news/webqoof/pragya-thakur-parrikar-died-cancer-he-didnt-ban-beef-fact-check",
+            "https://www.indiatoday.in/indiatoday/sitemapxml_prod/story/sitemap-story2017-6.xml.gz",
+            "https://www.indiatoday.in/indiatoday/sitemapxml_prod/story/sitemap-story2015-3.xml.gz"
+        ]
+    },
+    {
+        "claim": "Fee-paying schools save the UK taxpayer £20 billion.",
+        "urls": [
+            "https://fullfact.org/education/times-front-page-error-independent-schools/",
+            "https://www.logicallyfacts.com/en/article/fact-checking-the-sky-news-uk-leader-debate",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "Drinking Tequila helps to loose weight.",
+        "urls": [
+            "https://www.snopes.com/fact-check/drinking-tequila-health-benefits/",
+            "https://www.indiatoday.in/lifestyle/what-s-hot/story/tequila-for-weight-loss-6-surprising-health-benefits-you-had-no-idea-about-1295532-2018-07-25",
+            "https://www.usatoday.com/story/news/nation-now/2017/07/12/drinking-alcohol-after-workout-wont-negate-exercise-if-you-do/469886001/",
+            "https://leadstories.com/hoax-alert/2019/05/fake-news-its-official-drinking-tequila-could-help-you-lose-weight.html",
+            "https://www.usatoday.com/story/life/food-dining/2023/08/06/what-is-the-healthiest-alcohol/70481541007/"
+        ]
+    },
+    {
+        "claim": "Donald Trump said that there were very fine people on both sides of the violent protests in 2017, at Charlottesville.",
+        "urls": [
+            "https://www.politifact.com/article/2019/apr/26/context-trumps-very-fine-people-both-sides-remarks/",
+            "https://www.factcheck.org/2020/02/trump-has-condemned-white-supremacists/",
+            "https://www.usatoday.com/story/news/factcheck/2020/10/17/fact-check-trump-quote-very-fine-people-charlottesville/5943239002/",
+            "https://www.washingtonpost.com/politics/2024/06/28/what-trump-said-with-his-very-fine-people-comments-vs-what-he-meant/",
+            "https://www.washingtonpost.com/politics/2020/05/08/very-fine-people-charlottesville-who-were-they-2/"
+        ]
+    },
+    {
+        "claim": "A CIA survey, published by the BBC, has predicted the NDA's defeat in the ongoing Lok Sabha polls",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-cia-survey-on-indian-poll-results-is-a-hoax-1509266-2019-04-24",
+            "https://www.boomlive.in/sitemap/news-16-sitemap.xml",
+            "https://www.boomlive.in/sitemap/news-15-sitemap.xml",
+            "https://www.thequint.com/sitemap/sitemap-daily-2016-02-23.xml"
+        ]
+    },
+    {
+        "claim": "You've got millions of families paying 40, 50, 60% of their limited incomes to put a roof over their heads",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/02/bernie-sanders/yes-millions-families-spend-bulk-income-housing/",
+            "https://www.politifact.com/staff/yanqi-xu/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=true&speaker=bernie-sanders",
+            "https://www.politifact.com/factchecks/list/?category=housing&ruling=true",
+            "https://www.politifact.com/factchecks/2019/feb/14/jerrold-nadler/does-us-have-more-gun-deaths-1-day-other-countries/"
+        ]
+    },
+    {
+        "claim": "Donald Trump says In the ‘old days’ if you were president and you had a good economy, you were basically immune from criticism",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/04/i-dont-like-critics-critic-in-chief-trump-asks-us-allies-abide-by-his-double-standard/",
+            "https://www.politifact.com/factchecks/2019/apr/23/donald-trump/no-donald-trump-not-first-president-low-approval-a/",
+            "https://www.washingtonpost.com/politics/trump-repeatedly-takes-aim-at-the-media-including-a-new-york-times-columnist-critical-of-republicans/2019/04/23/2a42bc28-65b3-11e9-82ba-fcfeff232e8f_story.html",
+            "https://www.politifact.com/factchecks/list/?category=polls&ruling=pants-fire",
+            "https://www.politifact.com/factchecks/list/?category=polls"
+        ]
+    },
+    {
+        "claim": "North Carolina has banned and criminalized Islamic Sharia Law",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/23/facebook-posts/no-north-carolina-did-not-ban-sharia-law-or-make-p/",
+            "https://www.snopes.com/fact-check/north-carolina-sharia/",
+            "https://www.washingtonpost.com/world/national-security/new-executive-order-bans-travelers-from-six-muslim-majority-countries-applying-for-visas/2017/03/06/3012a42a-0277-11e7-ad5b-d22680e18d10_story.html",
+            "https://www.washingtonpost.com/outlook/2021/04/13/frances-ban-veil-looks-far-more-sinister-historical-context/",
+            "https://www.washingtonpost.com/national/how-a-series-of-fringe-anti-muslim-conspiracy-theories-went-mainstream--via-donald-trump/2016/11/05/7c366af6-8bf0-11e6-bf8a-3d26847eeed4_story.html"
+        ]
+    },
+    {
+        "claim": "The enumeration clause of the US Constitution speaks to the count of every individual and not just Americans, not just citizens. It’s everyone.\"",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/30/letitia-james/ny-ag-emphasizes-key-fact-citizenship-question-cas/",
+            "https://www.washingtonpost.com/politics/2020/07/24/twists-turns-trumps-executive-order-immigrants-census/",
+            "https://www.factcheck.org/2009/10/health-care-overhaul-constitutional/",
+            "https://www.washingtonpost.com/opinions/interactive/2024/john-lanchester-consumer-price-index-who-is-government/"
+        ]
+    },
+    {
+        "claim": "In my own state of Vermont, from the very first days of our state's history, what our Constitution says is that everybody can vote. That is true. So people in jail can vote.\"",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/24/bernie-sanders/sanders-set-firestorm-over-prisoners-voting-his-fa/",
+            "https://www.politifact.com/staff/ellie-french/",
+            "https://www.politifact.com/factchecks/list/?category=vermont&ruling=true",
+            "https://www.washingtonpost.com/graphics/2020/elections/trump-opposition-oral-history/",
+            "https://www.politifact.com/factchecks/2020/jan/17/john-rodgers/vermont-senator-says-cellphones-are-1-killer-teens/"
+        ]
+    },
+    {
+        "claim": "74% of the people in Texas are crammed into 4% of the land.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/26/bennett-sandlin/its-true-74-percent-texans-live-4-percent-states-l/",
+            "https://www.politifact.com/factchecks/list/?speaker=bennett-sandlin",
+            "https://www.politifact.com/factchecks/list/?category=census&ruling=true",
+            "https://www.politifact.com/factchecks/list/?page=324&category=&rul=",
+            "https://www.politifact.com/personalities/bennett-sandlin/"
+        ]
+    },
+    {
+        "claim": "Elizabeth Warren says she warned about the financial crisis before it happened",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/30/elizabeth-warren/elizabeth-warren-says-she-warned-about-financial-c/",
+            "https://www.usatoday.com/story/news/politics/elections/2019/07/22/recession-elizabeth-warren-warns-odds-economic-downturn-high/1792537001/",
+            "https://www.washingtonpost.com/business/economy/senate-passes-rollback-of-post-financial-crisis-banking-rules/2018/03/14/43837aae-27bd-11e8-b79d-f3d931db7f68_story.html",
+            "https://www.washingtonpost.com/news/wonk/wp/2014/12/14/elizabeth-warren-is-changing-washington-without-giving-up-her-outside-status/",
+            "https://www.washingtonpost.com/news/post-politics/wp/2015/12/07/elizabeth-warren-praises-hillary-clintons-wall-street-plan/"
+        ]
+    },
+    {
+        "claim": "An image shows litter left by Extinction Rebellion environmental protestors in Hyde Park.",
+        "urls": [
+            "https://fullfact.org/online/picture-does-not-show-aftermath-extinction-rebellion-protests/",
+            "https://www.factcheck.org/2019/09/viral-photo-falsely-targets-climate-strike-protesters/",
+            "https://www.snopes.com/fact-check/protesters-hyde-park-rubbish/",
+            "https://www.politifact.com/factchecks/2019/sep/24/facebook-posts/photo-doesnt-show-trash-left-climate-strike-protes/"
+        ]
+    },
+    {
+        "claim": "The South African Government have recently built 4 million houses.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/no-sa-government-hasnt-built-4-million-houses-and-ramaphosa-didnt-promise",
+            "https://africacheck.org/infofinder/explore-facts/how-many-houses-did-south-african-government-provide-last-complete-five",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Afactsheets&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&sort_bef_combine=search_api_relevance_DESC&page=117",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ablog&f%5B2%5D=article_type%3Aex_reports&f%5B3%5D=article_type%3Aguides&f%5B4%5D=article_type%3Areports&f%5B5%5D=country_search%3AZA&page=20",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ablog&f%5B2%5D=article_type%3Aex_reports&f%5B3%5D=article_type%3Afactsheets&f%5B4%5D=article_type%3Aguides&f%5B5%5D=article_type%3Areports&f%5B6%5D=article_type%3Aspot_checks&f%5B7%5D=country_search%3AUG&f%5B8%5D=country_search%3AZA&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=24"
+        ]
+    },
+    {
+        "claim": "Ramaphosa promised to build 1 million in Alexandra.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/no-sa-government-hasnt-built-4-million-houses-and-ramaphosa-didnt-promise",
+            "https://www.washingtonpost.com/opinions/2024/04/09/kenya-william-ruto-economy-corruption-democracy/",
+            "https://www.washingtonpost.com/opinions/2023/06/02/uganda-anti-gay-law-sanctions/",
+            "https://www.washingtonpost.com/opinions/2024/09/02/africa-kenya-digital-protests/",
+            "https://www.washingtonpost.com/opinions/2023/10/24/congo-lumumba-cia-amends/"
+        ]
+    },
+    {
+        "claim": "There were Muslim ties to the Notre Dame fire.",
+        "urls": [
+            "https://www.factcheck.org/2019/04/notre-dame-fire-fuels-anti-muslim-conspiracy-theory/",
+            "https://www.factcheck.org/featured-posts/page/55/",
+            "https://www.factcheck.org/issue/anti-muslim/",
+            "https://www.politifact.com/factchecks/2019/apr/16/facebook-posts/no-there-was-not-lone-man-dressed-muslim-garb-walk/",
+            "https://www.poynter.org/fact-checking/2019/facebook-users-are-posting-videos-of-themselves-lighting-wood-on-fire-to-spread-hoaxes-about-the-notre-dame-fire/"
+        ]
+    },
+    {
+        "claim": "There have been zero reported instances of any child born alive after an abortion in Texas.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/18/donna-howard/no-infant-has-been-reported-born-alive-after-abort/",
+            "https://www.factcheck.org/2019/03/the-facts-on-the-born-alive-debate/",
+            "https://www.politifact.com/article/2019/may/30/reports-born-alive-abortion-scenario-are-rare/",
+            "https://www.politifact.com/factchecks/list/?speaker=donna-howard",
+            "https://www.politifact.com/personalities/donna-howard/"
+        ]
+    },
+    {
+        "claim": "Bumblebee has officially been added to the ever-growing list of endangered species",
+        "urls": [
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/yes-bumblebee-has-been-added-list-endangered-species",
+            "https://www.washingtonpost.com/graphics/2021/climate-environment/biden-climate-environment-actions/",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Aspot_checks&search_api_fulltext=canada&sort_bef_combine=search_api_relevance_DESC&sort_by=search_api_relevance&sort_order=DESC&page=13",
+            "https://www.snopes.com/fact-check/honeybees-arent-endangered-in-the-us/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2020/02/07/daily-202-pete-buttigieg-is-emerging-as-a-unity-candidate-in-new-hampshire-with-a-bounce-from-iowa/5e3cdcf088e0fa45caedd0df/"
+        ]
+    },
+    {
+        "claim": "Bernie Sanders' Medicare-for-all will save Americans money.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/06/03/would-bernie-sanderss-medicare-for-all-save-americans-money/",
+            "https://www.washingtonpost.com/business/2020/02/20/lancet-medicare-for-all-study/",
+            "https://www.washingtonpost.com/business/economy/does-bernie-sanderss-health-plan-cost-33-trillion--or-save-2-trillion/2018/07/31/d178b14e-9432-11e8-a679-b09212fb69c2_story.html",
+            "https://www.factcheck.org/2018/08/the-cost-of-medicare-for-all/",
+            "https://www.washingtonpost.com/politics/2019/07/30/bernie-sanders-versus-kamala-harris-taxes-medicare-for-all/"
+        ]
+    },
+    {
+        "claim": "The FEC report once again highlights President Trump’s immense grassroots support among small donors. 98.79% of first quarter contributions to the Campaign and the joint committees came from ‘low-dollar’ contributions, defined as $200 or less.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/04/17/trump-harris-campaigns-sketchy-boasts-about-small-dollar-contributions/",
+            "https://www.washingtonpost.com/politics/2019/05/09/geography-how-early-money-is-flowing/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/the-health-202/2019/04/17/the-health-202-bernie-sanders-says-medicare-for-all-would-reduce-health-spending-but-that-s-unclear/5cb60483a7a0a475985bd484/"
+        ]
+    },
+    {
+        "claim": "Pat Robertson claimed that the Notre Dame cathedral fire on April 2019 was the result of \"Hell bubbling over with burning homosexuals\"",
+        "urls": [
+            "https://www.snopes.com/fact-check/pat-robertson-notre-dame-gays/",
+            "https://leadstories.com/hoax-alert/2019/04/fake-news-somali-muslim-did-not-man-throw-5-year-old-off-the-third-floor-at-mall-of-america.html",
+            "https://leadstories.com/hoax-alert/2019/04/fake-news-muslim-immigrants-conex-containers-guns-ammunition.html"
+        ]
+    },
+    {
+        "claim": "Barack Obama wrote \"If the political winds should shift, I will side with the muslims\" in his book titled \"Audacity of Hope\".",
+        "urls": [
+            "https://leadstories.com/hoax-alert/2020/05/Political-winds-should-shift-misquote.html"
+        ]
+    },
+    {
+        "claim": "Canadian Prime Minister begs Nigerian President for one million immigrants",
+        "urls": [
+            "https://dubawa.org/did-canada-beg-nigeria-for-one-million-immigrants/",
+            "https://africacheck.org/fact-checks/spotchecks/canada-begs-kenya-million-immigrants-no-false",
+            "https://www.dw.com/",
+            "https://www.dw.com/en/top-stories/s-9097",
+            "https://www.washingtonpost.com/graphics/2019/lifestyle/magazine/trump-insulted-these-countries-travel-writer-celebrates-them/"
+        ]
+    },
+    {
+        "claim": "Republicans rushed to repeal law preventing the mentally ill from buying guns in 2017",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/22/eric-swalwell/did-republicans-rush-repeal-gun-control-law-mental/",
+            "https://www.factcheck.org/2019/08/trumps-mixed-record-on-gun-control/",
+            "https://www.washingtonpost.com/news/powerpost/wp/2017/11/07/democrats-to-try-forcing-vote-on-bill-establishing-select-panel-on-gun-violence/",
+            "http://www.washingtonpost.com/sf/local/2017/03/06/despite-a-mothers-plea-her-mentally-ill-daughter-was-sold-a-gun-with-tragic-results/",
+            "https://www.washingtonpost.com/news/the-fix/wp/2018/02/16/advocates-say-blaming-florida-shooting-on-mental-illness-will-lead-to-more-discrimination/"
+        ]
+    },
+    {
+        "claim": "Bill to expand access to college tuition for military families blocked by New York Democrats after they approved aid for illegal immigrants.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/20/donald-trump/trump-calls-out-ny-dems-vote-expansion-military-be/",
+            "https://www.snopes.com/fact-check/ny-dems-block-tuition-aid-gold-star/",
+            "https://www.usatoday.com/story/news/politics/elections/2024/08/22/dnc-fact-check-kamala-harris/74832489007/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2016/09/07/daily-202-trump-making-a-play-for-virginia-despite-long-odds/57cf7a12cd249a6fa9f82088/",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "Kenya’s deputy president Ruto said ‘We put it in our manifesto, to construct 57 mega dams…”",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/fact-checking-5-claims-kenyas-deputy-president-ruto-including-corruption-and",
+            "https://africacheck.org/sites/default/files/media/documents/2022-08/Kenya%20Kwanza%20UDA%20Manifesto%202022.pdf",
+            "https://africacheck.org/sites/default/files/SocialAudit2010.pdf",
+            "https://africacheck.org/sites/default/files/KERICHO-COUNTY-CIDP2-FINAL-to-assembly.pdf",
+            "https://www.dw.com/en/article-sitemap.xml"
+        ]
+    },
+    {
+        "claim": "Kenya’s deputy president, Ruto, asked six ministers in the last term to step aside.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/fact-checking-5-claims-kenyas-deputy-president-ruto-including-corruption-and",
+            "https://www.dw.com/en/kenya-election-2022-your-guide-to-the-presidential-candidates/a-62598497",
+            "https://www.dw.com/en/how-kenyans-see-the-ruto-gachagua-split/a-70384466",
+            "https://africacheck.org/search?f%5B0%5D=topic%3A38&page=4",
+            "https://www.dw.com/en/kenya-election-2022-as-it-happened/a-62751508"
+        ]
+    },
+    {
+        "claim": "Like every budget passed by the Senate since Dan Patrick has been lieutenant governor, Senate Bill 1 is within the spending limit set by the Texas Constitution.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/16/dan-patrick/texas-constitution-requires-lawmakers-stay-under-s/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=true&speaker=dan-patrick",
+            "https://www.politifact.com/texas/promises/abbott-o-meter/promise/1286/impose-stricter-constitutional-spending-cap-based-/",
+            "https://www.usatoday.com/story/news/politics/elections/2024/10/28/election-2024-the-key-races-to-watch-in-all-50-states/75674463007/"
+        ]
+    },
+    {
+        "claim": "Hyderabad Police seized Rs 8 crore cash withdrawn from BJP’s bank account.",
+        "urls": [
+            "https://factly.in/telangana-police-authorities-confirmed-that-they-have-seized-rs-8-crore-cash-withdrawn-from-bjps-bank-account/",
+            "https://www.indiatoday.in/elections/lok-sabha-2019/story/8-cr-cash-seized-telangana-bjp-says-trs-conspiracy-1497341-2019-04-09",
+            "https://factly.in/category/fact-check/page/23/",
+            "https://factly.in/category/english/page/516/",
+            "https://factly.in/category/english/page/524/"
+        ]
+    },
+    {
+        "claim": "William Shakespeare wrote “I always feel happy, you know why? Because I don’t expect anything from anyone. Expectations always hurt. Life is short, so love your life, be happy. And keep smiling. Just live for yourself and before you speak, listen. Before you write, think. Before you spend, earn. Before you pray, forgive. Before you hurt, feel. Before you quit, try. Before you die, live.”",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/26/viral-image/no-shakespeare-didnt-say-life-short-so-love-your-l/",
+            "https://www.snopes.com/fact-check/did-shakespeare-say-he-always-felt-happy/",
+            "https://www.aap.com.au/factcheck/be-happy-quote-attributed-to-shakespeare-is-fake/",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-william-shakespeare-didnt-write-i-always-feel-happy-quote",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/no-evidence-quote-happiness-funnyman-jim-carrey"
+        ]
+    },
+    {
+        "claim": "Russian President Vladimir Putin has said more than once that for settling the conflict in Donbass the most important thing is not dialogue with Moscow, because Moscow is not a party to this conflict. It is an intra-Ukrainian conflict and it is up to the Ukrainians to settle it, if they talk to each other.\"",
+        "urls": []
+    },
+    {
+        "claim": "South Bend in Indiana unemployment fell by half under Mayor Pete Buttigieg",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/10/pete-buttigieg/did-south-bend-unemployment-fall-half-under-mayor-/",
+            "https://www.washingtonpost.com/washington-post-live/2021/05/14/transformers-recovery-with-transportation-secretary-pete-buttigieg/",
+            "https://www.washingtonpost.com/politics/in-south-bend-pete-buttigieg-sees-a-template-for-improving-america/2019/04/21/a665e4c0-5bda-11e9-9625-01d48d50ef75_story.html",
+            "https://www.politifact.com/article/2019/jun/17/who-pete-buttigieg-bio-democratic-presidential-can/",
+            "https://www.washingtonpost.com/politics/2019/05/03/trailer-what-we-learned-about-democratic-candidates-so-far/"
+        ]
+    },
+    {
+        "claim": "The 2008 United States election was the first election in which voters of color comprised over 25 percent of the electorate, and that number is going up.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/23/mac-heller/minority-electorate-surpassed-25-percent-when-obam/",
+            "https://www.washingtonpost.com/graphics/2020/opinions/systemic-racism-police-evidence-criminal-justice-system/"
+        ]
+    },
+    {
+        "claim": "African-American women inmates in Caifornia prisons are sterilized to cut welfare costs in California.",
+        "urls": [
+            "https://leadstories.com/hoax-alert/2019/10/fake-news-black-female-prisoners-are-not-sterilized-to-cut-welfare-costs-in-california.html",
+            "https://www.washingtonpost.com/history/2019/07/28/she-went-undercover-expose-an-insane-asylums-horrors-now-nellie-bly-is-getting-her-due/"
+        ]
+    },
+    {
+        "claim": "Prime Minister Scott Morrison says an electric vehicle can't tow a boat or trailer.",
+        "urls": []
+    },
+    {
+        "claim": "Kenya's broad-based economic growth averaged 5.6% over the last five years",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+        ]
+    },
+    {
+        "claim": "Joe Manchin was the only member of the Senate who has consistently voted against efforts to use the 'nuclear option' to change the rules of the Senate.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/24/joe-manchin/joe-manchin-only-senator-consistently-vote-against/",
+            "https://www.politifact.com/staff/austin-jones/",
+            "https://www.politifact.com/staff/al-bernardi/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=true&speaker=joe-manchin",
+            "https://www.washingtonpost.com/politics/manchin-voting-rights/2021/06/02/103db892-c320-11eb-93f5-ee9558eecf4b_story.html"
+        ]
+    },
+    {
+        "claim": "Previous claims that one or two drinks a day might protect against stroke are not true.",
+        "urls": [
+            "https://www.washingtonpost.com/wellness/2025/01/07/healthier-ultra-processed-foods/",
+            "https://africacheck.org/comment/reply/node/7331/field_comments",
+            "https://africacheck.org/fact-checks/meta-programme-fact-checks/even-25-cups-coffee-pose-no-risk-your-heart-its-complicated",
+            "https://africacheck.org/fact-checks/reports/not-healthyliving-why-these-city-joburg-tweets-are-nonsense",
+            "https://www.abs-cbn.com/lifestyle/06/05/16/stakes-are-high-for-wolfgang-steakhouse-in-manila"
+        ]
+    },
+    {
+        "claim": "Kenyatta administrations broad-based economic growth averaged 5.6% over the last five years.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right",
+            "https://pesacheck.org/fact-checking-president-uhuru-kenyattas-2019-state-of-the-nation-address-4966980760a8"
+        ]
+    },
+    {
+        "claim": "As of 2019 Kenya's broad-based economic growth averaged 5.6% over the last five years",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+        ]
+    },
+    {
+        "claim": "Since April 2013, more than KSh1.7 trillion shillings have been transferred to the Kenyan counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right",
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/kenyas-president-eyes-exit-we-fact-checked-his-administrations-last-budget",
+            "https://africacheck.org/fact-checks/reports/kenyan-president-william-ruto-sparred-journalists-over-his-policies-did-he-get",
+            "https://africacheck.org/fact-checks/reports/kenyan-billionaire-jimi-wanjigi-wants-be-president-were-his-tv-interview-facts"
+        ]
+    },
+    {
+        "claim": "Kenya's broad-based economic growth averaged 5.6% over the last five years as of 2019 under President Uhuru Kenyatta",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right",
+            "https://pesacheck.org/fact-checking-president-uhuru-kenyattas-2019-state-of-the-nation-address-4966980760a8"
+        ]
+    },
+    {
+        "claim": "Kenyan broad-based economic growth averaged 5.6% over the last five years.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+        ]
+    },
+    {
+        "claim": "Kenya’s broad-based economic growth averaged 5.6% over the last five years.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+        ]
+    },
+    {
+        "claim": "Kenya's broad-based economic growth averaged 5.6% over the last five years.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right"
+        ]
+    },
+    {
+        "claim": "Since April 2013, more than KSh1.7 trillion shillings has been transferred to the counties of Kenya",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right",
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/kenyas-president-eyes-exit-we-fact-checked-his-administrations-last-budget",
+            "https://africacheck.org/fact-checks/reports/kenyan-billionaire-jimi-wanjigi-wants-be-president-were-his-tv-interview-facts",
+            "https://africacheck.org/sites/default/files/media/documents/2021-12/State%20of%20the%20Nation%20Address-2021.pdf"
+        ]
+    },
+    {
+        "claim": "Since April 2013, more than KSh1.7 trillion shillings has been transferred to the counties.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/state-nation-2019-did-kenyatta-get-his-facts-right",
+            "https://africacheck.org/fact-checks/reports/claims-kenyas-counties-fact-checking-2019-state-devolution-address",
+            "https://africacheck.org/fact-checks/reports/kenyas-president-eyes-exit-we-fact-checked-his-administrations-last-budget",
+            "https://africacheck.org/sites/default/files/media/documents/2021-12/State%20of%20the%20Nation%20Address-2021.pdf",
+            "https://africacheck.org/fact-checks/reports/kenyan-president-william-ruto-sparred-journalists-over-his-policies-did-he-get"
+        ]
+    },
+    {
+        "claim": "Not all North Caroline teachers get a duty free lunch break.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/16/john-torbett/do-north-carolinas-teachers-get-work-free-lunch-br/",
+            "https://www.usatoday.com/story/money/2024/05/05/teacher-appreciation-week-2024-deals-ideas/73484110007/"
+        ]
+    },
+    {
+        "claim": "The UAE has banned three-month tourist visas for Nigerians",
+        "urls": [
+            "https://www.washingtonpost.com/graphics/2020/world/middle-east/arab-world-coronavirus-photo-project/",
+            "https://dubawa.org/false-ghanaians-sierra-leoneans-not-banned-from-travelling-to-uae/",
+            "https://www.washingtonpost.com/world/"
+        ]
+    },
+    {
+        "claim": "NATO States Sending Ukraine’s Navy ‘Junk’ Vessels",
+        "urls": [
+            "https://www.washingtonpost.com/opinions/2024/06/17/ukraine-naval-drone-success-pentagon/",
+            "https://www.dw.com/en/us-military-in-germany-what-you-need-to-know/a-49998340",
+            "https://www.washingtonpost.com/climate-environment/2023/03/17/russia-oil-environmental-risk/",
+            "https://www.dw.com/en/piracy/t-19112301/page-1"
+        ]
+    },
+    {
+        "claim": "More than 6 lakh high-risk pregnancies identified.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-about-welfare-benefits-to-pregnant-women/",
+            "https://factly.in/how-true-are-the-claims-about-the-pradhan-mantri-surakshit-matritva-abhiyan/",
+            "https://www.ptinews.com/"
+        ]
+    },
+    {
+        "claim": "More than a million Wisconsinites have voted to raise their own property taxes because Republicans have failed to fully fund our public schools for the past eight years",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/17/tony-evers/tony-evers-1m-wisconsinites-voted-raise-taxes/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=half-true&speaker=tony-evers",
+            "https://www.politifact.com/factchecks/list/?speaker=tony-evers",
+            "https://www.politifact.com/article/2019/jun/03/politifact-wisconsins-high-five-may-2019/",
+            "https://wisconsinwatch.org/2024/09/wisconsin-assembly-republican-democrat-river-falls-zimmerman-page/"
+        ]
+    },
+    {
+        "claim": "80.63 lakh pregnant women immunized",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-about-welfare-benefits-to-pregnant-women/",
+            "https://factly.in/fact-checking-government-claims-about-mission-indradhanush/",
+            "https://factly.in/category/stories/page/133/",
+            "https://factly.in/category/india/page/121/",
+            "https://factly.in/category/48-months-of-modi-government/page/2/"
+        ]
+    },
+    {
+        "claim": "80.63 lakh pregnant women have been immunized in India by August 2018.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-about-welfare-benefits-to-pregnant-women/",
+            "https://factly.in/fact-checking-government-claims-about-mission-indradhanush/"
+        ]
+    },
+    {
+        "claim": "India has validated elimination of maternal and neo-natal tetanus in May 2015, before the global target of December 2015.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-about-mission-indradhanush/"
+        ]
+    },
+    {
+        "claim": "3.15 crore children vaccinated in India by August 2018.",
+        "urls": [
+            "https://factly.in/fact-check-how-true-are-government-claims-about-its-health-initiatives/",
+            "https://factly.in/fact-checking-government-claims-about-mission-indradhanush/"
+        ]
+    },
+    {
+        "claim": "Donald trump claims Mexico only this week started to detain thousands of Central Americans at its southern border.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/04/04/trumps-false-claims-about-mexicos-immigration-system/",
+            "https://www.washingtonpost.com/immigration/trump-mexico-immigration-deal-has-additional-measures-not-yet-made-public/2019/06/10/967e4e56-8b8e-11e9-b08e-cfd89bd36d4e_story.html",
+            "https://www.washingtonpost.com/immigration/kids-in-cages-debate-trump-obama/2020/10/23/8ff96f3c-1532-11eb-82af-864652063d61_story.html",
+            "https://www.washingtonpost.com/world/national-security/deal-with-mexico-paves-way-for-asylum-overhaul-at-us-border/2018/11/24/87b9570a-ef74-11e8-9236-bb94154151d2_story.html",
+            "https://www.washingtonpost.com/world/the_americas/mexico-us-border-unaccompanied-children/2021/03/12/76155c10-829d-11eb-9ca6-54e187ee4939_story.html"
+        ]
+    },
+    {
+        "claim": "Puerto Rico got 91 Billion Dollars for the hurricane, more money than has ever been gotten for a hurricane before.",
+        "urls": [
+            "https://www.factcheck.org/2019/04/trump-misleads-on-aid-to-puerto-rico/",
+            "https://www.washingtonpost.com/politics/2019/03/28/heres-why-trump-says-puerto-rico-is-getting-billion-disaster-relief/",
+            "https://www.politifact.com/factchecks/2019/apr/03/donald-trump/trumps-false-tweet-puerto-rico-got-91-billion-hurr/",
+            "https://www.factcheck.org/issue/hurricane-maria/",
+            "https://www.washingtonpost.com/politics/2019/04/02/nearly-everything-trump-just-said-about-puerto-rico-is-wrong/"
+        ]
+    },
+    {
+        "claim": "Democratic Rep. Alexandria Ocasio-Cortez said, “Attorneys don’t know much about the law as lawyers do and Ben Shapiro is just an attorney. So, yeah.”",
+        "urls": [
+            "https://checkyourfact.com/2019/04/10/fact-check-facebook-ocasio-cortez-ben-shapiro-attorney/"
+        ]
+    },
+    {
+        "claim": "Mission Indradhanush (ensuring full immunisation with all available vaccines for children up to two years of age and pregnant women), has completed four phases covering 528 districts in India.",
+        "urls": [
+            "https://factly.in/fact-check-how-true-are-government-claims-about-its-health-initiatives/",
+            "https://fit.thequint.com/fit-connect/immunisation-week-we-need-trust-in-vaccines",
+            "https://factly.in/fact-checking-government-claims-about-mission-indradhanush/"
+        ]
+    },
+    {
+        "claim": "There is a link between a rise in thyroid cancer in women and the improper use of protective equipment during mammograms.",
+        "urls": [
+            "https://www.boomlive.in/world/does-one-need-a-thyroid-guard-during-a-mammogram-6951",
+            "https://www.washingtonpost.com/national/health-science/should-i-worry-about-radiation-exposure-from-x-rays-mammograms-and-other-scans/2018/09/28/cf17ea26-b536-11e8-a2c5-3187f427e253_story.html",
+            "https://www.usatoday.com/story/life/health-wellness/2023/09/14/prenuvo-full-body-mri-is-it-worth-it/70830562007/"
+        ]
+    },
+    {
+        "claim": "Senator Kamala Harris’s presidential campaign has raised $12 million from more than 218,000 individual contributions in the first quarter of 2019. 98 percent of Harris’s contributions were under $100 .",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/04/17/trump-harris-campaigns-sketchy-boasts-about-small-dollar-contributions/"
+        ]
+    },
+    {
+        "claim": "Eight professionals leave South Africa for every one that comes in.",
+        "urls": [
+            "https://africacheck.org/search?f%5B0%5D=country_search%3AZA&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=81",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Aguides&f%5B1%5D=article_type%3Ameta-programme-fact-checks&f%5B2%5D=article_type%3Areports&search_api_fulltext=canada&sort_bef_combine=search_api_relevance_DESC&sort_by=search_api_relevance&sort_order=DESC&page=30",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Aex_reports&f%5B2%5D=article_type%3Afactsheets&f%5B3%5D=article_type%3Areports&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=71",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Areports&page=48",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Areports&page=50"
+        ]
+    },
+    {
+        "claim": "President Donald Trump wants to abolish the pre-existing conditions protections within the U.S Affordable Care Act (ACA).",
+        "urls": [
+            "https://www.factcheck.org/2020/09/biden-misleads-on-preexisting-conditions/",
+            "https://www.factcheck.org/2020/10/viral-post-overstates-effect-of-trumps-order-on-preexisting-conditions/",
+            "https://www.washingtonpost.com/outlook/2020/10/22/preexisting-conditions-aca-debate-trump-biden/",
+            "https://www.washingtonpost.com/politics/trump-health-care-affordable-care-act/2020/09/24/e1cd928a-fe6b-11ea-9ceb-061d646d9c67_story.html",
+            "https://www.factcheck.org/2020/01/bloomberg-trump-spar-on-preexisting-conditions/"
+        ]
+    },
+    {
+        "claim": "When Winston Churchill was asked to cut arts funding in favour of the war effort, he simply replied, ‘then what are we fighting for?",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/02/viral-image/no-winston-churchill-didnt-say-what-are-we-fightin/",
+            "https://www.aap.com.au/factcheck/churchill-what-are-we-fighting-for-quote-is-an-artistic-creation/",
+            "https://www.snopes.com/fact-check/winston-churchill-on-the-arts/",
+            "https://www.politifact.com/search/updates/?page=7&q=quotations",
+            "https://www.politifact.com/factchecks/list/?page=4&category=military&ruling=false"
+        ]
+    },
+    {
+        "claim": "The House of Commons has little more than 635 employees.",
+        "urls": [
+            "https://fullfact.org/online/false-claims-about-mps/",
+            "https://fullfact.org/online/false-list-mp-crimes/",
+            "https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/",
+            "https://www.usatoday.com/story/news/politics/elections/2025/01/06/donald-trump-victory-congress-electoral-college/77486319007/"
+        ]
+    },
+    {
+        "claim": "19% of WVians rely on SNAP,\" or food stamps.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/may/10/joe-manchin/are-19-west-virginians-food-stamps/",
+            "https://www.politifact.com/staff/patrick-downey/",
+            "https://www.politifact.com/staff/kenneth-harmonay/",
+            "https://www.politifact.com/factchecks/list/?category=food&ruling=mostly-true",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=mostly-true&speaker=joe-manchin"
+        ]
+    },
+    {
+        "claim": "This year alone, MPs have cost the British taxpayer £92,993,748 in expenses.",
+        "urls": [
+            "https://fullfact.org/online/false-claims-about-mps/"
+        ]
+    },
+    {
+        "claim": "There is an agreement on real time information sharing between India and Switzerland.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-on-agreements-enabling-legislations-to-curb-corruption/",
+            "https://www.rmit.edu.au/study-with-us/international-students/programs-for-international-students/study-abroad-and-exchange/student-exchange",
+            "https://www.abs-cbn.com/video/business/11/26/21/india-ph-have-untapped-segments-for-collaboration",
+            "https://www.abs-cbn.com/video/business/03/19/21/philippine-shares-rally-alongside-asian-peers",
+            "https://www.aap.com.au/aapreleases/cision20230719ae61459/"
+        ]
+    },
+    {
+        "claim": "Bluegill fish are responsible for over 500 peoples deaths in the United States of America every summer.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/01/viral-image/no-bluegill-fish-arent-responsible-hundreds-human-/",
+            "https://www.snopes.com/fact-check/bluegill-dangerous-fish/",
+            "https://newsmeter.in/fact-check-viral-claims-that-bluegill-is-most-dangerous-fish-in-north-america-are-false/",
+            "https://www.usatoday.com/story/news/factcheck/2020/08/09/fact-check-no-bluegill-arent-dangerous-piranhas/3317185001/",
+            "https://checkyourfact.com/2020/07/30/fact-check-bluegill-fish-most-dangerous-north-america/"
+        ]
+    },
+    {
+        "claim": "The U.S. Immigration and Customs Enforcement (ICE)  removed thousands of  gang members",
+        "urls": [
+            "https://www.washingtonpost.com/immigration/ice-deported-thousands-of-family-members-minors-as-overall-arrests-dropped/2019/12/11/7d29dada-1b8d-11ea-87f7-f2e91143c60d_story.html",
+            "https://www.factcheck.org/2017/06/ms-13-gang-nonsense/",
+            "https://www.washingtonpost.com/news/fact-checker/wp/2018/02/08/president-trumps-claim-that-thousands-and-thousands-of-ms-13-members-are-off-the-streets/",
+            "https://www.washingtonpost.com/archive/politics/2005/08/02/customs-jails-1000-suspected-gang-members/ce1639b7-e35c-42b7-a01b-8293eec00f4f/",
+            "https://www.politifact.com/factchecks/2018/may/15/donald-trump/donald-trump-exaggerates-number-ms-13-gang-members/"
+        ]
+    },
+    {
+        "claim": "In 2018, US drug prices  declined for the first time in 46 years.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/07/15/are-prescription-drug-prices-going-down/",
+            "https://www.washingtonpost.com/politics/2019/01/16/can-trump-claim-credit-billion-savings-prescription-drugs/",
+            "https://www.factcheck.org/2019/07/pinning-down-prescription-drug-prices/",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "Under Donald Trump presidency there will always be protection for patients with pre-existing conditions.",
+        "urls": [
+            "https://www.factcheck.org/2018/10/trump-misleads-on-preexisting-conditions/",
+            "https://www.politifact.com/factchecks/2019/may/16/donald-trump/trumps-talk-preexisting-conditions-doesnt-match-hi/",
+            "https://www.politifact.com/factchecks/2018/oct/05/donald-trump/donald-trumps-pants-fire-claim-about-democrats-pre/",
+            "https://www.washingtonpost.com/politics/2020/01/13/trumps-traffic-jam-false-claims-pre-existing-conditions/",
+            "https://www.politifact.com/factchecks/2020/jan/15/donald-trump/trumps-claim-he-saved-pre-ex-conditions-part-fanta/"
+        ]
+    },
+    {
+        "claim": "Uganda’s President Yoweri Museveni said trees in Finland can take 120 years to mature.",
+        "urls": [
+            "https://africacheck.org/fact-checks/spotchecks/ugandas-museveni-right-trees-finland-can-take-120-years-mature-these-are-not"
+        ]
+    },
+    {
+        "claim": "Robert Soros (Son of George Soros) is married To Sister of Adam Schiff.",
+        "urls": [
+            "https://www.factcheck.org/2019/11/social-posts-distort-facts-on-political-relationships/",
+            "https://www.politifact.com/factchecks/2019/oct/11/viral-image/no-george-soross-son-isnt-married-adam-schiffs-sis/",
+            "https://www.factcheck.org/2018/02/adam-schiff-george-soros-not-laws/",
+            "https://www.logicallyfacts.com/en/fact-check/false-adam-schiff-sister-is-married-to-george-soros-son",
+            "https://www.snopes.com/fact-check/does-list-show-news-system-rigged/"
+        ]
+    },
+    {
+        "claim": "Police in Thailand can issue fines to anyone who does not wear a face mask in public during the novel coronavirus pandemic.",
+        "urls": [
+            "https://www.boomlive.in/world/coronavirus/false-thai-police-can-fine-people-who-fail-to-wear-masks-in-public-7487",
+            "https://www.abs-cbn.com/overseas/04/27/21/maskless-thai-pm-fined-as-coronavirus-cases-spike",
+            "https://www.dw.com/en/coronavirus-latest-wuhan-lockdown-lifted-lufthansa-shutters-germanwings/a-53043555",
+            "https://www.usatoday.com/story/news/50-states/2021/03/19/pandemic-popcorn-doctors-notes-red-lantern-award-news-around-states/115577868/",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "President Trump immediately dropped American sanctions against Russia after his election,",
+        "urls": [
+            "https://www.factcheck.org/2019/03/meme-misleads-on-russia-sanctions/",
+            "https://www.factcheck.org/issue/sanctions/",
+            "https://www.washingtonpost.com/news/worldviews/wp/2017/08/03/trump-vs-the-world-and-4-other-global-stories-you-might-have-missed/",
+            "https://www.washingtonpost.com/national-security/2024/11/10/trump-putin-phone-call-ukraine/",
+            "https://www.washingtonpost.com/national-security/2024/11/19/trump-venezuela-oil-deportations-maduro/"
+        ]
+    },
+    {
+        "claim": "Prime Minister Narendra Modi tops the list of 50 most honest politicians that was released in the USA.",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-did-pm-modi-top-the-list-of-50-most-honest-politicians-surveyed-in-the-us-1490803-2019-03-31",
+            "https://www.boomlive.in/post-claiming-pm-modi-topped-the-list-of-50-most-honest-politicians-is-fake/",
+            "https://factly.in/there-is-no-such-american-survey-rating-manmohan-singh-as-the-most-honest-person-in-the-world/",
+            "https://www.indiatoday.in/elections/lok-sabha-2019/story/chowkidar-more-than-just-uniform-cap-and-whistle-pm-modi-at-town-hall-1490769-2019-03-31",
+            "https://www.thequint.com/news/india/white-house-did-not-call-manmohan-singh-most-honest-political-leader"
+        ]
+    },
+    {
+        "claim": "South Africa’s official opposition party, the Democratic Alliance (DA), launched its election manifesto in Johannesburg on 23 February 2019.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/one-south-africa-all-fact-checking-das-2019-election-manifesto",
+            "https://www.dw.com/en/south-african-opposition-makes-election-pledge-to-fight-corruption/a-47659446",
+            "https://africacheck.org/fact-checks/reports/promises-kept-and-broken-african-national-congress-election-manifestos-2019-vs",
+            "https://africacheck.org/fact-checks/reports/life-under-da-western-cape-fact-checking-south-african-opposition-partys-claims",
+            "https://www.dw.com/en/africa/t-17871190/page-126"
+        ]
+    },
+    {
+        "claim": "Eight Democratic candidates ‘boycott’ the AIPAC conference",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/03/27/did-eight-democratic-candidates-boycott-aipac-conference/",
+            "https://www.washingtonpost.com/sitemap/2019/3/27/",
+            "https://www.washingtonpost.com/politics/rabbis-call-for-boycott-of-trumps-speech-to-pro-israel-group/2016/03/17/8e2f2ea6-ea14-11e5-a6f3-21ccdbc5f74e_story.html",
+            "https://www.washingtonpost.com/politics/2016/03/21/854e1ede-ef7b-11e5-85a6-2132cf446d0a_story.html",
+            "https://www.washingtonpost.com/politics/paloma/the-trailer/2019/03/26/the-trailer-2020-has-its-candidate-for-people-who-hate-politicians/5c98eb741b326b0f7f38f25a/"
+        ]
+    },
+    {
+        "claim": "The Council on American-Islamic Relations was founded in response to 9/11.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/15/ilhan-omar/ilhan-omar-misstates-facts-about-cairs-founding/",
+            "https://www.usatoday.com/story/news/politics/2019/04/10/omar-criticized-dan-crenshaw-unbelievable-9-11-description/3424054002/",
+            "https://www.usatoday.com/story/news/politics/2019/09/15/republicans-criticize-ilhan-omar-9-11-remarks-cbs-interview/2334643001/",
+            "https://www.usatoday.com/story/news/politics/2019/09/11/son-9-11-victim-ilhan-omar-show-respect-after-controversy/2285171001/",
+            "https://www.washingtonpost.com/nation/2019/04/11/i-am-american-everyone-else-rep-ilhan-omar-fires-back-critics-questioning-her-patriotism-after-remark/"
+        ]
+    },
+    {
+        "claim": "An estimated 1 million people marched for a People's vote on Saturday 23rd March.",
+        "urls": [
+            "https://fullfact.org/europe/peoples-vote-march-count/",
+            "https://www.washingtonpost.com/world/europe/with-brexit-plans-adrift-protesters-jam-london-to-demand-that-the-people-decide/2019/03/23/eb1ca11a-4ce1-11e9-8cfc-2c5d0999c21e_story.html",
+            "https://www.washingtonpost.com/elections/2024/10/24/2024-election-campaign-updates-harris-trump/",
+            "https://www.washingtonpost.com/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2016/09/07/daily-202-trump-making-a-play-for-virginia-despite-long-odds/57cf7a12cd249a6fa9f82088/"
+        ]
+    },
+    {
+        "claim": "CAIR was founded after 9/11, because they recognized that some people did something and that all of us were starting to lose access to our civil liberties",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/07/01/most-read-fact-checks-so-far/",
+            "https://www.factcheck.org/2019/04/rep-ilhan-omars-9-11-comments-in-context/",
+            "https://www.factcheck.org/2019/05/fake-tweet-puts-words-in-trumps-mouth/",
+            "https://www.washingtonpost.com/powerpost/the-president-today-made-america-smaller-democratic-candidates-react-to-trumps-attack-on-rep-omar/2019/04/13/931b3d02-5e05-11e9-842d-7d3ed7eb3957_story.html",
+            "https://www.washingtonpost.com/politics/2019/12/23/most-popular-fact-checks/"
+        ]
+    },
+    {
+        "claim": "America’s life expectancy has declined for the last three years in a row, the first time in a hundred years, because of surges in suicides and drug overdoses.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/03/andrew-yang/overdoses-suicide-driving-drop-us-life-expectancy-/",
+            "https://www.politifact.com/factchecks/list/?category=&ruling=mostly-true&speaker=andrew-yang",
+            "https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/",
+            "https://www.washingtonpost.com/politics/interactive/2021/biden-fact-checker-100-days/",
+            "https://www.washingtonpost.com/"
+        ]
+    },
+    {
+        "claim": "The UK and US have exported no vaccines.",
+        "urls": [
+            "https://www.washingtonpost.com/world/europe/covid-vaccine-exports-eu-uk-us/2021/03/10/1899556c-81a0-11eb-be22-32d331d87530_story.html",
+            "https://www.washingtonpost.com/world/europe/eu-britain-vaccine-curb-export/2021/03/24/99e87324-8bea-11eb-a33e-da28941cb9ac_story.html",
+            "https://fullfact.org/online/vaccine-export-eu/",
+            "https://www.abs-cbn.com/overseas/03/24/21/astrazeneca-us-trials-thrown-into-doubt-after-promising-data",
+            "https://www.abs-cbn.com/overseas/03/21/21/new-lockdowns-in-europe-overseas-fans-banned-at-tokyo-olympics"
+        ]
+    },
+    {
+        "claim": "American middle schools caught forcing students to do Muslim prayers 5 times a day.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/02/blog-posting/no-american-middle-schools-not-caught-forcing-stud/",
+            "https://www.politifact.com/factchecks/list/?page=4&category=&ruling=pants-fire&speaker=blog-posting",
+            "https://www.politifact.com/factchecks/list/?category=religion&ruling=pants-fire",
+            "https://www.politifact.com/factchecks/list/?page=58&category=&ruling=pants-fire&amp%3Bspeaker=blog-posting",
+            "https://www.politifact.com/factchecks/list/?category=education&ruling=pants-fire"
+        ]
+    },
+    {
+        "claim": "Nigeria has ‘100 million generators in private hands’.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/are-there-100-million-generators-private-hands-nigeria",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ablog&f%5B2%5D=article_type%3Aex_reports&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=632",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ameta-programme-fact-checks&f%5B2%5D=article_type%3Areports&f%5B3%5D=article_type%3Aspot_checks&page=623&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3AMedia_literacy&f%5B1%5D=article_type%3Ablog&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Areports&f%5B4%5D=country_search%3ANG&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=13",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Areports&sort_bef_combine=search_api_relevance_DESC&page=36"
+        ]
+    },
+    {
+        "claim": "Women in Russia get paid less than men for the same work.",
+        "urls": [
+            "https://www.dw.com/en/gender-pay-gap-in-germany-women-earn-18-less-than-men/a-68022521",
+            "https://www.washingtonpost.com/world/2024/07/30/russia-putin-antifeminism-women-children-society/",
+            "https://www.afp.com/en/search/results/Kathmandu%20%7Bkeep%7D%20student%20girls%20%5BTelegram%3A%40yy7600%5D%20-%20Kathmandu%20student%20girls%20and%20young%20women%20door-to-door%20service%20%28female%20college%20resources%29%20-%20student%20girls%20near%20Kathmandu%20-%20how%20to%20find%20%28foreign%20girl%20stewardess%20girls%29%F0%9F%92%AFnXr2?page=1&solrsort=sort_label%20asc",
+            "https://www.afp.com/en/search/results/Where%20to%20find%20escorts%20in%20Bratislava%20%5BTelegram%3A%40yy7600%5D%20-%20Bratislava%20%28how%20to%20find%20escorts%29%20one-stop%20service%20-%20Bratislava%20%28where%20to%20find%20escorts%29%20places%20with%20many%20escorts%20-%20How%20to%20find%20escorts%20in%20Bratislava%20%28foreign%20girls%20and%20flight%20attendants%29%20-%20How%20to%20find%20escorts%20in%20Bratislava%20%28part-time%20white-collar%20workers%29%20-%20Bratislava%20%28where%20to%20find%20escorts%29%20where%20there%20are%20many%20escorts%F0%9F%92%AFYoGN?page=1&solrsort=bundle%20asc",
+            "https://www.afp.com/en/search/results/Cali%20Airborne%20%28Escort%20Escort%29%20%5BwhatsApp%2085246714167%5D%20-%20How%20to%20find%20escorts%20for%20sex%20near%20Cali%20-%20Looking%20for%20young%20student%20women%20in%20Cali%20-%20Cali%20men%20drinking%20tea%20-%20Where%20to%20find%20escorts%20in%20Cali?page=15&A_street_in_the_red_light_district%F0%9F%92%AFCB81="
+        ]
+    },
+    {
+        "claim": "The Insolvency and Bankruptcy Code has led to significant results in India.",
+        "urls": []
+    },
+    {
+        "claim": "The gross domestic product grew 3.1 percent in 2018, after adjusting for inflation.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/03/25/trumps-misleading-spin-gdp-growth-rate/",
+            "https://www.factcheck.org/2019/03/spinning-gdp/",
+            "https://www.factcheck.org/2019/04/conway-overstates-economic-growth/",
+            "https://www.factcheck.org/2018/10/trumps-numbers-october-2018-update/",
+            "https://www.factcheck.org/2020/01/trumps-numbers-january-2020-update/"
+        ]
+    },
+    {
+        "claim": "The Indian Government has approved Public Sector Banks to amalgamate through an alternative mechanism to facilitate consolidation",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-about-the-banking-sector/"
+        ]
+    },
+    {
+        "claim": "West Virgina has fewer science, technology, engineering and math graduates than any neighbouring state.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/24/e-gordon-gee/does-west-virginia-trail-its-neighbors-stem-gradua/"
+        ]
+    },
+    {
+        "claim": "People who are vaccinated against chickenpox need to keep getting boosters.",
+        "urls": [
+            "https://www.factcheck.org/2019/03/kentucky-gov-misguides-on-chickenpox/",
+            "https://www.washingtonpost.com/health/2022/12/26/vaccine-hesitancy-measles-chickenpox-polio-flu/",
+            "https://www.thecanadianpressnews.ca/health/heres-the-advice-bidens-top-health-official-has-for-robert-f-kennedy-jr/article_67b9e935-bcbe-5e67-9fbf-80f604bd7836.html",
+            "https://www.abs-cbn.com/overseas/07/30/21/china-battles-biggest-covid-19-outbreak-in-months",
+            "https://www.liputan6.com/health/read/5858288/cara-agar-anak-terhindar-dari-penyakit-menular-seperti-cacar-air-dan-gondongan-saat-liburan"
+        ]
+    },
+    {
+        "claim": "Fewer than 500 people a year in the USA are killed by rifles.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2021/mar/30/facebook-posts/fact-checking-number-people-killed-rifles-and-peop/",
+            "https://www.politifact.com/factchecks/2019/jun/12/ilhan-omar/rep-ilhan-omars-claim-high-there-arent-500-gun-dea/",
+            "https://thedispatch.com/article/gun-safety-isnt-the-issue/",
+            "https://www.washingtonpost.com/politics/2023/03/27/nashville-school-shooting-children-guns/",
+            "https://www.washingtonpost.com/opinions/i-used-to-think-gun-control-was-the-answer-my-research-told-me-otherwise/2017/10/03/d33edca6-a851-11e7-92d1-58c702d2d975_story.html"
+        ]
+    },
+    {
+        "claim": "Natural chickenpox infection in childhood will have 99.999 percent no long-term repercussions.",
+        "urls": [
+            "https://www.factcheck.org/2019/03/kentucky-gov-misguides-on-chickenpox/"
+        ]
+    },
+    {
+        "claim": "Sen. Kirsten Gillibrand has the most votes against Donald Trump cabinet nominees",
+        "urls": [
+            "https://www.washingtonpost.com/news/the-fix/wp/2017/01/25/kirsten-gillibrand-has-voted-against-almost-all-of-donald-trumps-nominees-2020-anyone/",
+            "https://www.washingtonpost.com/news/monkey-cage/wp/2018/01/01/it-sure-looks-as-if-kirsten-gillibrand-is-running-for-president/",
+            "https://www.politifact.com/factchecks/2019/mar/29/kirsten-gillibrand/gillibrand-claims-most-votes-against-trump-cabinet/",
+            "https://www.washingtonpost.com/powerpost/standing-behind-trump-on-friday-the-future-of-the-democratic-party/2017/01/20/80a4e04e-de94-11e6-ad42-f3375f271c9c_story.html",
+            "https://www.washingtonpost.com/news/powerpost/wp/2017/01/26/warren-booker-try-to-answer-democratic-anger-at-votes-for-trump-nominees/"
+        ]
+    },
+    {
+        "claim": "50% of Americans agree that Robert Mueller’s investigation is a Witch Hunt.",
+        "urls": [
+            "https://www.factcheck.org/2019/03/trump-touts-questionable-survey-results/",
+            "https://www.washingtonpost.com/politics/2019/03/18/do-americans-think-muellers-probe-is-witch-hunt-depends-how-you-ask/",
+            "https://www.factcheck.org/person/robert-mueller/page/2/",
+            "https://www.factcheck.org/page/233/?irclickid=1MyW-S3oJxyOWRJ0WlXSvXJOUknSpUVxVQfBUE0&irgwc=1&term=vincula%20tu%20m%C3%B3vil&utm_campaign=ira&utm_medium=cpo&utm_source=affiliate&utm_term=2090448",
+            "https://www.washingtonpost.com/opinions/trump-is-right-this-is-a-witch-hunt/2019/03/18/a2487b14-49bf-11e9-b79a-961983b7e0cd_story.html"
+        ]
+    },
+    {
+        "claim": "Nigeria generates over 62 million tonnes of waste a year",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/what-waste-fact-checking-four-claims-about-nigerias-garbage-problem",
+            "https://africacheck.org/infofinder/explore-facts?f%5B0%5D=country%3ANG&page=0",
+            "https://africacheck.org/infofinder/explore-facts?sort_bef_combine=field_verified_date_ASC&page=45",
+            "https://africacheck.org/infofinder/explore-facts?page=3",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf"
+        ]
+    },
+    {
+        "claim": "Each person [in Nigeria] generates an average of 0.65 kg of waste per day",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/what-waste-fact-checking-four-claims-about-nigerias-garbage-problem",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf"
+        ]
+    },
+    {
+        "claim": "No one in Mid Ulster speaks Irish as their first language.",
+        "urls": [
+            "https://factcheckni.org/topics/peace/does-no-one-in-mid-ulster-speak-irish/",
+            "https://factcheckni.org/tag/language/",
+            "https://factcheckni.org/tag/census/",
+            "https://factcheckni.org/topics/law/thejournal-ie-are-there-really-more-polish-speakers-than-irish-speakers-in-northern-ireland/"
+        ]
+    },
+    {
+        "claim": "Wall Street got a trillion dollar bail out in 2008.",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/03/18/did-wall-street-get-trillion-dollar-bailout-during-financial-crisis/",
+            "https://www.washingtonpost.com/video/politics/did-wall-street-get-a-trillion-dollar-bailout--fact-checker/2019/03/18/ce34c497-1131-431a-be5c-06a826ca80ff_video.html",
+            "https://www.washingtonpost.com/archive/national/2010/12/02/feds-crisis-aid-benefited-firms-beyond-wall-st/1b911400-fdba-11df-acb2-d71d2f79858f/",
+            "https://www.washingtonpost.com/business/economy/a-guide-to-the-financial-crisis--10-years-later/2018/09/10/114b76ba-af10-11e8-a20b-5f4f84429666_story.html",
+            "https://www.washingtonpost.com/business/2018/09/20/would-saving-lehman-have-saved-us-great-recession/"
+        ]
+    },
+    {
+        "claim": "The Indian government has issued an order against sharing political posts online.",
+        "urls": [
+            "https://www.vishvasnews.com/english/politics/fact-check-government-has-not-issued-any-order-against-sharing-political-posts-online/",
+            "https://www.washingtonpost.com/world/2024/10/14/canada-modi-sikhs-violence-india/",
+            "https://www.washingtonpost.com/world/2024/04/29/india-assassination-raw-sikhs-modi/",
+            "https://www.washingtonpost.com/world/interactive/2023/singapore-china-news-influence-lianhe-zaobao/",
+            "https://www.washingtonpost.com/investigations/2024/08/02/trump-campaign-egypt-investigation/"
+        ]
+    },
+    {
+        "claim": "Senator Thom Tillis changes position on President Trump's national emergency declaration for border wall funding",
+        "urls": [
+            "https://www.washingtonpost.com/politics/trump-renews-veto-threat-as-senate-prepares-to-rebuke-him-on-national-emergency/2019/03/14/2efbea36-4647-11e9-aaf8-4512a6fe3439_story.html",
+            "https://www.washingtonpost.com/powerpost/tilliss-reversal-sums-up-state-of-senate-republicans--few-willing-to-cross-trump/2019/03/14/aceb6c4a-45d5-11e9-8aab-95b8d80a1e4f_story.html",
+            "https://www.washingtonpost.com/politics/2019/03/14/thom-tilliss-remarkable-flip-flop-trumps-national-emergency-others-who-also-backed-off/",
+            "https://www.politifact.com/factchecks/2019/mar/20/thom-tillis/supporting-trump-tillis-completely-reverses-course/",
+            "https://www.washingtonpost.com/opinions/2019/03/13/after-republicans-prostrate-themselves-before-trump-he-humiliates-them-further/"
+        ]
+    },
+    {
+        "claim": "sodium bicarbonate (baking soda) can cure cancer.",
+        "urls": [
+            "https://www.washingtonpost.com/news/to-your-health/wp/2015/02/26/the-people-who-believe-salt-water-and-baking-soda-can-cure-cancer/",
+            "https://fullfact.org/online/sodium-bicarbonate-cancer-cure/",
+            "https://www.vishvasnews.com/english/health/fact-check-the-post-claiming-that-baking-soda-can-cure-cancer-is-fake/",
+            "https://www.logicallyfacts.com/en/fact-check/cancer-cookies-made-from-blackstrap-molasses-and-sodium-bicarbonate-can-eradicate-cancer-cells-and-tumors",
+            "https://science.feedback.org/review/no-clinical-evidence-supports-the-use-of-baking-soda-as-a-cancer-treatment/"
+        ]
+    },
+    {
+        "claim": "Joe biden said The Trump budget cuts $845 billion, almost a trillion dollar cut in Medicare.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/mar/26/joe-biden/trump-medicare-budget-cuts-billion/",
+            "https://www.politifact.com/factchecks/list/?category=medicare&ruling=barely-true",
+            "https://www.factcheck.org/2020/02/competing-claims-on-trumps-budget-and-seniors/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/the-health-202/2019/03/18/the-health-202-democrats-are-taking-their-turn-using-mediscare-as-a-political-tactic/5c8d4dfc1b326b0f7f38f1a8/",
+            "https://www.politifact.com/factchecks/list/?page=2&category=&ruling=barely-true&speaker=joe-biden"
+        ]
+    },
+    {
+        "claim": "Donald Trump says Jews are leaving the Democratic Party",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/03/22/sorry-president-trump-heres-why-american-jews-arent-abandoning-democratic-party/",
+            "https://www.usatoday.com/story/news/politics/2019/03/16/donald-trump-predicts-jexodus-jewish-voters-democrats-say-fantasy/3131536002/",
+            "https://www.washingtonpost.com/elections/2024/10/07/2024-election-campaign-updates-harris-trump/",
+            "https://www.politifact.com/article/2019/mar/14/donald-trump-says-jews-are-leaving-democratic-part/",
+            "https://www.washingtonpost.com/politics/trump-questions-sincerity-of-tlaibs-tears-as-she-talked-about-her-grandmother/2019/08/20/03d7b532-c339-11e9-b72f-b31dfaa77212_story.html"
+        ]
+    },
+    {
+        "claim": "Democrats in the House of Representatives voted for the right of illegal immigrants to vote in the US.",
+        "urls": [
+            "https://www.ap.org/news-highlights/elections/2024/illegal-voting-by-noncitizens-is-rare-yet-republicans-are-making-it-a-major-issue-this-election/",
+            "https://www.factcheck.org/2024/03/elon-musk-overstates-partisan-impact-of-illegal-immigration-on-house-apportionment/",
+            "https://www.washingtonpost.com/dc-md-va/2024/05/23/house-vote-dc-noncitizen-voting/",
+            "https://www.factcheck.org/2019/03/misinformation-follows-house-approval-of-h-r-1/",
+            "https://www.politifact.com/factchecks/2019/mar/13/facebook-posts/no-house-democrats-did-vote-allow-noncitizens-vote/"
+        ]
+    },
+    {
+        "claim": "52 counties in the state of New York have average taxes of above the SALT (state and local taxes) $10,000 cap",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/17/andrew-cuomo/cuomo-claims-tax-change-bad-ny/"
+        ]
+    },
+    {
+        "claim": "The Boeing 737 Max 8, the type of plane that crashed in Ethiopia, continues to fly in the United States, despite the FAA saying \"software updates are likely coming.\"",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/mar/12/elizabeth-warren/warren-faa-leans-boeing-fix-737-max-8-software/",
+            "https://www.politifact.com/factchecks/list/?page=3&category=truth-o-meter&ruling=true",
+            "https://www.politifact.com/factchecks/list/?speaker=elizabeth-warren"
+        ]
+    },
+    {
+        "claim": "Thomas Jefferson third president of the United States said hemp is of first necessity to the wealth and protection of the country.",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/mar/13/facebook-posts/claims-about-thomas-jefferson-and-marijuana-are-mo/",
+            "https://www.politifact.com/factchecks/list/?page=2&category=corrections-and-updates&ruling=barely-true"
+        ]
+    },
+    {
+        "claim": "Kenya has one of the worst maternal mortality rates in the world.",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/does-kenya-have-one-worst-maternal-mortality-rates-world",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Aguides&f%5B2%5D=article_type%3Ameta-programme-fact-checks&f%5B3%5D=article_type%3Areports&f%5B4%5D=article_type%3Aspot_checks&f%5B5%5D=country_search%3AKE&page=11&sort_bef_combine=search_api_relevance_DESC",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&f%5B5%5D=country_search%3AKE&f%5B6%5D=topic%3A40&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=1",
+            "https://www.ap.org/about/"
+        ]
+    },
+    {
+        "claim": "Kenya has one of the worst maternal mortality rates in the world",
+        "urls": [
+            "https://africacheck.org/fact-checks/reports/does-kenya-have-one-worst-maternal-mortality-rates-world",
+            "https://africacheck.org/search?f%5B0%5D=article_type%3Aex_reports&f%5B1%5D=article_type%3Aguides&f%5B2%5D=article_type%3Ameta-programme-fact-checks&f%5B3%5D=article_type%3Areports&f%5B4%5D=article_type%3Aspot_checks&f%5B5%5D=country_search%3AKE&page=11&sort_bef_combine=search_api_relevance_DESC",
+            "https://www.africacheck.org/search?f%5B0%5D=article_type%3Ablog&f%5B1%5D=article_type%3Afactsheets&f%5B2%5D=article_type%3Aguides&f%5B3%5D=article_type%3Ameta-programme-fact-checks&f%5B4%5D=article_type%3Areports&f%5B5%5D=country_search%3AKE&f%5B6%5D=topic%3A40&search_api_fulltext=&sort_bef_combine=created_DESC&sort_by=created&sort_order=DESC&page=1",
+            "https://www.ap.org/about/"
+        ]
+    },
+    {
+        "claim": "Poland has had no terror attacks.",
+        "urls": [
+            "https://fullfact.org/online/does-polands-migration-policy-explain-its-lack-terror-attacks/",
+            "https://www.dw.com/en/poland-abandons-promise-to-take-in-refugees-after-brussels-attacks/a-19137258",
+            "https://www.dw.com/en/poland-to-stop-accepting-refugees-after-paris-attacks/a-18850522",
+            "https://www.washingtonpost.com/world/2023/08/18/ukraine-weapons-sabotage-gru-poland/",
+            "https://www.dw.com/en/poland-joins-hungary-in-planning-stringent-anti-terrorism-laws-in-wake-of-brussels-attacks/a-19141781"
+        ]
+    },
+    {
+        "claim": "Poland has a no-migrants policy.",
+        "urls": [
+            "https://fullfact.org/online/does-polands-migration-policy-explain-its-lack-terror-attacks/",
+            "https://www.dw.com/en/poland-tusk-plans-to-suspend-right-to-asylum/a-70478179",
+            "https://www.dw.com/en/rising-labor-migration-in-poland-hungary-and-czechia/a-66205353",
+            "https://www.washingtonpost.com/world/interactive/2022/ukraine-refugees-european-union/",
+            "https://www.dw.com/en/poland-baltics-step-up-border-controls-amid-migrant-crisis/a-69350351"
+        ]
+    },
+    {
+        "claim": "HR 1 is going to take your hard-earned tax dollars and millions more and send them to (a political candidate’s) campaign so (they) can put ads on TV",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/mar/26/mark-walker/fact-checking-mark-walker-hr-1s-campaign-finance-p/",
+            "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2016/09/07/daily-202-trump-making-a-play-for-virginia-despite-long-odds/57cf7a12cd249a6fa9f82088/",
+            "https://www.washingtonpost.com/",
+            "https://www.abs-cbn.com/news/world/2025/1/7/harris-gracious-in-defeat-as-congress-certifies-trump-s-election-1637"
+        ]
+    },
+    {
+        "claim": "Russia has historically reaffirmed its role as a state  that is the guarantor of stability and security, and is a party that brings peace, not agression.",
+        "urls": [
+            "https://www.stopfake.org/en/is-russia-a-guarantor-of-stability-and-security/"
+        ]
+    },
+    {
+        "claim": "MMR Vaccine does not causes autism in Children.",
+        "urls": [
+            "https://www.factcheck.org/2023/07/scicheck-false-claim-about-cause-of-autism-highlighted-on-pennsylvania-senate-panel/",
+            "https://www.washingtonpost.com/national/health-science/anti-vaccine-activists-spark-a-states-worst-measles-outbreak-in-decades/2017/05/04/a1fac952-2f39-11e7-9dec-764dc781686f_story.html",
+            "https://www.usatoday.com/story/news/health/2019/03/05/vaccines-autism-measles-shots-dont-increase-risk-study/3064073002/",
+            "https://www.washingtonpost.com/news/to-your-health/wp/2016/05/25/7-things-about-vaccines-and-autism-that-the-movie-vaxxed-wont-tell-you/",
+            "https://www.washingtonpost.com/news/to-your-health/wp/2015/09/17/the-origins-of-donald-trumps-autismvaccine-theory-and-how-it-was-completely-debunked-eons-ago/"
+        ]
+    },
+    {
+        "claim": "Over ninety per cent of those who died during the Troubles in Northern Ireland were killed by paramilitaries.",
+        "urls": [
+            "https://factcheckni.org/topics/peace/were-90-of-those-who-died-during-the-troubles-killed-by-paramilitaries/",
+            "https://www.washingtonpost.com/archive/politics/1989/08/28/international-arms-merchants-stock-both-sides-in-n-ireland/6a8e61de-2eee-463e-b416-810936eba8dd/",
+            "https://factcheckni.org/articles/are-an-average-of-three-women-killed-by-men-each-week/"
+        ]
+    },
+    {
+        "claim": "Nigeria’s central bank has banned textile imports",
+        "urls": [
+            "https://www.abs-cbn.com/overseas/04/17/20/at-least-300000-africans-expected-to-die-in-pandemic-says-un-agency",
+            "https://africacheck.org/sites/default/files/WHAT-A-WASTE-2.pdf"
+        ]
+    },
+    {
+        "claim": "Muslim Figure Said \"We must have Pork-Free Menus Or We Will Leave U.S",
+        "urls": [
+            "https://www.politifact.com/factchecks/2021/oct/29/facebook-posts/old-hoax-about-muslims-demanding-pork-free-menus-s/",
+            "https://www.snopes.com/fact-check/muslim-figure-pork-free/",
+            "https://leadstories.com/hoax-alert/2019/03/fake-news-muslim-figure-we-must-have-pork-free-menus-or-we-will-leave-us-how-would-you-respond-this.html",
+            "https://www.politifact.com/factchecks/list/?category=religion&ruling=pants-fire",
+            "https://leadstories.com/hoax-alert/2019/01/the-kumanovo-connection-macedonian-spam-clans-still-make-money-with-fake-news-about-muslims-and-migr.html"
+        ]
+    },
+    {
+        "claim": "PAHAL, India's Direct Benefit Transfer for LPG consumer scheme, is the world’s largest cash transfer program.",
+        "urls": [
+            "https://factly.in/fact-checking-government-claims-on-direct-benefit-transfer/",
+            "https://www.indiatoday.in/india/delhi/story/cabinet-reshuffle-dharmendra-pradhan-piyush-goyal-nirmala-sitharaman-mukhtar-abbas-naqvi-1036985-2017-09-03",
+            "https://www.indiatoday.in/technology/news/story/government-starts-e-booking-for-new-lpg-cylinders-291086-2015-08-31",
+            "https://www.boomlive.in/fact-check/politics/lpg-prices-2014-2023-ujjwala-yojana-200-subsidy-per-cylinder-scheme-pahal-factcheck-22951",
+            "https://www.indiatoday.in/budget-2017/story/president-pranab-mukherjee-budget-speech-full-text-958115-2017-01-31"
+        ]
+    },
+    {
+        "claim": "When the Coalition came to power, it inherited a 755 million tonne emissions deficit needed to reach Australia's second Kyoto target because Labor hadn't done the hard work.",
+        "urls": []
+    },
+    {
+        "claim": "Donald trump claims \"Nobody shows up (for immigration hearings). Three percent of the people come back for a trial.\"",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/03/04/president-trump-has-made-false-or-misleading-claims-over-days/",
+            "https://www.politifact.com/article/2019/mar/04/fact-checking-donald-trump-two-hour-speech/"
+        ]
+    },
+    {
+        "claim": "Donald Trump claims that Virginia’s Democratic governor said he would allow parents, \"if they didn’t want the child, who is now outside of the womb — long outside of the womb — they will execute the baby after birth.\"",
+        "urls": [
+            "https://www.politifact.com/article/2019/mar/04/fact-checking-donald-trump-two-hour-speech/"
+        ]
+    },
+    {
+        "claim": "More people are working today in the United States than ever before in the history of our country.",
+        "urls": [
+            "https://www.washingtonpost.com/business/interactive/2024/us-sanction-countries-work/",
+            "https://www.washingtonpost.com/graphics/2018/national/segregation-us-cities/",
+            "https://www.washingtonpost.com/",
+            "https://www.abs-cbn.com/focus/10/06/17/ican-staunch-campaigners-for-an-end-to-nuclear-weapons",
+            "https://www.afp.com/index.php/en/agency/inside-afp/inside-afp/afp-photographer-honored-honduran-congress"
+        ]
+    },
+    {
+        "claim": "The Trump administration passed the largest package of tax cuts and reforms in American history.",
+        "urls": [
+            "https://www.washingtonpost.com/news/wonk/wp/2017/04/26/trump-tax-cut-to-be-biggest-of-all-time-treasury-chief-says/",
+            "https://www.washingtonpost.com/news/politics/wp/2017/12/20/the-rose-garden-celebrations-of-trump-and-some-tax-thing-ranked/",
+            "https://www.usatoday.com/story/news/politics/2017/04/26/donald-trump-tax-plan-steve-mnuchin/100923518/",
+            "https://www.factcheck.org/2024/10/trumps-spin-on-tax-cuts-raising-revenues/",
+            "https://www.washingtonpost.com/graphics/2020/lifestyle/magazine/trump-presidential-norm-breaking-list/"
+        ]
+    },
+    {
+        "claim": "Donald trump claims 'We have nearly 5 million Americans that have been lifted off of food stamps.\"",
+        "urls": [
+            "https://www.washingtonpost.com/politics/2019/02/20/have-trumps-policies-lifted-nearly-million-americans-off-food-stamps/",
+            "https://www.factcheck.org/2019/02/factchecking-the-state-of-the-union-2/",
+            "https://www.factcheck.org/2020/03/trumps-welfare-claim/",
+            "https://www.washingtonpost.com/politics/2020/02/04/fact-checking-president-trumps-2020-state-union-address/",
+            "https://www.factcheck.org/2020/01/trumps-numbers-january-2020-update/"
+        ]
+    },
+    {
+        "claim": "Donald trump claims that 'We passed the largest package of tax cuts and reforms in American history'",
+        "urls": [
+            "https://www.washingtonpost.com/news/fact-checker/wp/2017/11/01/president-trumps-tax-cut-not-the-biggest-in-u-s-history/",
+            "https://www.politifact.com/factchecks/2018/jan/31/donald-trump/donald-trump-wrong-again-recent-tax-bill-biggest-e/",
+            "https://www.factcheck.org/2018/10/trump-stump-speeches-economy/",
+            "https://www.factcheck.org/2017/11/trumps-claims-dont-add/",
+            "https://www.factcheck.org/2021/01/factchecking-trumps-farewell-remarks/"
+        ]
+    },
+    {
+        "claim": "The BJP government published an infographic on the 48-months portal that makes four claims about the Jan Suraksha Yojana. This article is a fact check of those claims.",
+        "urls": [
+            "https://factly.in/fact-checking-the-government-claims-about-the-jan-suraksha-yojana/",
+            "https://factly.in/category/48-months-of-modi-government/page/3/",
+            "https://factly.in/fact-checking-government-claims-on-jan-suraksha/",
+            "https://factly.in/how-true-are-government-claims-about-the-pradhan-mantri-matru-vandana-yojana/",
+            "https://factly.in/category/india/page/123/"
+        ]
+    },
+    {
+        "claim": "When the wind stops blowing, that’s the end of your electric (power).",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/03/donald-trump/fact-checking-donald-trumps-take-wind-energy/",
+            "https://www.factcheck.org/2019/07/does-wind-work-without-subsidies/",
+            "https://www.washingtonpost.com/climate-environment/interactive/2024/uk-coal-power-exit/",
+            "https://www.washingtonpost.com/climate-solutions/interactive/2021/saul-griffith-mass-electrification/",
+            "https://www.factcheck.org/2024/09/trump-clings-to-inaccurate-climate-change-talking-points/"
+        ]
+    },
+    {
+        "claim": "Not a single bulletproof jacket was procured in UPA rule from 2009 to 2014.",
+        "urls": [
+            "https://www.indiatoday.in/fact-check/story/fact-check-pm-stands-correct-no-bulletproof-jacket-procured-during-upa-2-1469457-2019-03-03",
+            "https://www.indiatoday.in/magazine/india-today-conclave-2019/story/20190318-fear-is-good-1472035-2019-03-08",
+            "https://www.indiatoday.in/india/story/army-bulletproof-jackets-make-in-india-1208531-2018-04-09",
+            "https://voxukraine.org/en/provocation-and-disinformation-overview"
+        ]
+    },
+    {
+        "claim": "Donald trump claims When the wind stops blowing, that’s the end of your electric (power)",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/apr/03/donald-trump/fact-checking-donald-trumps-take-wind-energy/",
+            "https://www.politifact.com/article/2019/mar/04/fact-checking-donald-trump-two-hour-speech/",
+            "https://www.washingtonpost.com/news/national/wp/2019/03/09/feature/the-10-personas-of-donald-trump-in-a-single-speech/",
+            "https://www.washingtonpost.com/politics/2019/03/04/president-trump-has-made-false-or-misleading-claims-over-days/",
+            "https://www.factcheck.org/2019/07/does-wind-work-without-subsidies/"
+        ]
+    },
+    {
+        "claim": "Donald trump claims \"One in three women is sexually assaulted on the dangerous journey north.\"",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/jan/25/donald-trump/trump-said-1-3-migrant-women-sexually-assaulted-jo/",
+            "https://www.washingtonpost.com/politics/2019/03/04/president-trump-has-made-false-or-misleading-claims-over-days/",
+            "https://www.washingtonpost.com/politics/2019/01/22/trump-keeps-trying-win-shutdown-fight-by-pretending-hes-typical-president/",
+            "https://www.usatoday.com/story/news/politics/2019/01/19/read-president-trumps-speech-his-new-offer-reopen-government/2628077002/",
+            "https://www.politifact.com/article/2019/mar/04/fact-checking-donald-trump-two-hour-speech/"
+        ]
+    },
+    {
+        "claim": "Donal d trump claims \"The unemployment rate has reached the lowest in over 51 years. And African American, … Hispanic American, Asian American unemployment rates are at their all-time historic lows.\"",
+        "urls": [
+            "https://www.politifact.com/article/2019/mar/04/fact-checking-donald-trump-two-hour-speech/"
+        ]
+    },
+    {
+        "claim": "Beto O’Rourke and Sen. Kirsten Gillibrand \"have both said they would tear down the border wall between the US and Mexico if elected president",
+        "urls": [
+            "https://www.politifact.com/factchecks/2019/mar/07/america-first/did-beto-orourke-and-kirsten-gillibrand-say-theyd-/",
+            "https://www.washingtonpost.com/graphics/politics/policy-2020/immigration/",
+            "https://www.factcheck.org/2018/11/republican-closing-ads-immigration/",
+            "https://www.washingtonpost.com/graphics/politics/policy-2020/immigration/us-mexico-border-wall/",
+            "https://www.politifact.com/factchecks/list/?page=6&author=miriam-valverde"
+        ]
+    },
+    {
+        "claim": "Cancer is Candida or Fungus.",
+        "urls": [
+            "https://www.washingtonpost.com/health/2023/03/20/candida-auris-fungus-infection/",
+            "https://science.feedback.org/review/cancer-cells-are-not-fungi-the-two-are-derived-from-completely-different-species/"
+        ]
+    },
+    {
+        "claim": "CORY AQUINO's Presidency of the Philippines is unconstitutional.",
+        "urls": [
+            "https://verafiles.org/articles/vera-files-fact-check-contrary-misleading-fb-posts-cory-aqui",
+            "https://www.washingtonpost.com/archive/politics/1985/12/04/aquinos-widow-declares-candidacy/ea48ceca-12d9-4860-83f1-908d34238c38/",
+            "https://www.washingtonpost.com/archive/opinions/1986/09/16/stand-by-cory-aquino/40bc8d1a-1885-4399-b82e-e8a6f9d987ed/",
+            "https://www.washingtonpost.com/archive/politics/1986/09/14/the-troubled-presidency-of-corazon-aquino/f4d1a094-e414-476d-871a-1e2de61bdd63/",
+            "https://www.washingtonpost.com/archive/politics/1986/06/19/philippine-charter-debated/50a43bdf-36c1-49c2-8069-74d9a8c6332c/"
+        ]
+    },
+    {
         "claim": "Buncombe County Sheriff Quentin Miller says an ICE detainer request is not a valid warrant.",
         "urls": [
             "https://www.politifact.com/factchecks/2019/mar/28/quentin-miller/nc-sheriff-right-ice-detainers-are-not-valid-warra/",

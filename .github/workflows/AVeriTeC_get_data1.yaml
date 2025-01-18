@@ -7,7 +7,7 @@ on:
 
 jobs:
   Get-Data:
-    name: AVeriTeC
+    name: AVeriTeC1
     runs-on: ubuntu-latest
 
     steps:
@@ -27,9 +27,9 @@ jobs:
 
       - name: Run python file
         run: |
-          python get_data.py --input_path AVeriTeC/AVeriTeC1.json --output_path AVeriTeC/AVeriTeC_content.json
+          python get_data.py --input_path AVeriTeC/AVeriTeC2.json --output_path AVeriTeC/AVeriTeC_content1.json
 
       - uses: actions/upload-artifact@v4
         with:
-          name: save_file
-          path: AVeriTeC/AVeriTeC_content.json
+          name: AVeriTeC_content1
+          path: AVeriTeC/AVeriTeC_content1.json

@@ -410,4 +410,3 @@ for i in query:
 
 with open('result.json', 'w') as f:
     json.dump(save_result, f, indent=4, ensure_ascii=False)
-
