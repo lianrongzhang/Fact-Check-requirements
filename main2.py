@@ -327,20 +327,6 @@ def main(query, model, search_api_key, search_engine_id):
         fact_check_result = fact_check(query[0], documents, model, analyzer_time)
     return fact_check_result[0], fact_check_result[1]
 
-# def test_data(path):
-#     with open(path, 'r') as f:
-#         data = json.load(f)
-#     test = []  # 用於保留順序
-#     cnt = 0
-#     for i in data:
-#         if cnt >= 100:
-#             break
-#         for j in i:
-#             if j['claim'] not in test:
-#                 test.append(j['claim'])
-#         cnt+=1
-#     return test
-
 def test_data(path):
     with open(path, 'r') as f:
         data = json.load(f)

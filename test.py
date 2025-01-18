@@ -1594,26 +1594,26 @@
 #     print(result)
 #     print("-----------------------------------------------")
 
-import json
+# import json
 
-# 讀取 JSON 檔案
-with open('/home/user/talen-python/MultiFC/MultiFC1.json', 'r') as f:
-    data = json.load(f)
+# # 讀取 JSON 檔案
+# with open('/home/user/talen-python/MultiFC/MultiFC1.json', 'r') as f:
+#     data = json.load(f)
 
-# 計算資料長度並定義分割大小
-total_length = len(data)
-chunk_size = total_length // 5  # 每部分的大小
+# # 計算資料長度並定義分割大小
+# total_length = len(data)
+# chunk_size = total_length // 5  # 每部分的大小
 
-# 初始化分割結果
-parts = [data[i * chunk_size: (i + 1) * chunk_size] for i in range(4)]
-parts.append(data[4 * chunk_size:])  # 剩下的資料放在最後一部分
+# # 初始化分割結果
+# parts = [data[i * chunk_size: (i + 1) * chunk_size] for i in range(4)]
+# parts.append(data[4 * chunk_size:])  # 剩下的資料放在最後一部分
 
-# 儲存每一部分為新的 JSON 檔案
-for idx, part in enumerate(parts):
-    output_path = f'/home/user/talen-python/MultiFC/MultiFC_{idx + 1}.json'
-    with open(output_path, 'w') as outfile:
-        json.dump(part, outfile, indent=4, ensure_ascii=False)
-    print(f"Saved part {idx + 1} to {output_path}")
+# # 儲存每一部分為新的 JSON 檔案
+# for idx, part in enumerate(parts):
+#     output_path = f'/home/user/talen-python/MultiFC/MultiFC_{idx + 1}.json'
+#     with open(output_path, 'w') as outfile:
+#         json.dump(part, outfile, indent=4, ensure_ascii=False)
+#     print(f"Saved part {idx + 1} to {output_path}")
 
 
 
@@ -1658,3 +1658,27 @@ for idx, part in enumerate(parts):
 
 # with open('/home/user/talen-python/MultiFC/MultiFC4.json', 'w') as f:
 #     json.dump(test2, f, indent=4, ensure_ascii=False)
+
+
+# import json
+# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result1_llama3.json','r') as f:
+#     data = json.load(f)
+
+# with open('/home/user/talen-python/google fact check data/Climate_Fever.json','r') as f:
+#     data1 = json.load(f)
+
+# print(len(data))
+# cnt=0
+# for i in data1:
+#     label = i[0]['label']
+#     claim = i[0]['claim']
+#     for j in data:
+#         if j['claim'] == claim:
+#             if j['claim_status'] == label:
+#                 cnt+=1
+#                 break
+# print(cnt)
+
+from fake_useragent import UserAgent
+ua = UserAgent()
+print(ua.random)
