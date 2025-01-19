@@ -6,6 +6,9 @@ from bs4 import BeautifulSoup
 from langchain.schema import Document
 from fake_useragent import UserAgent
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
+import random
+
 
 # Initialize UserAgent object
 ua = UserAgent()
@@ -27,19 +30,33 @@ def fetch_url(url, timeout=10):
         return None
 
 def fetch_urls_with_retries(urls, max_retries=3, timeout=10):
-    """Fetch multiple URLs with retry logic."""
+    """
+    Fetch multiple URLs with retry logic and print success information to the terminal.
+    """
     results = []
     for url in urls:
+        success = False
+        content = None
         for attempt in range(max_retries):
             print(f"Fetching {url} (Attempt {attempt + 1}/{max_retries})...")
             doc = fetch_url(url, timeout=timeout)
             if doc:
-                results.append(doc)
+                success = True
+                content = doc
                 break
             else:
                 print(f"Retry {attempt + 1} failed for {url}.")
+
+            sleep_time = random.randint(2, 5)
+            time.sleep(sleep_time)
+        if success:
+            print(f"[SUCCESS] Successfully fetched content from {url}")
         else:
-            print(f"Failed to fetch {url} after {max_retries} retries.")
+            print(f"[FAILURE] Failed to fetch content from {url} after {max_retries} retries.")
+
+        # Append the result to the list
+        if content:
+            results.append(content)
     return results
 
 def process_claims_parallel(claims, max_retries=3, timeout=10, max_workers=5):
