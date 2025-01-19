@@ -44,8 +44,8 @@ def create_vector_db(persist_directory, embeddings):
         return None
     
 def get_fact_check_url(query):
-    API_KEY = 'AIzaSyB9E6JToDEV6x4LOkAFJWK1T5RcNK17lOY'
-    SEARCH_ENGINE_ID = '634b2a8e9c04d4ddf'
+    API_KEY = ''
+    SEARCH_ENGINE_ID = ''
     query = query
     url = f'https://www.googleapis.com/customsearch/v1?q={query}&key={API_KEY}&num=5&cx={SEARCH_ENGINE_ID}'
 
@@ -216,7 +216,7 @@ def query_vectordb(question, questionDB, answerDB):
         return
 
 def google_fact_check(query):
-    API_KEY = 'AIzaSyApMjuLcQNOTo_8jt4X3KTn5vvTnoQNF5Q'
+    API_KEY = ''
 
     # Base URL for Fact Check API
     url = 'https://factchecktools.googleapis.com/v1alpha1/claims:search'
