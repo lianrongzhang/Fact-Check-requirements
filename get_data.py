@@ -1,154 +1,95 @@
 import os
 import argparse
 import json
-import threading
-import time
-from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup
 from langchain.schema import Document
-
+from fake_useragent import UserAgent
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Initialize UserAgent object
 ua = UserAgent()
 os.environ['USER_AGENT'] = ua.random
 
-def run_with_timeout(func, args=(), kwargs={}, timeout=10):
-    result = [None]
-    exception = [None]
-
-    def target():
-        try:
-            result[0] = func(*args, **kwargs)
-        except Exception as e:
-            exception[0] = e
-
-    thread = threading.Thread(target=target)
-    thread.daemon = True
-    thread.start()
-    thread.join(timeout)
-
-    if thread.is_alive():
-        print("Function execution timed out.")
-        return None
-    if exception[0]:
-        print(f"Error during execution: {exception[0]}")
-        return None
-    return result[0]
-
-def web_loader(url):
+def fetch_url(url, timeout=10):
+    """Fetch content from a URL and return a LangChain Document object."""
     try:
         headers = {'User-Agent': ua.random}
-        response = requests.get(url, headers=headers)
-
-        # Parse the HTML using BeautifulSoup
+        response = requests.get(url, headers=headers, timeout=timeout)
+        response.raise_for_status()  # Raise HTTPError for bad responses
         soup = BeautifulSoup(response.text, 'html.parser')
-        plain_text = soup.get_text()  # Extract plain text content
-
-        # Create a LangChain Document object
-        doc = Document(
-            page_content=plain_text,
-            metadata={"source": url}  # Optionally add the URL to metadata
-        )
-        return doc  # Return the document directly
-    except Exception as e:
-        print(f"Error loading content from {url}: {e}")
+        plain_text = soup.get_text(strip=True)  # Extract clean text
+        
+        # Create a LangChain Document
+        return Document(page_content=plain_text, metadata={"source": url})
+    except requests.RequestException as e:
+        print(f"Error fetching {url}: {e}")
         return None
 
-def get_fact_check_content(urls, max_retries=10):
-    if not urls:
-        print("No URLs provided.")
-        return [], []
-
-    print('-' * 50)
-    print('Searching relevant information...')
-    fact_check_content = []
-    failed_urls = []
-
-    for i, url in enumerate(urls, start=1):
-        for retries in range(max_retries):
-            doc = run_with_timeout(web_loader, args=(url,))
+def fetch_urls_with_retries(urls, max_retries=3, timeout=10):
+    """Fetch multiple URLs with retry logic."""
+    results = []
+    for url in urls:
+        for attempt in range(max_retries):
+            print(f"Fetching {url} (Attempt {attempt + 1}/{max_retries})...")
+            doc = fetch_url(url, timeout=timeout)
             if doc:
-                print(f"[{i}/{len(urls)}] Successfully fetched content from {url}")
-                fact_check_content.append(doc)
+                results.append(doc)
                 break
             else:
-                print(f"[{i}/{len(urls)}] Attempt {retries + 1} failed. Retrying...")
-            time.sleep(1)
+                print(f"Retry {attempt + 1} failed for {url}.")
         else:
-            print(f"[{i}/{len(urls)}] Failed to load content from {url} after {max_retries} attempts.")
-            fact_check_content.append(Document(page_content="", metadata={"source": url}))
-            failed_urls.append(url)
+            print(f"Failed to fetch {url} after {max_retries} retries.")
+    return results
 
-    print('Search completed.')
-    print('-' * 50)
-    return fact_check_content, failed_urls
+def process_claims_parallel(claims, max_retries=3, timeout=10, max_workers=5):
+    """Process claims and their URLs in parallel using threading."""
+    results = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_claim = {
+            executor.submit(fetch_urls_with_retries, claim['urls'], max_retries, timeout): claim['claim']
+            for claim in claims if claim['urls']
+        }
+        for future in as_completed(future_to_claim):
+            claim = future_to_claim[future]
+            try:
+                results[claim] = future.result()
+            except Exception as e:
+                print(f"Error processing claim '{claim}': {e}")
+                results[claim] = []
+    return results
 
-def retry_failed_urls(failed_urls, output_path):
-    print("Retrying failed URLs...")
-    retried_content = []
-    for url in failed_urls:
-        doc = run_with_timeout(web_loader, args=(url,))
-        if doc:
-            print(f"Successfully fetched content from {url} (Retry successful).")
-            retried_content.append(doc)
-        else:
-            print(f"Failed to fetch content from {url} even after retrying.")
-            retried_content.append(Document(page_content="", metadata={"source": url}))
+def save_results_to_file(results, output_path):
+    """Save LangChain documents as JSON with metadata."""
+    serialized_results = {
+        claim: [{"page_content": doc.page_content, "metadata": doc.metadata} for doc in docs]
+        for claim, docs in results.items()
+    }
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(serialized_results, f, indent=4, ensure_ascii=False)
+    print(f"Results saved to {output_path}")
 
-    # Save retried results immediately
-    with open(output_path, 'a') as f:
-        for doc in retried_content:
-            json.dump({"page_content": doc.page_content, "metadata": doc.metadata}, f, ensure_ascii=False)
-            f.write("\n")
-
-    return retried_content
-
-def main(input_path, output_path):
-    with open(input_path, 'r') as f:
+def main(input_path, output_path, max_retries=3, timeout=10, max_workers=5):
+    """Main entry point to process claims and fetch URLs."""
+    with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    query = []
-    save_result = dict()
-    failed_urls = []
+    claims = [{"claim": item['claim'], "urls": item['urls']} for item in data if 'urls' in item and item['urls']]
+    print(f"Loaded {len(claims)} claims from {input_path}.")
 
-    for i in data:
-        if i['urls']:
-            query.append([i['claim'], i['urls']])
+    # Process claims in parallel
+    results = process_claims_parallel(claims, max_retries=max_retries, timeout=timeout, max_workers=max_workers)
 
-    print(len(query))
-    for i in query:
-        print(f"Processing claim: {i[0]}")
-        result, failed = get_fact_check_content(i[1])
-        save_result[i[0]] = result  # Store LangChain Document objects in the result
-        failed_urls.extend(failed)
-
-    # Save intermediate results
-    serialized_result = {
-        claim: [{"page_content": doc.page_content, "metadata": doc.metadata} for doc in docs]
-        for claim, docs in save_result.items()
-    }
-    with open(output_path, 'w') as f:
-        json.dump(serialized_result, f, indent=4, ensure_ascii=False)
-
-    if failed_urls:
-        retry_failed_urls(failed_urls, output_path)
+    # Save results to file
+    save_results_to_file(results, output_path)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process fact-checking claims.")
-    parser.add_argument(
-        "--input_path",
-        type=str,
-        required=True,
-        help="Path to the input JSON file containing claims and URLs."
-    )
-    parser.add_argument(
-        "--output_path",
-        type=str,
-        required=True,
-        help="Path to save the output JSON file with fact-check content."
-    )
-
+    parser = argparse.ArgumentParser(description="Fetch and process fact-checking claims.")
+    parser.add_argument("--input_path", type=str, required=True, help="Path to input JSON file.")
+    parser.add_argument("--output_path", type=str, required=True, help="Path to save output JSON file.")
+    parser.add_argument("--max_retries", type=int, default=3, help="Maximum number of retries for failed requests.")
+    parser.add_argument("--timeout", type=int, default=10, help="Request timeout in seconds.")
+    parser.add_argument("--max_workers", type=int, default=5, help="Maximum number of threads for parallel processing.")
     args = parser.parse_args()
 
-    main(args.input_path, args.output_path)
+    main(args.input_path, args.output_path, args.max_retries, args.timeout, args.max_workers)

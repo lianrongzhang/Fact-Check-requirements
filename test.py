@@ -1661,7 +1661,7 @@
 
 
 # import json
-# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result1_llama3.json','r') as f:
+# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result2_mistral.json','r') as f:
 #     data = json.load(f)
 
 # with open('/home/user/talen-python/google fact check data/Climate_Fever.json','r') as f:
@@ -1679,6 +1679,8 @@
 #                 break
 # print(cnt)
 
-from fake_useragent import UserAgent
-ua = UserAgent()
-print(ua.random)
+import json
+with open('/home/user/talen-python/AVeriTeC/AVeriTeC_content1.json','r') as f:
+    data = json.load(f)
+
+print(len(data))

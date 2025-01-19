@@ -16,7 +16,7 @@ def analyze_fact_check(fact_check_content, model):
         llm = OllamaLLM(model=model)
         # 定義 PromptTemplate
         template = """
-        Write a concise summary of the following:
+        Write a summary of the following:
         {context}
         """
         prompt = PromptTemplate.from_template(template)
@@ -59,8 +59,12 @@ def fact_check(query, documents, model,analyzer_time=None):
         2. Evidence 2:  
         - Observation: [Detail the second piece of evidence or data relevant to the claim.]  
         - Reasoning: [Explain how this evidence supports or refutes the claim, or note any limitations.]
+        .
+        .
+        . (if needed)
 
-        3. Additional Analysis (if needed):  
+        
+        Additional Analysis:  
         - [Integrate multiple pieces of evidence or consider other contextual factors for deeper reasoning.]
 
         ### Conclusion:
@@ -136,9 +140,8 @@ content = test_data(path1)
 
 keys = list(content.keys())
 values = list(content.values())
-model = "llama3"
+model = "mistral"
 save_result = []
-
 for key, value in zip(keys, values):
     print(f"Processing claim: {key}")
     print("-----------------------------------------------------------------")
@@ -177,6 +180,6 @@ for key, value in zip(keys, values):
     print("-----------------------------------------------------------------")
     save_result.append(tmp)
 
-# 保存结果
-with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result2_llama3.json', 'w') as f:
+# # 保存结果
+with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result3_mistral.json', 'w') as f:
     json.dump(save_result, f, indent=4, ensure_ascii=False)

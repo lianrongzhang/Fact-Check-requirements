@@ -31,5 +31,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: save_file
+          name: Climate_Fever_content
           path: Climate_Fever/Climate_Fever_content.json
