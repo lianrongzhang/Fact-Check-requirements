@@ -29,7 +29,7 @@ def fetch_url(url, timeout=10):
         print(f"Error fetching {url}: {e}")
         return None
 
-def fetch_urls_with_retries(urls, max_retries=3, timeout=10):
+def fetch_urls_with_retries(urls, max_retries=10, timeout=10):
     """
     Fetch multiple URLs with retry logic and print success information to the terminal.
     """
@@ -47,7 +47,7 @@ def fetch_urls_with_retries(urls, max_retries=3, timeout=10):
             else:
                 print(f"Retry {attempt + 1} failed for {url}.")
 
-            sleep_time = random.randint(2, 5)
+            sleep_time = random.randint(5, 10)
             time.sleep(sleep_time)
         if success:
             print(f"[SUCCESS] Successfully fetched content from {url}")

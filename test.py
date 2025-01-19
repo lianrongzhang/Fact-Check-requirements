@@ -1661,7 +1661,7 @@
 
 
 # import json
-# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result2_mistral.json','r') as f:
+# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result3_mistral.json','r') as f:
 #     data = json.load(f)
 
 # with open('/home/user/talen-python/google fact check data/Climate_Fever.json','r') as f:
@@ -1680,7 +1680,17 @@
 # print(cnt)
 
 import json
-with open('/home/user/talen-python/AVeriTeC/AVeriTeC_content1.json','r') as f:
+with open('/home/user/talen-python/AVeriTeC/AVeriTeC2.json','r') as f:
+    data = json.load(f)
+
+print(len(data))
+
+with open('/home/user/talen-python/AVeriTeC/AVeriTeC3.json','r') as f:
+    data = json.load(f)
+
+print(len(data))
+
+with open('/home/user/talen-python/AVeriTeC/AVeriTeC4.json','r') as f:
     data = json.load(f)
 
 print(len(data))
