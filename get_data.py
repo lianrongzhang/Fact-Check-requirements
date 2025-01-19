@@ -43,21 +43,31 @@ def fetch_urls_with_retries(urls, max_retries=3, timeout=10):
     return results
 
 def process_claims_parallel(claims, max_retries=3, timeout=10, max_workers=5):
-    """Process claims and their URLs in parallel using threading."""
-    results = {}
+    """Process claims and their URLs in parallel while preserving input order."""
+    results = [None] * len(claims)  # Placeholder list to maintain order
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_claim = {
-            executor.submit(fetch_urls_with_retries, claim['urls'], max_retries, timeout): claim['claim']
-            for claim in claims if claim['urls']
+        future_to_index = {
+            executor.submit(fetch_urls_with_retries, claim['urls'], max_retries, timeout): idx
+            for idx, claim in enumerate(claims)
         }
-        for future in as_completed(future_to_claim):
-            claim = future_to_claim[future]
+        for future in as_completed(future_to_index):
+            idx = future_to_index[future]
             try:
-                results[claim] = future.result()
+                results[idx] = {
+                    "claim": claims[idx]['claim'],
+                    "docs": future.result()
+                }
             except Exception as e:
-                print(f"Error processing claim '{claim}': {e}")
-                results[claim] = []
-    return results
+                print(f"Error processing claim '{claims[idx]['claim']}': {e}")
+                results[idx] = {
+                    "claim": claims[idx]['claim'],
+                    "docs": []
+                }
+
+    # Convert list of results to dictionary
+    ordered_results = {item['claim']: item['docs'] for item in results}
+    return ordered_results
 
 def save_results_to_file(results, output_path):
     """Save LangChain documents as JSON with metadata."""
