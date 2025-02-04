@@ -3,183 +3,199 @@ import json
 from langchain.prompts import PromptTemplate
 from langchain_ollama import OllamaLLM
 from langchain.schema import Document
+from langchain.output_parsers import PydanticOutputParser
+from pydantic import BaseModel
 import timeit
+import threading
+import argparse
+import gc
 
 
 def analyze_fact_check(fact_check_content, model):
-    if fact_check_content == None:
-        return("There are no fact check content.")
+    if fact_check_content is None:
+        return "There are no fact check content."
+
     info = []
     time_start = timeit.default_timer()
+
     for i in fact_check_content[1]:
         # 初始化 LLM
         llm = OllamaLLM(model=model)
+
         # 定義 PromptTemplate
         template = """
         Write a summary of the following:
         {context}
         """
         prompt = PromptTemplate.from_template(template)
+
         # 格式化 prompt
         formatted_prompt = prompt.format(context=i)
+
         # 執行 LLM
         result = llm.invoke(formatted_prompt)
+
         # 將結果與 URL 結合
         info.append(f"{result}, url: {i['metadata']}")
+
+        del llm
+        gc.collect()
+
     time_end = timeit.default_timer()
+
     # 將結果轉為 Document 格式
     documents = [Document(page_content=item) for item in info]
 
     return documents, time_end - time_start
 
-def fact_check(query, documents, model,analyzer_time=None):
+class FactCheckOutput(BaseModel):
+    label: str
+    language: str
+    date: str
+    country: str
+    url: list[str]
+    reasoning: str
+    
+def fact_check(query, documents, model, analyzer_time=None):
     if not documents:
         return
+
     llm = OllamaLLM(model=model)
-    # 定義 prompt
+
+    # 在此我們對原有的 prompt 進行調整，增加明確的思考過程說明
     template = """
-        You are a professional fact-checker tasked with evaluating the following claim.
-        Let's break down the evidence and reasoning step by step.
-        First, analyze the provided context {context} and identify key information relevant to the claim {claim}.
-        Then, evaluate the evidence step by step to determine if the claim is true or false.
-        Ensure your response includes the URL(s) of the source(s) you used for evaluation.
-        Finally, structure the response in the following format:
-        
-        ### Analysis of Claim:
+    You are a professional fact-checker tasked with evaluating the following claim.
+    Let's break down the evidence and reasoning step by step.
+    First, analyze the provided context {context} and identify key information relevant to the claim {claim}.
+    Then, evaluate the evidence step by step to determine if the claim is true or false.
+    Ensure your response includes the URL(s) of the source(s) you used for evaluation.
+    
+    Finally, you MUST STRICTLY structure the one and only one response in the following JSON format and don't add anything excessive:
 
-        - Key Information from Context:  
-        [Summarize the key points from the context relevant to the claim.]
+    {{
+        "label": "[Supported|Refuted|Not Enough Information]",
+        "language": "[Language of the claim and context]",
+        "date": "[YYYY-MM-DD]",
+        "country": "[Country Code with 2 letter only]",
+        "url": ["URL1", "URL2", ...],
+        "reasoning": "[Your complete reasoning process here in double quote]"
+    }}
 
-        ### Step-by-Step Evaluation:
+    Remember, output only the LEGAL JSON string mentioned above.
 
-        1. Evidence 1:  
-        - Observation: [Detail the first piece of evidence or data relevant to the claim.]  
-        - Reasoning: [Explain how this evidence supports or refutes the claim, or note any limitations.]
-
-        2. Evidence 2:  
-        - Observation: [Detail the second piece of evidence or data relevant to the claim.]  
-        - Reasoning: [Explain how this evidence supports or refutes the claim, or note any limitations.]
-        .
-        .
-        . (if needed)
-
-        
-        Additional Analysis:  
-        - [Integrate multiple pieces of evidence or consider other contextual factors for deeper reasoning.]
-
-        ### Conclusion:
-
-        - Claim Status: [State "Supported," "Refuted," or "Not Enough Information"]
-        - Language: [Specify the language of the claim and context, do not translate.]
-        - Date: [Specify the date of the claim or context, e.g., "YYYY-MM-DD."]
-        - Country: [Reason the country relevant to the claim and transform it to the country code (e.g., US, UK, CA), only show the country code.]
-        - URL: [Provide the URL(s) of the source(s) for reference.]
     """
     prompt = PromptTemplate.from_template(template)
     formatted_prompt = prompt.format(context=documents, claim=query)
-    
-    # 將 prompt 傳遞給 LLM
+
+    # 使用 PydanticOutputParser
+    parser = PydanticOutputParser(pydantic_object=FactCheckOutput)
+
     time_start = timeit.default_timer()
     result = llm.invoke(formatted_prompt)
     time_end = timeit.default_timer()
-    url_pattern = r"(https?://[^\s]+)"
-    
-    # 使用正則表達式搜尋 result 中是否有符合的連結
-    match = re.search(url_pattern, result)
-
-    if match:
-        # 如果有找到，返回結果和連結
-        if analyzer_time == None:
-            return result, time_end - time_start
+    del llm
+    gc.collect()
+    try:
+        start_index = result.index('{')
+        end_index = result.index('}', start_index)
+        result_json = result[start_index:end_index + 1]
+        
+        parsed_result = parser.parse(result_json)
+        if analyzer_time is None:
+            return result, parsed_result.model_dump(), time_end - time_start
         else:
-            return result, time_end - time_start + analyzer_time
-    else:
-        return False, None
+            return result, parsed_result.model_dump(), time_end - time_start + analyzer_time
+    except Exception as e:
+        return None, None, 0
     
-def extract_data(response, patterns):
-    result = {}
+def run_with_timeout(func, args=(), kwargs={}, timeout=60):
+    result = [None]  # To store the function result
+    exception = [None]  # To capture any exception
 
-    # 檢查 response 是否為字串
-    if not isinstance(response, str):
-        print(f"Skipping non-string response: {response} (type: {type(response)})")
+    def target():
+        try:
+            result[0] = func(*args, **kwargs)
+        except Exception as e:
+            exception[0] = e
+
+    thread = threading.Thread(target=target)
+    thread.daemon = True
+    thread.start()
+    thread.join(timeout)  # Wait for execution to complete
+
+    if thread.is_alive():  # Check if the function timed out
+        print("Function execution timed out.")
         return None
-    
-    for key, regex_list in patterns.items():
-        if key == "URL":
-            matches = []
-            for regex in regex_list:
-                matches.extend(re.findall(regex, response))
-            # 使用 set 去重，然後轉回 list
-            result[key] = list(set(matches)) if matches else None
-        else:
-            for regex in regex_list:
-                match = re.search(regex, response)
-                if match:
-                    result[key] = match.group(1).strip()
-                    break
-            if key not in result:
-                result[key] = None
-    return result
+    if exception[0]:  # Check for any exceptions
+        print(f"Error during execution: {exception[0]}")
+        return None
+    return result[0]
 
-patterns = {
-    "Claim Status": [r"Claim Status:\s*([^\n]+)", r"\*\*Claim Status\*\*:\s*([^\n]+)"],
-    "Language": [r"Language:\s*([^\(\n]+)", r"\*\*Language\*\*:\s*([^\(\n]+)"],
-    "Date": [r"Date:\s*([^\(\n]+)", r"\*\*Date\*\*:\s*([^\(\n]+)"],
-    "Country": [r"Country:\s*([A-Z]+)", r"\*\*Country\*\*:\s*([A-Z]+)"],
-    "URL": [r"URL:\s*(https?://[^\s]+)", r"https?://[^\s]+"]
-}
-    
 def test_data(path):
     with open(path, 'r') as f:
         data = json.load(f)
     return data
 
-path1 = '/home/user/talen-python/Climate_Fever/Climate_Fever_content.json'
 
-content = test_data(path1)
 
-keys = list(content.keys())
-values = list(content.values())
-model = "mistral"
-save_result = []
-for key, value in zip(keys, values):
-    print(f"Processing claim: {key}")
-    print("-----------------------------------------------------------------")
-    documents, analyzer_time = analyze_fact_check([key, value], model)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Fetch and process fact-checking claims.")
+    parser.add_argument("--input_path", type=str, required=True, help="Path to input JSON file.")
+    parser.add_argument("--model", type=str, required=True, help="Path to input JSON file.")
+    parser.add_argument("--output_path", type=str, required=True, help="Path to input JSON file.")
     
-    fact_check_result, final_time = fact_check(key, documents, model, analyzer_time)
-    retry_count = 0
+    args = parser.parse_args()
 
-    # 重试机制
-    while fact_check_result == False:
-        retry_count += 1
-        if retry_count > 3:
-            print("Failed to get a URL after 3 attempts.")
-            fact_check_result = False
-            final_time = None
-            break
-        fact_check_result, final_time = fact_check(key, documents, model, analyzer_time)
+    input_path = args.input_path
+    model = args.model
+    output_path = args.output_path
+    content = test_data(input_path)
 
-    if fact_check_result == False:
-        print(f"Skipping claim: {key}")
-        continue
-    
-    extract_data_result = extract_data(fact_check_result, patterns)
-    tmp = {
-        "claim": key,
-        "result": fact_check_result,
-        "claim_status": extract_data_result["Claim Status"],
-        "language": extract_data_result["Language"],
-        "date": extract_data_result["Date"],
-        "country": extract_data_result["Country"],
-        "url": extract_data_result["URL"],
-        "time_taken": final_time
-    }
-    print("Result:")
-    print(tmp['result'])
-    print("-----------------------------------------------------------------")
-    save_result.append(tmp)
+    keys = list(content.keys())
+    values = list(content.values())
+    save_result = []
 
-# # 保存结果
-with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result3_mistral.json', 'w') as f:
-    json.dump(save_result, f, indent=4, ensure_ascii=False)
+    for key, value in zip(keys, values):
+        if value == []:
+            print(f"Skipping claim: {key}")
+            continue
+        print(f"Processing claim: {key}")
+        print("-----------------------------------------------------------------")
+        documents, analyzer_time = analyze_fact_check([key, value], model)
+        fact_check_result, parsing_result, final_time = run_with_timeout(fact_check,args=(key, documents, model, analyzer_time))
+        retry_count = 0
+
+        # 重試機制
+        while fact_check_result == None:
+            retry_count += 1
+            if retry_count > 20:
+                print("Failed to get a valid result after 20 attempts.")
+                fact_check_result = None
+                final_time = None
+                break
+
+            fact_check_result, parsing_result, final_time = run_with_timeout(fact_check,args=(key, documents, model, analyzer_time))
+
+        if fact_check_result == None:
+            print(f"Skipping claim: {key}")
+            continue
+
+        tmp = {
+            "claim": key,
+            "label": parsing_result['label'],
+            "reasoning": parsing_result['reasoning'],
+            "date" : parsing_result['date'],
+            "country" : parsing_result['country'],
+            "urls" : parsing_result['url'],
+            "time_taken": final_time
+        }
+
+        print("Result:")
+        print(json.dumps(parsing_result, indent=4, ensure_ascii=False))
+        print("-----------------------------------------------------------------")
+        save_result.append(tmp)
+    # 保存結果
+    with open(output_path, 'w') as f:
+        json.dump(save_result, f, indent=4, ensure_ascii=False)

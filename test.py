@@ -1661,36 +1661,69 @@
 
 
 # import json
-# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result3_mistral.json','r') as f:
+# import re  # 匯入正則表達式模組
+
+# # 讀取檔案
+# with open('/home/user/talen-python/Climate_Fever/Climate_Fever_result3_deepseek-r1:8b.json', 'r') as f:
 #     data = json.load(f)
 
-# with open('/home/user/talen-python/google fact check data/Climate_Fever.json','r') as f:
+# with open('/home/user/talen-python/google fact check data/Climate_Fever.json', 'r') as f:
 #     data1 = json.load(f)
 
 # print(len(data))
-# cnt=0
+# cnt = 0
+
+# # 處理並比較資料
 # for i in data1:
 #     label = i[0]['label']
-#     claim = i[0]['claim']
 #     for j in data:
-#         if j['claim'] == claim:
-#             if j['claim_status'] == label:
-#                 cnt+=1
-#                 break
+#         if j['claim'] == i[0]['claim'] and j['label'] == label:
+#             cnt+=1
+#             break
 # print(cnt)
 
-import json
-with open('/home/user/talen-python/AVeriTeC/AVeriTeC2.json','r') as f:
+# import json
+
+# # 定義輸入檔案路徑
+# file_paths = [
+#     "/home/user/talen-python/MultiFC/MultiFC_content1.json", 
+#     "/home/user/talen-python/MultiFC/MultiFC_content2.json", 
+#     "/home/user/talen-python/MultiFC/MultiFC_content3.json",
+#     "/home/user/talen-python/MultiFC/MultiFC_content4.json",
+#     "/home/user/talen-python/MultiFC/MultiFC_content5.json"
+# ]  # 替換為你的檔案路徑
+# output_file = "/home/user/talen-python/MultiFC/MultiFC_content.json"
+
+# # 初始化空的主字典
+# merged_data = {}
+
+# # 遍歷每個檔案，讀取並合併內容
+# for file_path in file_paths:
+#     with open(file_path, 'r', encoding='utf-8') as f:
+#         data = json.load(f)
+#         # 合併到主字典中
+#         for key, value in data.items():
+#             if key not in merged_data:
+#                 merged_data[key] = value
+#             else:
+#                 # 如果鍵已存在，合併其值
+#                 merged_data[key].extend(value)
+
+# # 將合併的資料寫入新檔案
+# with open(output_file, 'w', encoding='utf-8') as f:
+#     json.dump(merged_data, f, ensure_ascii=False, indent=4)
+
+# print(f"合併完成，輸出檔案為: {output_file}")
+
+# import json
+
+# with open('AVeriTeC/AVeriTeC_content3.json','r') as f:
+#     data = json.load(f)
+
+# print(len(data))
+
+import json 
+
+with open('data/AVeriTeC.json', 'r') as f:
     data = json.load(f)
-
-print(len(data))
-
-with open('/home/user/talen-python/AVeriTeC/AVeriTeC3.json','r') as f:
-    data = json.load(f)
-
-print(len(data))
-
-with open('/home/user/talen-python/AVeriTeC/AVeriTeC4.json','r') as f:
-    data = json.load(f)
-
 print(len(data))
